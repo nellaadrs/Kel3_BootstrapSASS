@@ -12,7 +12,7 @@
 
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-md fixed-top">
+    <nav class="navbar navbar-expand-md fixed-top bg-light">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="https://media.tenor.com/Z0wDoxDHjn4AAAAj/tsunami-studio-wave.gif" alt="Logo Toko" width="40"
@@ -32,17 +32,25 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="./menu.html">Menu</a>
+                        <a class="nav-link" href="menu.html">Menu</a>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">Tentang Kami</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Tentang Kami
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Sejarah</a>
+                            <a class="dropdown-item" href="#">Tim Kami</a>
+                            <a class="dropdown-item" href="#">Kontak</a>
+                        </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Lokasi</a>
+                        <a class="nav-link" href="#">Testimoni</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Order</a>
+                        <a class="nav-link" href="order.html">Order</a>
                     </li>
                 </ul>
             </div>
@@ -51,45 +59,66 @@
     <!-- end of navbar -->
 
     <!-- content -->
-    <section class="container" style="height: 500px;">
+    <section class="jumbotron bg-warning vh-100 d-md-flex align-items-center mb-10">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-lg-6 text-center align-self-center">
+                    <div class="">
+                        <h2 class="tulisan">Nikmati kelezatan berbagai macam menu CirengQU</h2>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="w-100 ">
+                        <img src="https://cdn0-production-images-kly.akamaized.net/Sw4gdbuSIxsm0oK1PjlSVHGYqac=/0x0:5184x2922/1200x675/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3647992/original/080489600_1638244176-shutterstock_1952650309.jpg"
+                            class="px-4 py-3 w-100">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
 
     </section>
-    <section class="container">
-        <h1 class="text-center">Daftar menu</h1>
+    <section class="container-fluid py-3 my-4">
+        <h1 class="text-center mb-5">Daftar menu</h1>
         <div class="row">
             <div class="col-4">
                 <div class="card custom-card">
-                    <img class="card-img-top"
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1200px-No-Image-Placeholder.svg.png"
-                        height="300px">
+                    <img class="card-img-top px-4 py-3 w-100"
+                        src="https://cdn0-production-images-kly.akamaized.net/Sw4gdbuSIxsm0oK1PjlSVHGYqac=/0x0:5184x2922/1200x675/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3647992/original/080489600_1638244176-shutterstock_1952650309.jpg"
+                        height="280px">
                     <div class="card-body">
-                        <h3 class="card-title">Cireng1</h3>
+                        <h3 class="card-title">Menu 1</h3>
                         <p class="card-text">Deskripsi.</p>
-                        <a href="#" class="btn btn-primary">Selengkapnya</a>
+
+                        <button href="#" class="btn btn-warning" data-toggle="modal"
+                            data-target="#menu1">Selengkapnya</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="card custom-card">
+                    <img class="card-img-top px-4 py-3 w-100"
+                        src="https://cdn.discordapp.com/attachments/1087367052253216769/1154421201482027028/img-header-1.png"
+                        height="280px">
+                    <div class="card-body">
+                        <h3 class="card-title">Menu 2</h3>
+                        <p class="card-text">Deskripsi.</p>
+                        <button href="#" class="btn btn-warning" data-toggle="modal"
+                            data-target="#menu2">Selengkapnya</button>
                     </div>
                 </div>
             </div>
             <div class="col-4">
                 <div class="card custom-card">
-                    <img class="card-img-top"
+                    <img class="card-img-top px-4 py-3 w-100"
                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1200px-No-Image-Placeholder.svg.png"
-                        height="300px">
+                        height="280px">
                     <div class="card-body">
-                        <h3 class="card-title">Cireng1</h3>
+                        <h3 class="card-title">Menu 3</h3>
                         <p class="card-text">Deskripsi.</p>
-                        <a href="#" class="btn btn-primary">Selengkapnya</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="card custom-card">
-                    <img class="card-img-top"
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1200px-No-Image-Placeholder.svg.png"
-                        height="300px">
-                    <div class="card-body">
-                        <h3 class="card-title">Cireng1</h3>
-                        <p class="card-text">Deskripsi.</p>
-                        <a href="#" class="btn btn-primary">Selengkapnya</a>
+                        <button href="#" class="btn btn-warning" data-toggle="modal">Selengkapnya</button>
                     </div>
                 </div>
             </div>
@@ -97,6 +126,57 @@
         </div>
     </section>
 
+    <section id="selengkapnya">
+        <div class="modal fade" id="menu1" tabindex="-1" role="dialog" aria-labelledby="menu1title" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="menu1title">Menu 1</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="https://cdn0-production-images-kly.akamaized.net/Sw4gdbuSIxsm0oK1PjlSVHGYqac=/0x0:5184x2922/1200x675/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3647992/original/080489600_1638244176-shutterstock_1952650309.jpg"
+                            class="px-4 py-3 w-100">
+
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis quis maiores debitis
+                            dolor, non facilis amet, natus eveniet deleniti sequi vel! A praesentium aspernatur impedit.
+                            Esse soluta aliquid tenetur eligendi! Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Velit atque natus et cupiditate voluptatem. Ducimus distinctio odit molestias aliquam
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="menu2" tabindex="-1" role="dialog" aria-labelledby="menu1title" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="menu1title">Menu 3</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="https://cdn.discordapp.com/attachments/1087367052253216769/1154421201482027028/img-header-1.png"
+                            class="px-4 py-3 w-100" height="280px">
+
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis quis maiores debitis
+                            dolor, non facilis amet, natus eveniet deleniti sequi vel! A praesentium aspernatur impedit.
+                            Esse soluta aliquid tenetur eligendi!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="container">
 
@@ -117,8 +197,8 @@
                 <div class="col-lg-4 ">
                     <h4>INFORMASI</h4>
                     <ul class="info">
-                        <li><a href="">Beranda</a></li>
-                        <li><a href="">Menu</a>
+                        <li><a href="./index.html">Beranda</a></li>
+                        <li><a href="./menu.html">Menu</a>
                         </li>
                         <li><a href="">Tentang Kami</a></li>
                         <li><a href="">Testimoni</a></li>
