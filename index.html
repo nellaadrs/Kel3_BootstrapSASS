@@ -3,7 +3,7 @@
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/dcf3185087.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="tampilan.css">
+    <!-- <link rel="stylesheet" href="tampilan.css"> -->
 </head>
 <body>
     <nav class="navbar navbar-expand-md fixed-top">
@@ -27,11 +27,18 @@
                         <a class="nav-link" href="#">Menu</a>
                     </li>
 
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Tentang Kami
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="#">Sejarah</a>
+                          <a class="dropdown-item" href="#">Tim Kami</a>
+                          <a class="dropdown-item" href="#">Kontak</a>
+                      </div>
+                  </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">Tentang Kami</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Lokasi</a>
+                        <a class="nav-link" href="#">Testimoni</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Order</a>
@@ -47,20 +54,20 @@
     <!-- end content -->
 
     <!-- footer -->
-    <div class="footer">
+    <div class="footer text-body">
       <div class="container">
         <div class="row">
           <div class="col-lg-4">
-            <h4>CirengQU</h4>
+            <h4 class="text">CirengQU</h4>
             <h6>Tentang kami</h6>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
             <h6>Kontak</h6>
-            <p>081234567890</p>
+            <p><span><i class="fa-solid fa-phone m-2"></i></span>081234567890</p>
           </div>
           <div class="col-lg-4 ">
             <h4>INFORMASI</h4>
-            <ul class="info">
-              <li><a href="">Beranda</a></li>
+            <ul class="list-unstyled">
+              <li><a href="" class="">Beranda</a></li>
               <li><a href="">Menu</a>
               </li>
               <li><a href="">Tentang Kami</a></li>
@@ -70,19 +77,15 @@
           </div>
           <div class="col-lg-4">
             <h4>Pembayaran</h4>
-            <p style="color: white;">Diisi Logo Pembayaran</p>
+            <p class="text-white">Diisi Logo Pembayaran</p>
+            
           </div>
         </div>
   
         <div class="row">
           <div class="col-md-12 align-center">
-            <!-- <div class="social-icons">
-              <a href="#"><i class="fa fa-coffee"></i></a>
-              <a href="#">Twitter</a>
-              <a href="#">Instagram</a>
-            </div> -->
-            <div class="copyright text-center">
-              <hr style="color: white;">
+            <div class="copyright text-center ">
+              <hr>
               &copy; 2021 Your Company. All rights reserved.
             </div>
           </div>
