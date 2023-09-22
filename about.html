@@ -1,11 +1,12 @@
 <html>
-<head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://kit.fontawesome.com/dcf3185087.js" crossorigin="anonymous"></script>
-    <!-- <link rel="stylesheet" href="tampilan.css"> -->
-</head>
-<body>
-    <nav class="navbar navbar-expand-md fixed-top">
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://kit.fontawesome.com/dcf3185087.js" crossorigin="anonymous"></script>
+        <!-- <link rel="stylesheet" href="tampilan.css"> -->
+    </head>
+    <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md fixed-top shadow">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="https://media.tenor.com/Z0wDoxDHjn4AAAAj/tsunami-studio-wave.gif" alt="Logo Toko" width="40" height="40" class="mr-2">
@@ -27,13 +28,13 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Tentang Kami
                       </a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                           <a class="dropdown-item" href="#">Sejarah</a>
-                          <a class="dropdown-item" href="#">Tim Kami</a>
-                          <a class="dropdown-item" href="#">Kontak</a>
+                          <a class="dropdown-item" href="#kualitas">Kualitas</a>
+                          <a class="dropdown-item" href="#kontak">Kontak</a>
                       </div>
                   </li>
                     <li class="nav-item">
@@ -46,7 +47,6 @@
             </div>
         </div>
     </nav>
-    <!-- navbar -->
     
     <!-- content -->
 
@@ -69,39 +69,82 @@
             </div>
         </div>
     </section>
+    <!-- end jumbotron -->
 
-    <!-- Kontak-->
-    <div class="container">
-        <div class="card">
+    <!-- Perjalanan -->
+    <div class="container ">
+        <!-- <div class="card"> -->
             <div class="card-body">
                 <div class="row">
-                    <div class="col-md-6 kolom">
-                        <form>
-                            <div class="form-group">
-                              <label for="namaToko">Nama Toko</label>
-                              <input type="text" class="form-control" id="namaToko" placeholder="Masukkan nama toko">
-                            </div>
-                            <div class="form-group">
-                              <label for="alamatToko">Alamat Toko</label>
-                              <input type="text" class="form-control" id="alamatToko" placeholder="Masukkan alamat toko">
-                            </div>
-                            <div class="form-group">
-                              <label for="nomorTelepon">Nomor Telepon</label>
-                              <input type="text" class="form-control" id="nomorTelepon" placeholder="Masukkan nomor telepon toko">
-                            </div>
-                            <div class="form-group">
-                              <label for="emailToko">Email Toko</label>
-                              <input type="email" class="form-control" id="emailToko" placeholder="Masukkan email toko">
-                            </div>
-                          </form>
+                   <h4>Cerita</h4>
+                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                     Nemo soluta doloremque vitae modi nisi, harum quis libero corporis, blanditiis esse eaque quibusdam sed repudiandae voluptatum ex vel animi illum non.</p>
                     </div>
-                    <div class="col-md-6 kolom">
-                        <img src="image.jpg" alt="Gambar Toko">
+                </div>
+            </div>
+        <!-- </div> -->
+    </div>
+
+    <!-- Bahan yang digunakan -->
+    <section class="section py-5" id="kualitas">
+        <div class="container mr-1">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="mb-">Kualitas Bahan</h2>
+                    <p class="lead">
+                        Cireng adalah makanan lezat yang terbuat dari bahan-bahan berkualitas tinggi. Kami memahami bahwa kualitas bahan adalah kunci kelezatan cireng kami.
+                    </p>
+                    <ul class="list-unstyled">
+                        <li>
+                            <i class="fas fa-check text-success mr-2"></i>
+                            Tepung terigu berkualitas tinggi
+                        </li>
+                        <li>
+                            <i class="fas fa-check text-success mr-2"></i>
+                            Bawang putih segar
+                        </li>
+                        <li>
+                            <i class="fas fa-check text-success mr-2"></i>
+                            Bumbu-bumbu pilihan
+                        </li>
+                        <li>
+                            <i class="fas fa-check text-success mr-2"></i>
+                            Air bersih
+                        </li>
+                        <!-- Tambahkan bahan-bahan lainnya di sini -->
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://assets.ayobandung.com/crop/0x0:0x0/750x500/webp/photo/p1/995/2023/08/17/987598385435-666283761.jpg" alt="Cireng" class="rounded-circle" width="250" height="250">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Kontak-->
+    <section id="kontak" class="section">
+        <div class="container w-75 mt-4">
+            <h3 class="text text-center">KONTAK</h3>
+            <hr class="w-25 border border-warning border-4">
+            <div class="card shadow">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6 kolom">
+                            <br><br><br><br>
+                            <p><span><i class="fa-solid fa-location-dot m-3"></i> </span> Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                            <p><span><i class="fa-solid fa-phone m-3"></i> </span> 081334567890</p>
+                            <p><span><i class="fa-brands fa-whatsapp m-3"></i></span> 081234567890</p>
+                        </div>
+                        <div class="col-md-6 kolom">
+                            <!-- <img src="https://i.postimg.cc/fT7s2ydq/CirengQu.png" alt="Gambar Toko" width="250" height="250" class="rounded-pill mt-1 ml-2"> -->
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d506585.7329107072!2d112.38371402876494!3d-7.274819558845546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fbf8381ac47f%3A0x3027a76e352be40!2sSurabaya%2C%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1695307654527!5m2!1sid!2sid" width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <br>
     <!-- end kontak -->
 
@@ -163,7 +206,7 @@
             </div>
         </div>
     </div>
-    <!-- End profil -->
+
     <!-- footer -->
     <div class="footer text-body">
         <div class="container">
