@@ -1,5 +1,3 @@
-# Kel3_TugasAkhirBootstrapSASS
-
 [![Contributors][contributors-shield]][contributors-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Bootstrap][Bootstrap.com]][Bootstrap-url]
@@ -11,5 +9,5 @@
     <img src="https://cdn.discordapp.com/attachments/875383813411311627/1154626194134806598/CirengQu_Logo2.png" alt="Logo" width="100" height="100">
   </a>
 
-  <h3 align="center">CirengQu</h3>
+  <h2 align="center">CirengQu</h2>
   <p align="center">Kelompok 3 | Bootstrap & SASS</p>
