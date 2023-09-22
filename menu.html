@@ -7,12 +7,15 @@
     <title>Menu</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/dcf3185087.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script> -->
     <!-- <link rel="stylesheet" href="tampilan.css"> -->
+
 </head>
 
 <body>
+
     <!-- navbar -->
-    <nav class="navbar navbar-expand-md fixed-top bg-light">
+    <nav class="navbar navbar-expand-md fixed-top shadow mb-4 bg-light">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="https://media.tenor.com/Z0wDoxDHjn4AAAAj/tsunami-studio-wave.gif" alt="Logo Toko" width="40"
@@ -30,24 +33,22 @@
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Beranda</a>
                     </li>
-
                     <li class="nav-item">
                         <a class="nav-link" href="menu.html">Menu</a>
                     </li>
-
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdownMenuLink" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Tentang Kami
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Sejarah</a>
-                            <a class="dropdown-item" href="#">Tim Kami</a>
-                            <a class="dropdown-item" href="#">Kontak</a>
+                            <a class="dropdown-item" href="#perjalanan">Perjalanan</a>
+                            <a class="dropdown-item" href="#kualitas">Kualitas</a>
+                            <a class="dropdown-item" href="#kontak">Kontak</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Testimoni</a>
+                        <a class="nav-link" href="testimoni.html">Testimoni</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="order.html">Order</a>
@@ -84,8 +85,8 @@
         <div class="row">
             <div class="col-4">
                 <div class="card custom-card">
-                    <img class="card-img-top px-4 py-3 w-100"
-                        src="https://cdn0-production-images-kly.akamaized.net/Sw4gdbuSIxsm0oK1PjlSVHGYqac=/0x0:5184x2922/1200x675/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3647992/original/080489600_1638244176-shutterstock_1952650309.jpg"
+                    <img class="card-img-top w-100"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1200px-No-Image-Placeholder.svg.png"
                         height="280px">
                     <div class="card-body">
                         <h3 class="card-title">Menu 1</h3>
@@ -99,20 +100,20 @@
 
             <div class="col-4">
                 <div class="card custom-card">
-                    <img class="card-img-top px-4 py-3 w-100"
-                        src="https://cdn.discordapp.com/attachments/1087367052253216769/1154421201482027028/img-header-1.png"
+                    <img class="card-img-top w-100"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1200px-No-Image-Placeholder.svg.png"
                         height="280px">
                     <div class="card-body">
                         <h3 class="card-title">Menu 2</h3>
                         <p class="card-text">Deskripsi.</p>
-                        <button href="#" class="btn btn-warning" data-toggle="modal"
+                        <button href="#" class="btn btn-warning " data-toggle="modal"
                             data-target="#menu2">Selengkapnya</button>
                     </div>
                 </div>
             </div>
             <div class="col-4">
                 <div class="card custom-card">
-                    <img class="card-img-top px-4 py-3 w-100"
+                    <img class="card-img-top w-100"
                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1200px-No-Image-Placeholder.svg.png"
                         height="280px">
                     <div class="card-body">
@@ -184,49 +185,57 @@
     <!-- end of content -->
 
     <!-- footer -->
-    <div class="footer">
+    <div class="footer text-body">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
-                    <h4>CirengQU</h4>
+                    <h4 class="text">CirengQU</h4>
                     <h6>Tentang kami</h6>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                     <h6>Kontak</h6>
-                    <p>081234567890</p>
+                    <p><span><i class="fa-solid fa-phone m-2"></i></span>081234567890</p>
                 </div>
                 <div class="col-lg-4 ">
                     <h4>INFORMASI</h4>
-                    <ul class="info">
-                        <li><a href="./index.html">Beranda</a></li>
-                        <li><a href="./menu.html">Menu</a>
+                    <ul class="list-unstyled">
+                        <li><a href="" class="">Beranda</a></li>
+                        <li><a href="">Menu</a>
                         </li>
-                        <li><a href="">Tentang Kami</a></li>
+                        <li><a href="about.html">Tentang Kami</a></li>
                         <li><a href="">Testimoni</a></li>
                         <li><a href="">Order</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4">
                     <h4>Pembayaran</h4>
-                    <p style="color: white;">Diisi Logo Pembayaran</p>
+                    <img src="https://scontent.fsub8-2.fna.fbcdn.net/v/t1.6435-9/100609253_756371721818730_7857219132717006848_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=174925&_nc_ohc=35cY7CFOgvcAX_7Kuna&_nc_ht=scontent.fsub8-2.fna&oh=00_AfALF-Tw6lRcCmqAkM2pkMA7KKfogBqQBOy4X1WwLAw8qQ&oe=65334EED"
+                        alt="" width="30" height="30" class="mr-2">
+                    <img src="https://theme.zdassets.com/theme_assets/1379487/2cb35fe96fa1191f49c2b769b50cf8b546fff65e.png"
+                        alt="" width="30" height="30" class="mr-2">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Logo_Bank_Rakyat_Indonesia.svg/899px-Logo_Bank_Rakyat_Indonesia.svg.png"
+                        alt="" width="30" height="30" class="mr-2">
+                    <!-- <p class="text-white">Diisi Logo Pembayaran</p> -->
+
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-md-12 align-center">
-                    <div class="copyright text-center">
-                        <hr style="color: white;">
+                    <div class="copyright text-center ">
+                        <hr>
                         &copy; 2021 Your Company. All rights reserved.
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- end of footer -->
+</body>
+<!-- end of footer -->
 
-    <!-- scfript -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- scfript -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
