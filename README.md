@@ -1,5 +1,3 @@
-[![Contributors][contributors-shield]][contributors-url]
-[![Stargazers][stars-shield]][stars-url]
 [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 
 <!-- PROJECT LOGO -->
@@ -13,9 +11,5 @@
   <p align="center">Kelompok 3 | Bootstrap & SASS</p>
 </div>
 
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/nellaadrs/Kel3_BootstrapSASS/stargazers
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/nellaadrs/Kel3_BootstrapSASS/graphs/contributors
 [Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
 [Bootstrap-url]: https://getbootstrap.com
