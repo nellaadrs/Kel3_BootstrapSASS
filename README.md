@@ -9,7 +9,9 @@
 
   <h2 align="center">CirengQu</h2>
   <p align="center">Kelompok 3 | Bootstrap & SASS</p>
+</div>
 
+<div>
   <p>Anggota Kelompok :</p>
   <ul> 
     <li>Gandhi (index.html) </li>
