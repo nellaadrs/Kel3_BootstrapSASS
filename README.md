@@ -11,11 +11,11 @@
   <p align="center">Kelompok 3 | Bootstrap & SASS</p>
 </div>
 
-Index        : Gandhi
-Menu         : Syukran
-Tentang Kami : Nella
-Testimoni    : Ikhsan
-Order        : Khrisna
+<p>Index        : Gandhi</p>
+<p>Menu         : Syukran</p>
+<p>Tentang Kami : Nella</p>
+<p>Testimoni    : Ikhsan</p>
+<p>Order        : Khrisna</p>
 
 [Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
 [Bootstrap-url]: https://getbootstrap.com
