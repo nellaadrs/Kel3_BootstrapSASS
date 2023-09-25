@@ -9,6 +9,15 @@
 
   <h2 align="center">CirengQu</h2>
   <p align="center">Kelompok 3 | Bootstrap & SASS</p>
+
+  <p>Anggota Kelompok :</p>
+  <ul> 
+    <li>Gandhi (index.html) </li>
+    <li>Syukran (menu.html)</li>
+    <li>Nella (about.html)</li>
+    <li>Ikhsan (testimonial.html)</li>
+    <li>Khrisna (order.html)</li>
+  </ul>
 </div>
 
 [Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
