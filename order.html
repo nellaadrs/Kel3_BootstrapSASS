@@ -131,6 +131,23 @@
             </div>
         </div>
     </section>
+    <script>
+        var tambahJumlahButton = document.getElementById("tambahJumlah");
+        var kurangJumlahButton = document.getElementById("kurangJumlah");
+        var jumlahField = document.getElementById("jumlah");
+
+        tambahJumlahButton.addEventListener("click", function () {
+            var currentJumlah = parseInt(jumlahField.value);
+            jumlahField.value = currentJumlah + 1;
+        });
+
+        kurangJumlahButton.addEventListener("click", function () {
+            var currentJumlah = parseInt(jumlahField.value);
+            if (currentJumlah > 1) {
+                jumlahField.value = currentJumlah - 1;
+            }
+        });
+    </script>
 
     <!-- footer -->
     <footer class="footer navbar-dark bg-dark pt-4">
