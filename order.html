@@ -113,18 +113,21 @@
                                     <option value="keju">Keju</option>
                                 </select>
                             </div>
-                            <div class="col-auto">
+                            <div class="col-6">
                                 <label for="jumlah" class="form-label d-md-flex">Jumlah</label>
-                                <button type="button" class="btn btn-primary" id="tambahJumlah">+</button>
-                                <input type="text" class="form-control-group text-center" id="jumlah" name="jumlah"
-                                    value="0" required>
-                                <button type="button" class="btn btn-primary" id="kurangJumlah">-</button>
+                                <div class="d-flex">
+                                    <button type="button" class="btn btn-primary" id="tambahJumlah">+</button>
+                                    <input type="text" class="form-control text-center" id="jumlah" name="jumlah"
+                                        value="0" required="">
+                                    <button type="button" class="btn btn-primary" id="kurangJumlah">-</button>
+                                </div>
+
                             </div>
                             <div class="mb-3">
                                 <label for="catatan" class="form-label">Catatan</label>
                                 <textarea class="form-control" id="catatan" name="catatan" rows="3"></textarea>
                             </div>
-                            <button type="submit" class="btn btn-primary">Pesan</button>
+                            <button type="submit" class="btn btn-primary mb-5">Pesan</button>
                         </form>
                     </section>
                 </div>
