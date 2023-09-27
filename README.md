@@ -9,7 +9,7 @@
 
   <h2 align="center">CirengQu</h2>
   <p align="center">Kelompok 3 | Bootstrap & SASS</p>
-  <a href="https://nellaadrs.github.io/Kel3_BootstrapSASS/index.html" align="center">Web Preview</a>
+  <a href="https://nellaadrs.github.io/Kel3_BootstrapSASS/index.html" target="_blank" align="center">Web Preview</a>
   <br>
 </div>
 
