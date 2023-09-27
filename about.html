@@ -6,6 +6,21 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
         <script src="https://kit.fontawesome.com/dcf3185087.js" crossorigin="anonymous"></script>
         <!-- <link rel="stylesheet" href="tampilan.css"> -->
+        <style>
+        /* .custom-prev-btn {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        }
+        .custom-next-btn {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        } */
+
+        </style>
     </head>
     <body>
     <!-- navbar -->
@@ -113,64 +128,87 @@
     <!-- foto -->
     <section id="foto" class="bg-light ">
         <div class="container mt-5">
-            <h3 class="text-center mt-5">PILIHAN MENU </h3>
-            <div class="owl-carousel owl-theme">
-                <div class="item">
-                    <div class="card m-3 shadow mb-5">
-                        <img src="https://www.piknikdong.com/wp-content/uploads/2021/01/Resep-Cireng-Isi-Ayam-min-1.jpg" class="card-img-top rounded " alt="Image 1" width="250" height="250">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Cireng Ayam Pedas</h5>
-                            <!-- <p class="card-text">This is the first card in the slider.</p> -->
+            <div class="row">
+                <div class="col-md-1">
+                    <button class="custom-prev-btn btn btn-warning align-item-center">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                </div>
+                <div class="col-md-10 ">
+                    <h3 class="text-center mt-5">PILIHAN MENU </h3>
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="card m-3 shadow mb-5">
+                                <img src="https://www.piknikdong.com/wp-content/uploads/2021/01/Resep-Cireng-Isi-Ayam-min-1.jpg" class="card-img-top rounded " alt="Image 1" width="230" height="230">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Cireng Ayam Pedas</h5>
+                                    <!-- <p class="card-text">This is the first card in the slider.</p> -->
+                                </div>
+                            </div>
                         </div>
+                        <div class="item">
+                            <div class="card m-3 shadow mb-5">
+                                <img src="https://www.natural-poultry.com/wp-content/uploads/2022/01/Cireng-isi-Ayam-Pedas.jpg" class="card-img-top" alt="Image 2" width="230" height="230">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Cireng Ayam Kentang</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card m-3 shadow mb-5">
+                                <img src="https://i0.wp.com/i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/f3f24ea1-4ae1-4813-a8ee-45ce485a4b8f_Go-Biz_20221102_154734.jpeg" class="card-img-top" alt="Image 3" width="230" height="230">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Cireng Abon Sapi</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card m-3 shadow mb-5">
+                                <img src="https://cdn.idntimes.com/content-images/post/20201010/75487908-288539792196937-1079945905944117155-n-316a63f2b11a6c04f8aac6a1f2146aba_600x400.jpg" class="card-img-top" alt="Image 4" width="230" height="230">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Cireng Sosis Pedas</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card m-3 shadow mb-5">
+                                <img src="https://caramembuat.net/wp-content/uploads/2022/01/cara-membuat-cireng-isi-keju-kornet.jpg" class="card-img-top" alt="Image 5" width="230" height="230">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Cireng Kornet Keju</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card m-3 shadow mb-5">
+                                <img src="https://asset-a.grid.id/crop/0x0:0x0/360x240/photo/2022/04/14/resep-spageti-spesial-ini-wajib-20220414030159.jpg" class="card-img-top" alt="Image 6" width="230" height="230">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Spageti Pedas</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card m-3 shadow mb-5">
+                                <img src="https://img-global.cpcdn.com/recipes/186babe54777306f/680x482cq70/double-cheese-burger-pedas-%EB%A7%A4%EC%BD%A4-%EB%8D%94%EB%B8%94-%EC%B9%98%EC%A6%88%EB%B2%84%EA%B1%B0-tren-korea-foto-resep-utama.jpg" class="card-img-top" alt="Image 7" width="230" height="230">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Burger Pedas</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="item">
+                            <div class="card m-3">
+                                <img src="https://assets.ayobandung.com/crop/0x0:0x0/750x500/webp/photo/p1/995/2023/08/17/987598385435-666283761.jpg" class="card-img-top" alt="Image 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card 2</h5>
+                                    <p class="card-text">This is the second card in the slider.</p>
+                                </div>
+                            </div>
+                        </div> -->
                     </div>
                 </div>
-                <div class="item">
-                    <div class="card m-3 shadow mb-5">
-                        <img src="https://www.natural-poultry.com/wp-content/uploads/2022/01/Cireng-isi-Ayam-Pedas.jpg" class="card-img-top" alt="Image 2" width="250" height="250">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Cireng Ayam Kentang</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="card m-3 shadow mb-5">
-                        <img src="https://i0.wp.com/i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/f3f24ea1-4ae1-4813-a8ee-45ce485a4b8f_Go-Biz_20221102_154734.jpeg" class="card-img-top" alt="Image 3" width="250" height="250">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Cireng Abon Sapi</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="card m-3 shadow mb-5">
-                        <img src="https://cdn.idntimes.com/content-images/post/20201010/75487908-288539792196937-1079945905944117155-n-316a63f2b11a6c04f8aac6a1f2146aba_600x400.jpg" class="card-img-top" alt="Image 4" width="250" height="250">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Cireng Sosis Pedas</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="card m-3 shadow mb-5">
-                        <img src="https://caramembuat.net/wp-content/uploads/2022/01/cara-membuat-cireng-isi-keju-kornet.jpg" class="card-img-top" alt="Image 5" width="250" height="250">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Cireng Kornet Keju</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="card m-3 shadow mb-5">
-                        <img src="https://asset-a.grid.id/crop/0x0:0x0/360x240/photo/2022/04/14/resep-spageti-spesial-ini-wajib-20220414030159.jpg" class="card-img-top" alt="Image 6" width="250" height="250">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Spageti Pedas</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="card m-3 shadow mb-5">
-                        <img src="https://img-global.cpcdn.com/recipes/186babe54777306f/680x482cq70/double-cheese-burger-pedas-%EB%A7%A4%EC%BD%A4-%EB%8D%94%EB%B8%94-%EC%B9%98%EC%A6%88%EB%B2%84%EA%B1%B0-tren-korea-foto-resep-utama.jpg" class="card-img-top" alt="Image 7" width="250" height="250">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Burger Pedas</h5>
-                        </div>
-                    </div>
+                <div class="col-md-1">
+                    <button class="custom-next-btn btn btn-warning align-item-center">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
                 </div>
             </div>
         </div>
@@ -202,9 +240,9 @@
         </div>
     </section>
     <!-- end kontak -->
-        
+
     <!-- footer -->
-    <div class="footer navbar-dark bg-dark mt-4">
+    <!-- <div class="footer navbar-dark bg-dark mt-4">
         <div class="container">
           <div class="row m-4">
             <div class="col-lg-4 mt-3">
@@ -244,8 +282,9 @@
             </div>
           </div>
         </div>
-     </div>
-   </div>
+     </div> -->
+   
+    </div>
   
     <!-- scfript -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -290,6 +329,14 @@
             $(".custom-prev-btn").click(function(){
                 owl.trigger("prev.owl.carousel");
             });
+
+
+    // load footer
+    fetch("footer.html")
+    .then(response => response.text())
+    .then(data =>{
+        document.getElementById("footer").innerHTML = data;
+    });
     </script>
 </body>
 </html>
