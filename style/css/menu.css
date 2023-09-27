@@ -1,0 +1,14 @@
+.card img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+html,
+body,
+nav {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/*# sourceMappingURL=menu.css.map */
