@@ -1,0 +1,27 @@
+// index
+
+
+// menu
+
+
+// tentang kami
+// masih cobaa
+$button-hover-color:#eaaa49;
+$button-hover-text :white;
+
+.tombol:hover{
+    background-color: $button-hover-color;
+    color: $button-hover-text;
+}
+
+$background : #eaaa49;
+$border-radius : 10px;
+.nav-item:hover{
+    background-color: $background;
+    border-radius: $border-radius;
+}
+
+// testimoni
+
+
+// order
