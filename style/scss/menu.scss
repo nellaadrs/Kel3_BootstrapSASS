@@ -1,14 +1,39 @@
-$cardImgHeight: 200px;
-
-.card img {
-	height: $cardImgHeight;
-	width: 100%;
-	object-fit: cover;
-}
+$breakpoints: (
+	small: 576px,
+	medium: 768px,
+	large: 992px,
+	xlarge: 1200px,
+);
+$backgroundColor: #ffc700;
+$backgroundLinear: linear-gradient(
+	90deg,
+	rgba(255, 199, 0, 1) 0%,
+	rgba(255, 199, 0, 1) 41%,
+	rgba(255, 171, 0, 1) 67%
+);
+$redColor: rgb(235, 8, 8);
 
 html,
 body,
 nav {
 	max-width: 100vw;
 	overflow-x: hidden;
+}
+
+.card img {
+	height: 200px;
+	width: 100%;
+	object-fit: cover;
+}
+
+#header {	
+	background: $backgroundLinear;
+}
+
+#lainnya {
+	background: $backgroundColor;
+}
+
+.redtext {
+	color: $redColor;
 }
