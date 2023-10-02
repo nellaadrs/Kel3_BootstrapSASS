@@ -16,6 +16,12 @@ $border-right-buttom : 40px;
     border-bottom-right-radius: $border-right-buttom;
     border-top-left-radius: $border-left-top ;
 }
+
+// hover card
+.card:hover {
+  transform: scale(1.05); /* Ubah faktor skala sesuai keinginan Anda */
+  transition: transform 0.3s ease; /* Durasi dan efek transisi */
+}
 // bahan 2
 // $border-left-buttom : 40px;
 // $border-right-top : 40px;
