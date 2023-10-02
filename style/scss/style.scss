@@ -1,57 +1,13 @@
 
-// jumbotron
-    /* CSS untuk pola gelombang */
-    .jumbotron {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        min-height: 400px;
-        padding-top: 100px;
-        background: #ffc107;
-    }
 
-    $curve-position : absolute;
-    $curve-display : block;
-    $width-curve : 100%;
-    $height : 100%;
-    $width : 55%;
-    
-    .curve {
-        position: $curve-position;
-        height: 250px;
-        width: $width-curve;
-        bottom: 0;
-        text-align: center;
-    }
-    .curve::before, .curve::after{
-        content: '';
-        display: $curve-display;
-        position: $curve-position;
-        border-radius: 100% 50%;
-        width: $width;
-        height: $height;
-    }
-    
-    .curve::before {
-        transform: translate(85%, 60%);
-        background-color: hsl(0, 0%, 100%);
-    }
-    
-    .curve::after {
-        background-color: #ffc107;
-        transform: translate(-4%, 40%);
-        z-index: -1;
-    }
-
-// tentang kami
-// masih cobaa
-$button-hover-color:#eaaa49;
-$button-hover-text :white;
+// hover tombol
+$button-hover-color:rgb(207, 96, 32);
+$button-hover-text :#ffffff;
 
 .tombol:hover{
     background-color: $button-hover-color;
     color: $button-hover-text;
+    border: none;
 }
 
 // kualitas
