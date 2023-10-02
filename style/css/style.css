@@ -1,45 +1,8 @@
 /* CSS untuk pola gelombang */
-.jumbotron {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 400px;
-  padding-top: 100px;
-  background: #ffc107;
-}
-
-.curve {
-  position: absolute;
-  height: 250px;
-  width: 100%;
-  bottom: 0;
-  text-align: center;
-}
-
-.curve::before, .curve::after {
-  content: "";
-  display: block;
-  position: absolute;
-  border-radius: 100% 50%;
-  width: 55%;
-  height: 100%;
-}
-
-.curve::before {
-  transform: translate(85%, 60%);
-  background-color: hsl(0, 0%, 100%);
-}
-
-.curve::after {
-  background-color: #ffc107;
-  transform: translate(-4%, 40%);
-  z-index: -1;
-}
-
 .tombol:hover {
-  background-color: #eaaa49;
-  color: white;
+  background-color: rgb(207, 96, 32);
+  color: #ffffff;
+  border: none;
 }
 
 .gambar_bahan {
