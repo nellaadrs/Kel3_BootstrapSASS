@@ -1,4 +1,49 @@
 
+// jumbotron
+    /* CSS untuk pola gelombang */
+    .jumbotron {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 400px;
+        padding-top: 100px;
+        background: #ffc107;
+    }
+
+    $curve-position : absolute;
+    $curve-display : block;
+    $width-curve : 100%;
+    $height : 100%;
+    $width : 55%;
+    
+    .curve {
+        position: $curve-position;
+        height: 250px;
+        width: $width-curve;
+        bottom: 0;
+        text-align: center;
+    }
+    .curve::before, .curve::after{
+        content: '';
+        display: $curve-display;
+        position: $curve-position;
+        border-radius: 100% 50%;
+        width: $width;
+        height: $height;
+    }
+    
+    .curve::before {
+        transform: translate(85%, 60%);
+        background-color: hsl(0, 0%, 100%);
+    }
+    
+    .curve::after {
+        background-color: #ffc107;
+        transform: translate(-4%, 40%);
+        z-index: -1;
+    }
+
 // tentang kami
 // masih cobaa
 $button-hover-color:#eaaa49;
@@ -9,9 +54,32 @@ $button-hover-text :white;
     color: $button-hover-text;
 }
 
-$background : #eaaa49;
-$border-radius : 10px;
-.nav-item:hover{
-    background-color: $background;
-    border-radius: $border-radius;
+// kualitas
+$border-left-top : 40px;
+$border-right-buttom : 40px;
+.gambar_bahan{
+    border-bottom-right-radius: $border-right-buttom;
+    border-top-left-radius: $border-left-top ;
 }
+// bahan 2
+// $border-left-buttom : 40px;
+// $border-right-top : 40px;
+// .gambar_bahan2{
+//     border-top-right-radius: $border-right-top;
+//     border-bottom-left-radius: $border-left-buttom ;
+// }
+
+// .gambar_bahan2{
+//     $left : -120px;
+//     $top :100px;
+//     margin-left: $left;
+//     margin-top: $top;
+// }
+
+// gelombang bahan
+/* CSS untuk pola gelombang */
+
+// .bahan {
+
+
+
