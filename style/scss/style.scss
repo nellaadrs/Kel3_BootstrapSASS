@@ -1,0 +1,46 @@
+
+
+// hover tombol
+.tombol:hover{
+    $button-hover-color:rgb(207, 96, 32);
+    $button-hover-text :#ffffff;
+    background-color: $button-hover-color;
+    color: $button-hover-text;
+    border: none;
+}
+
+// kualitas
+$border-left-top : 40px;
+$border-right-buttom : 40px;
+.gambar_bahan{
+    border-bottom-right-radius: $border-right-buttom;
+    border-top-left-radius: $border-left-top ;
+}
+
+// hover card
+.card:hover {
+  transform: scale(1.08); /* Ubah faktor skala sesuai keinginan Anda */
+  transition: transform 0.3s ease; /* Durasi dan efek transisi */
+}
+// bahan 2
+// $border-left-buttom : 40px;
+// $border-right-top : 40px;
+// .gambar_bahan2{
+//     border-top-right-radius: $border-right-top;
+//     border-bottom-left-radius: $border-left-buttom ;
+// }
+
+// .gambar_bahan2{
+//     $left : -120px;
+//     $top :100px;
+//     margin-left: $left;
+//     margin-top: $top;
+// }
+
+// gelombang bahan
+/* CSS untuk pola gelombang */
+
+// .bahan {
+
+
+

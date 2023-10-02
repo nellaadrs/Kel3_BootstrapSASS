@@ -7,9 +7,11 @@
     <title>Menu</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/dcf3185087.js" crossorigin="anonymous"></script>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script> -->
-    <!-- <link rel="stylesheet" href="tampilan.css"> -->
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./style/css/menu.css">
 </head>
 
 <body>
@@ -51,109 +53,199 @@
     <!-- end of navbar -->
 
     <!-- content -->
-    <section class="jumbotron bg-warning vh-100 d-flex align-items-center">
+    <section class="bg-warning d-flex align-items-center">
         <div class="container py-4 my-5 align-self-center">
             <div class="row">
                 <div class="col-lg-6 order-lg-2">
-                    <div class="w-100">
-                        <img src="./assets/img-header-menu.png" class="px-4 py-3 w-100 img-fluid rounded">
+                    <div class="w-100 pt-3">
+                        <img src="./assets/img-header-menu.png" class="px-4 py-3 img-fluid rounded">
                     </div>
                 </div>
                 <div class="col-lg-6 text-center order-lg-1 align-self-center mt-4 text-lg-left">
                     <div class="">
-                        <h2 class="tulisan">Nikmati kelezatan berbagai macam menu CirengQu!</h2>
+                        <h2 class="tulisan">Nikmati kelezatan berbagai macam menu <span class="redtext">CirengQu!</span>
+                        </h2>
                     </div>
-                    <a href="#daftarMenu" class="btn btn-outline-dark">Lihat Menu <svg xmlns="http://www.w3.org/2000/svg"
+                    <button id="lihat" class="btn btn-outline-danger">Lihat Menu <svg xmlns="http://www.w3.org/2000/svg"
                             width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 18">
                             <path fill-rule="evenodd"
                                 d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
-                        </svg></a>
+                        </svg></button>
                 </div>
             </div>
         </div>
     </section>
 
-    </section>
-    <section class="container-fluid d-flex-row py-3 my-4 px-5" id="daftarMenu">
-        <h1 class="text-center mb-5">DAFTAR MENU</h1>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
-            <div class="col mb-4">
-                <div class="card custom-card shadow">
-                    <img class="card-img-top"
-                        src="https://cdn0-production-images-kly.akamaized.net/Sw4gdbuSIxsm0oK1PjlSVHGYqac=/0x0:5184x2922/1200x675/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3647992/original/080489600_1638244176-shutterstock_1952650309.jpg"
-                        height="280px">
-                    <div class="card-body">
-                        <h3 class="card-title">Original</h3>
-                        <p class="card-text text-justify">Gurih, renyah, rasa autentik.</p>
-                        <button href="#" class="btn btn-warning" data-toggle="modal"
-                            data-target="#menu1">Selengkapnya</button>
+    <section class="container-fluid d-flex-row pt-lg-3 px-3 bg-white" id="lihatSection">
+        <h1 class="text-center mt-5">CIRENG ISI</h1>
+        <div class="container-fluid d-flex mt-lg-4 justify-content-center">
+            <button class="custom-prev-btn btn btn-warning align-self-center">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="container my-5 col-10">
+                <div class="custom-carousel-container">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="col mb-4">
+                                <div class="card custom-card shadow">
+                                    <img class="card-img-top"
+                                        src="https://img.kurio.network/LbzxLhOUbdVaSCOeE8Xnew900so=/1200x1200/filters:quality(80)/https://kurio-img.kurioapps.com/21/03/18/891895d5-54fe-4a9a-a5a2-c9890d8e6e1d.jpe"
+                                        width="280px" height="100%">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Ayam pedas</h3>
+                                        <p class="card-text text-justify">Cireng pedas berisi ayam.</p>
+                                        <button href="#" class="btn btn-warning" data-toggle="modal"
+                                            data-target="#menu1">Selengkapnya</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col mb-4">
+                                <div class="card custom-card shadow">
+                                    <img class="card-img-top"
+                                        src="https://images.tokopedia.net/img/cache/500-square/VqbcmM/2022/2/15/862d88ea-7a85-40e3-b812-7be1a2d97e57.jpg"
+                                        width="280px" height="100%">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Sosis Pedas</h3>
+                                        <p class="card-text text-justify">Cireng pedas berisi sosis.</p>
+                                        <button href="#" class="btn btn-warning " data-toggle="modal"
+                                            data-target="#menu2">Selengkapnya</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col mb-4">
+                                <div class="card custom-card shadow">
+                                    <img class="card-img-top"
+                                        src="https://fyine.com/wp-content/uploads/2021/01/resepkoki.png" width="280px"
+                                        height="100%">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Ayam Kentang</h3>
+                                        <p class="card-text ">Cireng ayam kentang.</p>
+                                        <button href="#" class="btn btn-warning " data-toggle="modal"
+                                            data-target="#menu4">Selengkapnya</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col mb-4">
+                                <div class="card custom-card shadow">
+                                    <img class="card-img-top"
+                                        src="https://i.pinimg.com/736x/f6/3d/32/f63d32fc75253d286a7ca256b8b2fb73.jpg"
+                                        width="280px" height="100%">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Abon Sapi</h3>
+                                        <p class="card-text ">Cireng isi abon sapi.</p>
+                                        <button href="#" class="btn btn-warning " data-toggle="modal"
+                                            data-target="#menu5">Selengkapnya</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col mb-4">
+                                <div class="card custom-card shadow">
+                                    <img class="card-img-top"
+                                        src="https://cdn0-production-images-kly.akamaized.net/2L6yfDeslVAJtSPWUJTyPWm9Qhw=/1200x675/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/1123299/original/034012800_1453812916-tokopedia.jpg"
+                                        width="280px" height="100%">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Kornet Keju</h3>
+                                        <p class="card-text ">Cireng kornet keju.</p>
+                                        <button href="#" class="btn btn-warning " data-toggle="modal"
+                                            data-target="#menu3">Selengkapnya</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more items here -->
                     </div>
-                </div>
-            </div>
 
-            <div class="col mb-4">
-                <div class="card custom-card shadow">
-                    <img class="card-img-top"
-                        src="https://cdn.discordapp.com/attachments/1087367052253216769/1154421201482027028/img-header-1.png"
-                        height="280px">
-                    <div class="card-body">
-                        <h3 class="card-title">Pedas</h3>
-                        <p class="card-text text-justify">Pedas, gurih, nikmat.</p>
-                        <button href="#" class="btn btn-warning " data-toggle="modal"
-                            data-target="#menu2">Selengkapnya</button>
+                </div>
+
+            </div>
+            <button class="custom-next-btn btn btn-warning align-self-center">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <section class="container-fluid d-flex-row py-3 my-4 px-3 vh-100" id="lainnya">
+        <h1 class="text-center mt-3">LAINNYA</h1>
+        <div class="d-flex">
+            <div class="col-sm-10 container my-5">
+
+                <div class="item">
+                    <div class="col mb-4">
+                        <div class="card custom-card shadow">
+                            <img class="card-img-top"
+                                src="https://static.vecteezy.com/system/resources/previews/026/130/354/non_2x/the-best-hot-spicy-burgergraphy-images-will-satisfy-your-cravings-generative-ai-free-photo.jpeg"
+                                width="280px" height="100%">
+                            <div class="card-body text-center">
+                                <h3 class="card-title">Burger Pedas</h3>
+                                <p class="card-text ">Krimi, gurih, bercitarasa keju.</p>
+                                <button href="#" class="btn btn-warning " data-toggle="modal"
+                                    data-target="#menu6">Selengkapnya</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col mb-4">
-                <div class="card custom-card shadow">
-                    <img class="card-img-top"
-                        src="https://img-global.cpcdn.com/recipes/fa033d36ea18d137/1200x630cq70/photo.jpg"
-                        height="280px">
-                    <div class="card-body">
-                        <h3 class="card-title">Keju</h3>
-                        <p class="card-text text-justify">Krimi, gurih, bercitarasa keju.</p>
-                        <button href="#" class="btn btn-warning " data-toggle="modal"
-                            data-target="#menu3">Selengkapnya</button>
+                <div class="item">
+                    <div class="col mb-4">
+                        <div class="card custom-card shadow">
+                            <img class="card-img-top"
+                                src="https://p1.pxfuel.com/preview/1019/563/629/spaghetti-aglio-olio-pasta-italian.jpg"
+                                width="280px" height="100%">
+                            <div class="card-body text-center">
+                                <h3 class="card-title">Spageti Pedas</h3>
+                                <p class="card-text ">Krimi, gurih, bercitarasa keju.</p>
+                                <button href="#" class="btn btn-warning " data-toggle="modal"
+                                    data-target="#menu7">Selengkapnya</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <!-- Add more items here -->
             </div>
-            <div class="col mb-4">
-                <div class="card custom-card shadow">
-                    <img class="card-img-top"
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1200px-No-Image-Placeholder.svg.png"
-                        height="280px">
-                    <div class="card-body">
-                        <h3 class="card-title">Menu 3</h3>
-                        <p class="card-text">Deskripsi.</p>
-                        <button href="#" class="btn btn-warning" data-toggle="modal">Selengkapnya</button>
-                    </div>
+        </div>
+    </section>
+
+    <section class="py-sm-5 d-inline-block mh-100 float-md-none float-sm-right my-xl-4" id="floatblock">
+
+    </section>
+
+    <section class="d-flex align-items-center justify-content-center">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 text-center order-lg-2 align-self-center mt-4 text-lg-left mb-5">
+                <div class="">
+                    <h2 class="text-center mt-5 mt-md-0">Tunggu Apalagi?</h2>
+                    <h2 class="text-center">Order <span class="redtext">CirengQu</span> Sekarang!
+                    </h2>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <a href="order.html">
+                        <button id="lihat" class="btn btn-warning align-self-center justify-content-end">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="16" fill="currentColor"
+                                class="bi bi-basket2-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M5.929 1.757a.5.5 0 1 0-.858-.514L2.217 6H.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h.623l1.844 6.456A.75.75 0 0 0 3.69 15h8.622a.75.75 0 0 0 .722-.544L14.877 8h.623a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1.717L10.93 1.243a.5.5 0 1 0-.858.514L12.617 6H3.383L5.93 1.757zM4 10a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm4-1a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1z" />
+                            </svg>
+                        </button>
+                    </a>
                 </div>
             </div>
-            <div class="col mb-4">
-                <div class="card custom-card shadow">
-                    <img class="card-img-top"
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1200px-No-Image-Placeholder.svg.png"
-                        height="280px">
-                    <div class="card-body">
-                        <h3 class="card-title">Menu 4</h3>
-                        <p class="card-text">Deskripsi.</p>
-                        <button href="#" class="btn btn-warning" data-toggle="modal">Selengkapnya</button>
-                    </div>
+            <div class="card border-dark col-lg-6 text-center order-lg-1 align-self-center mt-4 text-lg-left mb-5"
+                style="max-width: 200rem; width: 200px;">
+                <div class="card-header bg-warning text-center card-title">Pesan Antar</div>
+                <div class="card-body text-dark d-flex justify-content-center">
+                    <img src="data:image/png;base64,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"
+                        alt="" style="all: unset; height: 60px;" class="mx-2">
+                    <img src="https://seduhteh.files.wordpress.com/2019/11/grabfood-vector-logo.png" alt="" class="mx-2"
+                        style="all: unset; height: 60px;">
                 </div>
             </div>
-            <div class="col mb-4">
-                <div class="card custom-card shadow">
-                    <img class="card-img-top"
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1200px-No-Image-Placeholder.svg.png"
-                        height="280px">
-                    <div class="card-body">
-                        <h3 class="card-title">Menu 5</h3>
-                        <p class="card-text">Deskripsi.</p>
-                        <button href="#" class="btn btn-warning" data-toggle="modal">Selengkapnya</button>
-                    </div>
-                </div>
-            </div>
-            <!-- Repeat the above card structure for other columns -->
         </div>
     </section>
 
@@ -161,22 +253,25 @@
         <div class="modal fade" id="menu1" tabindex="-1" role="dialog" aria-labelledby="menu1title" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
                 <div class="modal-content">
+
                     <div class="modal-header">
-                        <h5 class="modal-title" id="menu1title">Original</h5>
+                        <h5 class="modal-title" id="menu1title">Ayam Pedas</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                        <img src="https://cdn0-production-images-kly.akamaized.net/Sw4gdbuSIxsm0oK1PjlSVHGYqac=/0x0:5184x2922/1200x675/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3647992/original/080489600_1638244176-shutterstock_1952650309.jpg"
+                        <img src="https://img.kurio.network/LbzxLhOUbdVaSCOeE8Xnew900so=/1200x1200/filters:quality(80)/https://kurio-img.kurioapps.com/21/03/18/891895d5-54fe-4a9a-a5a2-c9890d8e6e1d.jpe"
                             class="px-4 py-3 w-100">
 
-                        <p class="text-justify">Cireng rasa original memiliki cita rasa gurih yang otentik dengan
-                            tekstur renyah yang
-                            menggoda!. Sangat cocok sebagai camilan sehari-hari.
+                        <p class="text-justify">Cireng yang digoreng garing dengan lapisan pedas luar biasa, berisi
+                            potongan ayam yang lembut dan beraroma pedas yang memukau.
                         </p>
                     </div>
-                    <div class="modal-footer">
+                    <div class="modal-footer justify-content-between">
+                        <div class="price-tag">
+                            <button class="btn btn-outline-warning ml-2">Rp. 2000 / PCS</button>
+                        </div>
                         <button type="button" class="btn btn-danger" data-dismiss="modal">Tutup</button>
                     </div>
                 </div>
@@ -187,19 +282,21 @@
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="menu1title">Pedas</h5>
+                        <h5 class="modal-title" id="menu1title">Sosis Pedas</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                        <img src="https://cdn.discordapp.com/attachments/1087367052253216769/1154421201482027028/img-header-1.png"
-                            class="px-4 py-3 w-100" height="280px">
-                        <p class="text-justify">Cireng pedas menggabungkan kegurihan cireng klasik dengan sentuhan pedas
-                            yang membangunkan
-                            selera makan Anda, menciptakan sensasi yang menggetarkan lidah!.</p>
+                        <img src="https://images.tokopedia.net/img/cache/500-square/VqbcmM/2022/2/15/862d88ea-7a85-40e3-b812-7be1a2d97e57.jpg"
+                            class="px-4 py-3 w-100">
+                        <p class="text-justify">Cireng dengan lapisan pedas yang menggigit, berisi sosis pedas yang
+                            memberikan sensasi pedas yang menggugah selera!</p>
                     </div>
-                    <div class="modal-footer">
+                    <div class="modal-footer justify-content-between">
+                        <div class="price-tag">
+                            <button class="btn btn-outline-warning ml-2">Rp. 2000 / PCS</button>
+                        </div>
                         <button type="button" class="btn btn-danger" data-dismiss="modal">Tutup</button>
                     </div>
                 </div>
@@ -209,18 +306,112 @@
         <div class="modal fade" id="menu3" tabindex="-1" role="dialog" aria-labelledby="menu1title" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="menu1title">Keju</h5>
+                    <div class="modal-header d-flex align-items-center">
+                        <h5 class="modal-title" id="menu1title">Kornet Keju</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                        <img src="https://img-global.cpcdn.com/recipes/fa033d36ea18d137/1200x630cq70/photo.jpg"
+                        <img src="https://cdn0-production-images-kly.akamaized.net/2L6yfDeslVAJtSPWUJTyPWm9Qhw=/1200x675/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/1123299/original/034012800_1453812916-tokopedia.jpg"
                             class="px-4 py-3 w-100" height="280px">
-                        <p class="text-justify">Cireng keju memanjakan lidah Anda dengan rasa krimi yang lembut,
-                            dipadukan dengan gurihnya
-                            cireng, menjadikannya camilan yang luar biasa dengan rasa keju yang tak terlupakan!.</p>
+                        <p class="text-justify">Cireng yang renyah, dengan lapisan luar berisi campuran kornet berbumbu
+                            dan keju meleleh yang memikat, menjadikannya camilan yang luar biasa dengan rasa keju yang
+                            tak terlupakan!</p>
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                        <div class="price-tag">
+                            <button class="btn btn-outline-warning ml-2">Rp. 2000 / PCS</button>
+                        </div>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Tutup</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="menu4" tabindex="-1" role="dialog" aria-labelledby="menu1title" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="menu1title">Ayam Kentang</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="https://fyine.com/wp-content/uploads/2021/01/resepkoki.png" class="px-4 py-3 w-100"
+                            height="280px">
+                        <p class="text-justify">Cireng renyah yang memanjakan lidah dengan isian lezat berupa ayam dan
+                            kentang yang berpadu harmonis!</p>
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                        <div class="price-tag">
+                            <button class="btn btn-outline-warning ml-2">Rp. 2000 / PCS</button>
+                        </div>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Tutup</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="menu5" tabindex="-1" role="dialog" aria-labelledby="menu1title" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="menu1title">Abon Sapi</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="https://i.pinimg.com/736x/f6/3d/32/f63d32fc75253d286a7ca256b8b2fb73.jpg"
+                            class="px-4 py-3 w-100" height="280px">
+                        <p class="text-justify">Cireng yang renyah dengan taburan abon sapi gurih di dalamnya,
+                            menghadirkan rasa gurih yang nikmat!</p>
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                        <div class="price-tag">
+                            <button class="btn btn-outline-warning ml-2">Rp. 2000 / PCS</button>
+                        </div>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Tutup</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="menu6" tabindex="-1" role="dialog" aria-labelledby="menu1title" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="menu1title">Burger Pedas</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="https://static.vecteezy.com/system/resources/previews/026/130/354/non_2x/the-best-hot-spicy-burgergraphy-images-will-satisfy-your-cravings-generative-ai-free-photo.jpeg"
+                            class="px-4 py-3 w-100" height="280px">
+                        <p class="text-justify">Burger dengan rasa pedas yang memanjakan lidah, dengan saus pedas,
+                            daging lezat, dan topping yang menggugah selera.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Tutup</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="menu7" tabindex="-1" role="dialog" aria-labelledby="menu1title" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="menu1title">Spageti Pedas</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="https://p1.pxfuel.com/preview/1019/563/629/spaghetti-aglio-olio-pasta-italian.jpg"
+                            class="px-4 py-3 w-100" height="280px">
+                        <p class="text-justify">Spageti yang diselimuti saus tomat pedas, diberi tambahan
+                            lapisan keju, dan potongan sayuran segar yang memberikan cita rasa pedas yang menggugah
+                            selera.</p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-danger" data-dismiss="modal">Tutup</button>
@@ -229,10 +420,6 @@
             </div>
         </div>
     </section>
-
-    <section class="container">
-
-    </section>
     <!-- end of content -->
 
     <!-- footer -->
@@ -240,7 +427,7 @@
         <div class="container">
             <div class="row m-4">
                 <div class="col-lg-4 mt-4">
-                    <h4 class="text text-warning">CirengQU</h4>
+                    <h4 class="text text-warning">CirengQu</h4>
                     <h6 class="text-warning">Tentang kami</h6>
                     <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                     <h6 class="text-warning">Kontak</h6>
@@ -287,6 +474,59 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- owl -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+    const lihat = document.getElementById('lihat');
+    const lihatSection = document.getElementById('lihatSection');
+
+    lihat.addEventListener('click', function () {
+        var headerOffset = 65;
+        var elementPosition = lihatSection.getBoundingClientRect().top;
+        var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth"
+        });
+    });
+
+    $(document).ready(function () {
+        var owl = $(".owl-carousel");
+        owl.owlCarousel({
+            items: 3,
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                810: {
+                    items: 2
+                },
+                1280: {
+                    items: 3
+                }
+            }
+        });
+
+        $(".custom-next-btn").click(function () {
+            owl.trigger("next.owl.carousel");
+        });
+        $(".custom-prev-btn").click(function () {
+            owl.trigger("prev.owl.carousel");
+        });
+    });
+
+    if (window.innerWidth < 400 && window.innerHeight < 820) {
+        $('#floatblock').css('margin-bottom', '150px');
+    } else {
+        $('#floatblock').css('margin-bottom', '0px');
+    }    
+</script>
 </body>
 
 </html>

@@ -1,0 +1,19 @@
+/* CSS untuk pola gelombang */
+.tombol:hover {
+  background-color: rgb(207, 96, 32);
+  color: #ffffff;
+  border: none;
+}
+
+.gambar_bahan {
+  border-bottom-right-radius: 40px;
+  border-top-left-radius: 40px;
+}
+
+/*card hover */
+.card:hover {
+  transform: scale(1.08); /* Ubah faktor skala sesuai keinginan Anda */
+  transition: transform 0.3s ease; /* Durasi dan efek transisi */
+}
+
+/*# sourceMappingURL=style.css.map */

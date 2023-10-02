@@ -1,115 +1,92 @@
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./style/css/style.css">
         <script src="https://kit.fontawesome.com/dcf3185087.js" crossorigin="anonymous"></script>
-        <!-- <link rel="stylesheet" href="tampilan.css"> -->
+        <style>
+        </style>
+         <script>
+            fetch('navbar.html')
+              .then(response => response.text())
+              .then(data => {
+                document.getElementById("navigation").innerHTML = data;
+              })
+          </script>
+        
+          <script>
+            fetch('footer.html')
+              .then(response => response.text())
+              .then(data => {
+                document.getElementById("footer").innerHTML = data;
+              })
+          </script>
     </head>
     <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-md fixed-top shadow mb-4 bg-light">
-        <div class="container">
-            <a class="navbar-brand text-warning" href="#">
-                <img src="https://media.tenor.com/Z0wDoxDHjn4AAAAj/tsunami-studio-wave.gif" alt="Logo Toko" width="40" height="40" class="mr-2">
-                CirengQU
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon">
-                  <i class="fa-solid fa-bars fa-lg" style="color: #000000;"></i>
-                </span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a class="nav-link text-body" href="index.html">Beranda</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link text-body" href="menu.html">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-body" href="about.html"><ins class="text-warning">Tentang Kami</ins></a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link text-body" href="testimoni.html">Testimoni</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-body" href="order.html">Order</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <section id="navigation"></section>
+    
     <!-- content -->
 
     <!-- jumbotron -->
-    <section class="jumbotron bg-warning">
-        <div class="container py-4 mt-4 my-4">
-            <div class="row ">
-                <div class="col-md-6 text-center align-self-center">
+    <section class="jumbotron bg-warning mt-5 mb-5">
+        <div class="container py-4 mt-4">
+            <div class="row">
+                <div class="col-md-6 order-2 order-sm-1 text-center align-self-center">
                     <div class="">
-                        <p>Selamat datang di CirengQU! Kami adalah tujuan terbaik Anda untuk mencicipi cireng lezat berkualitas tinggi. Rasakan kelezatan kami sekarang!
+                        <h2 class="text-inline">Selamat datang di <span  class="text text-white">CirengQU!</span> </h2> 
+                        <p class="text-black"> Kami adalah tujuan terbaik Anda untuk mencicipi cireng lezat berkualitas tinggi. Rasakan kelezatan kami sekarang!
                         </p>
                     <div>
-                        <button id="scroll" class="border border-last rounded p-2">Lihat Selanjutnya</button>
+                        <button id="scroll" class="border border-last rounded p-2 tombol">Lihat Selanjutnya</button>
                     </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="w-100 ">
-                        <img src="https://cdn0-production-images-kly.akamaized.net/Sw4gdbuSIxsm0oK1PjlSVHGYqac=/0x0:5184x2922/1200x675/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3647992/original/080489600_1638244176-shutterstock_1952650309.jpg" class="rounded px-4 py-3 w-100 ">                    
+                <div class="col-md-6 order-1 order-sm-2">
+                    <div class="w-100">
+                        <img src="https://assets.ayobandung.com/crop/0x0:0x0/750x500/webp/photo/p1/995/2023/08/17/987598385435-666283761.jpg" class="px-4 py-3 w-100 gambar">                    
                     </div>
-                
                 </div>
             </div>
         </div>
+        <div class="curve"></div>
     </section>
-    <!-- end jumbotron -->
+    
     <!-- Perjalanan -->
-    <section id="about" class="section">                   
-        <div class="container mt-3 ">
-            <!-- <div class="card"> -->
-                <div class="card-body">
-                    <div class="row">
-                       <h4>PERJALANAN</h4>
-                       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                         Nemo soluta doloremque vitae modi nisi, harum quis libero corporis, blanditiis esse eaque quibusdam sed repudiandae voluptatum ex vel animi illum non.
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias rem nobis cumque explicabo possimus sapiente necessitatibus in quae nulla eligendi. Possimus dolorum ipsa accusantium esse tempora hic ex ad voluptatum.</p>
-                        </div>
-                    </div>
-                </div>
-            <!-- </div> -->
-        </div>
-    </section>
 
     <!-- Bahan yang digunakan -->
-    <section class="section py-2" id="kualitas">
-        <div class="container">
+    <section class="section bahan mb-5" id="kualitas">
+        <div class="container mt-5">
             <!-- <div class="card shadow"> -->
                 <div class="card-body">
                     <div class="row">
-                        <div class="col-md-6 d-flex align-items-center">
-                            <img src="https://assets.ayobandung.com/crop/0x0:0x0/750x500/webp/photo/p1/995/2023/08/17/987598385435-666283761.jpg" alt="Cireng" class="img-fluid rounded mx-auto d-block mb-4" width="350" >
+                        <div class="col-sm-6 mb-5 d-flex">
+                            <img src="https://kurio-img.kurioapps.com/20/08/17/f3376b9a-9c73-442c-8ef9-227fb6d23db2.jpg" alt="Cireng" class="img-fluid mx-auto d-block mt-5 gambar_bahan " width="300" >
+                            <!-- <div>
+                                <img src="https://kurio-img.kurioapps.com/20/08/17/f3376b9a-9c73-442c-8ef9-227fb6d23db2.jpg" alt="Cireng" class="gambar_bahan2 " width="300" >
+                            </div> -->
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-sm-6">
                             <h2 class="text-center">Kualitas Bahan</h2>
-                            <p >
+                            <p class="lead">
                                 Cireng adalah makanan lezat yang terbuat dari bahan-bahan berkualitas tinggi. Kami memahami bahwa kualitas bahan adalah kunci kelezatan cireng kami.
                             </p>
                             <ul class="list-unstyled">
-                                <li>
+                                <li class="mb-2">
                                     <i class="fas fa-check text-success mr-2"></i>
                                     Tepung terigu berkualitas tinggi
                                 </li>
-                                <li>
+                                <li class="mb-2">
                                     <i class="fas fa-check text-success mr-2"></i>
                                     Bawang putih segar
                                 </li>
-                                <li>
+                                <li class="mb-2">
                                     <i class="fas fa-check text-success mr-2"></i>
                                     Bumbu-bumbu pilihan
                                 </li>
-                                <li>
+                                <li class="mb-2">
                                     <i class="fas fa-check text-success mr-2"></i>
                                     Air bersih
                                 </li>
@@ -120,149 +97,164 @@
                 </div>
             <!-- </div> -->
         </div>
+        
     </section>
-    
 
+    <!-- foto -->
+    <section id="foto" class="foto mb-5">
+        <div class="container mt-5">
+            <div class="row align-items-center">
+                <div class="col-1">
+                    <button class="custom-prev-btn btn btn-warning">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                </div>
+                <div class="col-10">
+                    <h3 class="text-center mt-5">PILIHAN MENU </h3>
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="card m-3 shadow mb-5">
+                                <img src="https://www.piknikdong.com/wp-content/uploads/2021/01/Resep-Cireng-Isi-Ayam-min-1.jpg" class="card-img-top rounded " alt="Image 1" width="230" height="230">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Cireng Ayam Pedas</h5>
+                                    <!-- <p class="card-text">This is the first card in the slider.</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card m-3 shadow mb-5">
+                                <img src="https://www.natural-poultry.com/wp-content/uploads/2022/01/Cireng-isi-Ayam-Pedas.jpg" class="card-img-top" alt="Image 2" width="230" height="230">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Cireng Ayam Kentang</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card m-3 shadow mb-5">
+                                <img src="https://i0.wp.com/i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/f3f24ea1-4ae1-4813-a8ee-45ce485a4b8f_Go-Biz_20221102_154734.jpeg" class="card-img-top" alt="Image 3" width="230" height="230">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Cireng Abon Sapi</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card m-3 shadow mb-5">
+                                <img src="https://cdn.idntimes.com/content-images/post/20201010/75487908-288539792196937-1079945905944117155-n-316a63f2b11a6c04f8aac6a1f2146aba_600x400.jpg" class="card-img-top" alt="Image 4" width="230" height="230">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Cireng Sosis Pedas</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card m-3 shadow mb-5">
+                                <img src="https://caramembuat.net/wp-content/uploads/2022/01/cara-membuat-cireng-isi-keju-kornet.jpg" class="card-img-top" alt="Image 5" width="230" height="230">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Cireng Kornet Keju</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card m-3 shadow mb-5">
+                                <img src="https://asset-a.grid.id/crop/0x0:0x0/360x240/photo/2022/04/14/resep-spageti-spesial-ini-wajib-20220414030159.jpg" class="card-img-top" alt="Image 6" width="230" height="230">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Spageti Pedas</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card m-3 shadow mb-5">
+                                <img src="https://img-global.cpcdn.com/recipes/186babe54777306f/680x482cq70/double-cheese-burger-pedas-%EB%A7%A4%EC%BD%A4-%EB%8D%94%EB%B8%94-%EC%B9%98%EC%A6%88%EB%B2%84%EA%B1%B0-tren-korea-foto-resep-utama.jpg" class="card-img-top" alt="Image 7" width="230" height="230">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Burger Pedas</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1" style="margin-left: -25;">
+                    <button class="custom-next-btn btn btn-warning" >
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Kontak-->
-    <section id="kontak" class="section py-3">
-        <div class="container">
+    <section id="kontak" class="section mb-5">
+        <div class="container mt-3 ">
             <!-- <div class="card shadow"> -->
                 <div class="card-body">
                     <!-- <hr class="w-25 border border-warning border-4"> -->
                     <div class="row">
                         <div class="col-md-6 kolom">
-                            <h3 class="text py-2">KONTAK</h3>
-                            <p><span class="badge bg-warning p-2 rounded-circle" width="30" height="30"><i class="fa-solid fa-location-dot" ></i> </span> Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                            <p><span  class="badge bg-warning p-2 rounded-circle" width="30" height="30"><i class="fa-solid fa-phone "></i> </span> 081334567890</p>
-                            <p><span  class="badge bg-warning p-2 rounded-circle" width="30" height="30"><i class="fa-brands fa-whatsapp "></i></span> 081234567890</p>
+                            <h3 class="text text-center">KONTAK</h3>
+                            <div class="list">
+                                <ul>
+                                    <li class="list-unstyled text mt-3"><span class="badge bg-warning p-2 rounded-circle" width="30" height="30"><i class="fa-solid fa-location-dot" ></i> </span>  Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                                    <li class="list-unstyled mt-2"><span  class="badge bg-warning p-2 rounded-circle" width="30" height="30"><i class="fa-solid fa-phone "></i> </span> 081334567890</li>
+                                    <li class="list-unstyled mt-2"><span  class="badge bg-warning p-2 rounded-circle" width="30" height="30"><i class="fa-brands fa-whatsapp "></i></span> 081234567890</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="col-md-6 py-2 kolom">
+                        <div class="col-md-6 mb-5 kolom">
                             <!-- <img src="https://i.postimg.cc/fT7s2ydq/CirengQu.png" alt="Gambar Toko" width="250" height="250" class="rounded-pill mt-1 ml-2"> -->
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d506585.7329107072!2d112.38371402876494!3d-7.274819558845546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fbf8381ac47f%3A0x3027a76e352be40!2sSurabaya%2C%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1695307654527!5m2!1sid!2sid" width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="img-fluid mt-2"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d506585.7329107072!2d112.38371402876494!3d-7.274819558845546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fbf8381ac47f%3A0x3027a76e352be40!2sSurabaya%2C%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1695307654527!5m2!1sid!2sid" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded shadow mt-2 order-sm-1" height="300" ></iframe>
                         </div>
                     </div>
                 </div>
             <!-- </div> -->
         </div>
     </section>
-    <br>
     <!-- end kontak -->
 
-    <!-- profil -->
-    <!-- <div class="container">
-        <div class="text text-center">
-            <h3>TIM KAMI</h3>
-            <hr class="tim w-25">
-        </div>
-        <div class="row m-5">
-            <div class="col-md-4 ">
-                <div class="card ">
-                    <img src="https://www.youngontop.com/wp-content/uploads/2022/09/portrait-pretty-korean-girl-receive-surprising-news-looking-amazed-happy-camera-standing-blue-background_1258-76005.jpg" class="card-img-top" alt="Team Member 1">
-                    <div class="card-body">
-                        <h5 class="card-title team-member">Nama Anggota Tim 1</h5>
-                        <p class="card-text position">Posisi Anggota Tim 1</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://www.youngontop.com/wp-content/uploads/2022/09/portrait-pretty-korean-girl-receive-surprising-news-looking-amazed-happy-camera-standing-blue-background_1258-76005.jpg" class="card-img-top" alt="Team Member 2">
-                    <div class="card-body">
-                        <h5 class="card-title team-member">Nama Anggota Tim 2</h5>
-                        <p class="card-text position">Posisi Anggota Tim 2</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://www.youngontop.com/wp-content/uploads/2022/09/portrait-pretty-korean-girl-receive-surprising-news-looking-amazed-happy-camera-standing-blue-background_1258-76005.jpg" class="card-img-top" alt="Team Member 2">
-                    <div class="card-body">
-                        <h5 class="card-title team-member">Nama Anggota Tim 3</h5>
-                        <p class="card-text position">Posisi Anggota Tim 2</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card ">
-                    <img src="https://www.youngontop.com/wp-content/uploads/2022/09/portrait-pretty-korean-girl-receive-surprising-news-looking-amazed-happy-camera-standing-blue-background_1258-76005.jpg" class="card-img-top" alt="Team Member 2">
-                    <div class="card-body">
-                        <h5 class="card-title team-member">Nama Anggota Tim 4</h5>
-                        <p class="card-text position">Posisi Anggota Tim 2</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://www.youngontop.com/wp-content/uploads/2022/09/portrait-pretty-korean-girl-receive-surprising-news-looking-amazed-happy-camera-standing-blue-background_1258-76005.jpg" class="card-img-top" alt="Team Member 2">
-                    <div class="card-body">
-                        <h5 class="card-title team-member">Nama Anggota Tim 5</h5>
-                        <p class="card-text position">Posisi Anggota Tim 2</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
     <!-- footer -->
-    <div class="footer navbar-dark bg-dark mt-4">
-        <div class="container">
-          <div class="row m-4">
-            <div class="col-lg-4 mt-3">
-              <h4 class="text text-warning">CirengQU</h4>
-              <h6 class="text-warning">Tentang kami</h6>
-              <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-              <h6 class="text-warning">Kontak</h6>
-              <p class="text-white"><span><i class="fa-solid fa-phone m-2"></i></span>081234567890</p>
-            </div>
-            <div class="col-lg-4 mt-3 ">
-              <h4 class="text-warning">INFORMASI</h4>
-              <ul class="list-unstyled">
-                <li ><a href="index.html" class="text-white">Beranda</a></li>
-                <li><a href="menu.html" class="text-white">Menu</a>
-                </li>
-                <li><a href="about.html" class="text-white">Tentang Kami</a></li>
-                <li><a href="testimoni.html" class="text-white">Testimoni</a></li>
-                <li><a href="order.html" class="text-white">Order</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-4 mt-3">
-              <h4 class="text-warning">Pembayaran</h4>
-              <img src="https://scontent.fsub8-2.fna.fbcdn.net/v/t1.6435-9/100609253_756371721818730_7857219132717006848_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=174925&_nc_ohc=35cY7CFOgvcAX_7Kuna&_nc_ht=scontent.fsub8-2.fna&oh=00_AfALF-Tw6lRcCmqAkM2pkMA7KKfogBqQBOy4X1WwLAw8qQ&oe=65334EED" alt=""width="30" height="30" class="mr-2">
-            <img src="https://theme.zdassets.com/theme_assets/1379487/2cb35fe96fa1191f49c2b769b50cf8b546fff65e.png" alt=""width="30" height="30" class="mr-2">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Logo_Bank_Rakyat_Indonesia.svg/899px-Logo_Bank_Rakyat_Indonesia.svg.png" alt=""width="30" height="30" class="mr-2">
-              
-            </div>
-          </div>
-    
-          <div class="row">
-            <div class="col-md-12 align-center">
-              <div class="copyright text-center text-white">
-                <hr>
-                &copy; 2021 Your Company. All rights reserved.
-              </div>
-              <br>
-            </div>
-          </div>
-        </div>
-     </div>
-   </div>
+    <section id="footer"></section>
+    </div>
   
     <!-- scfript -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script>
         var tombol = document.getElementById('scroll');
-        var tujuan = document.getElementById('about');
+        var tujuan = document.getElementById('kualitas');
 
         tombol.addEventListener('click', function() {
         tujuan.scrollIntoView({ behavior: 'smooth' });
     });
+
+    // slider
+    var owl = $(".owl-carousel");
+            owl.owlCarousel({
+                items: 3,
+                loop: true,
+                margin: 15,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                responsiveClass: true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    768:{
+                        items:2
+                    },
+                    992:{
+                        items:3
+                    }
+                }
+            });
+
+            // Tambahkan fungsi untuk tombol sebelumnya dan selanjutnya
+            $(".custom-next-btn").click(function(){
+                owl.trigger("next.owl.carousel");
+            });
+            $(".custom-prev-btn").click(function(){
+                owl.trigger("prev.owl.carousel");
+            });
+
     </script>
 </body>
 </html>
