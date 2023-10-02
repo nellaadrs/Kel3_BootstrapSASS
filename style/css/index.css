@@ -4,9 +4,16 @@
 .hero-section .text-header h1 {
   font-size: 64px;
 }
- 
+
 #why {
   padding: 5rem 0 5rem 0;
-} 
+}
+
+.card-container .card-2 {
+  background: #e6e6e6;
+}
+.card-container .card-2:hover {
+  box-shadow: 20px 20px 60px #c4c4c4, -20px -20px 60px #ffffff;
+}
 
 /*# sourceMappingURL=index.css.map */

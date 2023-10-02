@@ -1,3 +1,5 @@
+$shadow : 20px 20px 60px #c4c4c4, -20px -20px 60px #ffffff;
+
 .hero-section{
     .text-header {
         padding: 2rem;
@@ -11,3 +13,14 @@
 #why {
     padding: 5rem 0 5rem 0;
 }
+
+.card-container {
+    $background-card : #e6e6e6;
+    .card-2 {
+        background: $background-card;
+    }
+    .card-2:hover {
+        box-shadow:  $shadow;
+    }
+}
+
