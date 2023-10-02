@@ -10,6 +10,10 @@
   border-top-left-radius: 40px;
 }
 
-/* CSS untuk pola gelombang */
+/*card hover */
+.card:hover {
+  transform: scale(1.05); /* Ubah faktor skala sesuai keinginan Anda */
+  transition: transform 0.3s ease; /* Durasi dan efek transisi */
+}
 
 /*# sourceMappingURL=style.css.map */
