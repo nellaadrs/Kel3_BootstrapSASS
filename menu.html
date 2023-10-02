@@ -53,18 +53,18 @@
     <!-- end of navbar -->
 
     <!-- content -->
-    <section class="jumbotron bg-warning vh-100 d-flex align-items-center" id="header">
+    <section class="bg-warning d-flex align-items-center" id="header">
         <div class="container py-4 my-5 align-self-center">
             <div class="row">
                 <div class="col-lg-6 order-lg-2">
-                    <div class="w-100">
-                        <img src="./assets/img-header-menu.png" class="px-4 py-3 w-100 img-fluid rounded">
+                    <div class="w-100 pt-3">
+                        <img src="./assets/img-header-menu.png" class="px-4 py-3 img-fluid rounded">
                     </div>
                 </div>
                 <div class="col-lg-6 text-center order-lg-1 align-self-center mt-4 text-lg-left">
                     <div class="">
-                        <h2 class="tulisan">Nikmati kelezatan berbagai macam menu <span
-                                class="redtext">CirengQu!</span></h2>
+                        <h2 class="tulisan">Nikmati kelezatan berbagai macam menu <span class="redtext">CirengQu!</span>
+                        </h2>
                     </div>
                     <button id="lihat" class="btn btn-outline-danger">Lihat Menu <svg xmlns="http://www.w3.org/2000/svg"
                             width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 18">
@@ -212,7 +212,7 @@
         </div>
     </section>
 
-    <section class="py-sm-5 d-inline-block mh-100 float-md-none float-sm-right my-xl-4">
+    <section class="py-sm-5 d-inline-block mh-100 float-md-none float-sm-right my-xl-4" id="floatblock">
 
     </section>
 
@@ -519,7 +519,13 @@
         $(".custom-prev-btn").click(function () {
             owl.trigger("prev.owl.carousel");
         });
-    })
+    });
+
+    if (window.innerWidth < 400 && window.innerHeight < 820) {
+        $('#floatblock').css('margin-bottom', '150px');
+    } else {
+        $('#floatblock').css('margin-bottom', '0px');
+    }    
 </script>
 </body>
 
