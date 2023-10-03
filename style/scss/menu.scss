@@ -4,14 +4,25 @@ $breakpoints: (
 	large: 992px,
 	xlarge: 1200px,
 );
-$backgroundColor: #ffc700;
-$backgroundLinear: linear-gradient(
-	90deg,
-	rgba(255, 199, 0, 1) 0%,
-	rgba(255, 199, 0, 1) 41%,
-	rgba(255, 171, 0, 1) 67%
+
+$font-weights: (
+	light: 300,
+	regular: 400,
+	bold: 600,
 );
+
 $redColor: rgb(235, 8, 8);
+// praktik 8 Variabel
+
+@function background($color) {
+	$ch: adjust-hue($color, 2);
+	@return lighten($ch, 2%);
+}
+
+@function weight($weight-name) {
+	@return map-get($font-weights, $weight-name);
+}
+// praktik 9 Fungsi
 
 html,
 body,
@@ -26,14 +37,18 @@ nav {
 	object-fit: cover;
 }
 
-#header {	
-	background: $backgroundLinear;
-}
-
 #lainnya {
-	background: $backgroundColor;
+	background: background(rgba(255, 199, 0, 1));
 }
 
 .redtext {
 	color: $redColor;
+}
+
+.bold{
+	font-weight: weight(bold);
+}
+
+.lighten{
+	background: background(rgba(255, 199, 0, 1));
 }

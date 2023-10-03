@@ -11,16 +11,20 @@ nav {
   object-fit: cover;
 }
 
-#header {
-  background: linear-gradient(90deg, rgb(255, 199, 0) 0%, rgb(255, 199, 0) 41%, rgb(255, 171, 0) 67%);
-}
-
 #lainnya {
-  background: #ffc700;
+  background: #ffd10a;
 }
 
 .redtext {
   color: rgb(235, 8, 8);
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.lighten {
+  background: #ffd10a;
 }
 
 /*# sourceMappingURL=menu.css.map */
