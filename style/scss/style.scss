@@ -22,25 +22,14 @@ $border-right-buttom : 40px;
   transform: scale(1.08); /* Ubah faktor skala sesuai keinginan Anda */
   transition: transform 0.3s ease; /* Durasi dan efek transisi */
 }
-// bahan 2
-// $border-left-buttom : 40px;
-// $border-right-top : 40px;
-// .gambar_bahan2{
-//     border-top-right-radius: $border-right-top;
-//     border-bottom-left-radius: $border-left-buttom ;
-// }
 
-// .gambar_bahan2{
-//     $left : -120px;
-//     $top :100px;
-//     margin-left: $left;
-//     margin-top: $top;
-// }
-
-// gelombang bahan
-/* CSS untuk pola gelombang */
-
-// .bahan {
-
+// fungsi tulisan kualitas bahan
+@function lighten($color, $amount) {
+  @return mix($color, white, $amount);
+}
+h2#bahan {
+  color: lighten(orange, 70%);
+  text-align: center;
+}
 
 
