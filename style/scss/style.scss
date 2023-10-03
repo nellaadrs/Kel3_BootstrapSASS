@@ -19,7 +19,7 @@ $border-right-buttom : 40px;
 
 // hover card
 .card:hover {
-  transform: scale(1.08); /* Ubah faktor skala sesuai keinginan Anda */
+  transform: scale(1.08); 
   transition: transform 0.3s ease; /* Durasi dan efek transisi */
 }
 
@@ -28,8 +28,10 @@ $border-right-buttom : 40px;
   @return mix($color, white, $amount);
 }
 h2#bahan {
-  color: lighten(orange, 70%);
+  color: lighten(rgb(60, 51, 41), 60%);
   text-align: center;
+  @media (min-width: 768px) {
+    font-size: 2rem;
+  }
 }
-
 
