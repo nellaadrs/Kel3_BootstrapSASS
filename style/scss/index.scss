@@ -1,26 +1,76 @@
-$shadow : 20px 20px 60px #c4c4c4, -20px -20px 60px #ffffff;
+$shadow : 2px 2px 7px #c4c4c4, -2px -2px 7px #ffffff;
+$warning : #ffc107;
+$dark : #343a40;
+$fSize: (
+    small : 2rem,
+    normal : 2.5rem
+);
 
-.hero-section{
-    .text-header {
-        padding: 2rem;
-        h1 {
-            font-size: 64px;
-        }
-    }
+// Tugas Praktik 10 - Fungsi
+@function cardHover($color){
+    $darken : darken($color, 5%);
+    @return $darken;
+}
+@function fontSize($fontName) {
+    @return map-get($fSize, $fontName);
+}
 
+body {
+    background: white;
 }
 
 #why {
     padding: 5rem 0 5rem 0;
 }
 
+.img-header {
+    width: 85%;
+}
+
 .card-container {
-    $background-card : #e6e6e6;
+    $background-card : white;
     .card-2 {
         background: $background-card;
-    }
-    .card-2:hover {
+        height: auto;
         box-shadow:  $shadow;
+        .card-img {
+            width: 75px;
+            margin-top: 0.4rem;
+        }
+        p {
+            font-weight: 600;
+        }
+    }
+    .card-2:hover{
+        // Penerapan fungsi
+        background: cardHover($background-card);
     }
 }
+.card-bs {
+    box-shadow: $shadow;
+    border-radius: 18px;
+}
+
+.stars {
+    background: $warning;
+    color: $dark;
+    border-radius: 6px;
+    width: max-content;
+    padding: 6px 8px;
+}
+
+.btn-dark:hover {
+    background: transparent;
+    color: $dark;
+}
+.btn-warning:hover {
+    background: transparent;
+    color: $dark;
+}
+
+@media only screen and (max-width: 576px) {
+    h1 {
+        font-size: fontSize(small);
+    }
+  }
 

@@ -1,19 +1,58 @@
-.hero-section .text-header {
-  padding: 2rem;
-}
-.hero-section .text-header h1 {
-  font-size: 64px;
+body {
+  background: white;
 }
 
 #why {
   padding: 5rem 0 5rem 0;
 }
 
+.img-header {
+  width: 85%;
+}
+
 .card-container .card-2 {
-  background: #e6e6e6;
+  background: white;
+  height: auto;
+  box-shadow: 2px 2px 7px #c4c4c4, -2px -2px 7px #ffffff;
+}
+.card-container .card-2 .card-img {
+  width: 75px;
+  margin-top: 0.4rem;
+}
+.card-container .card-2 p {
+  font-weight: 600;
 }
 .card-container .card-2:hover {
-  box-shadow: 20px 20px 60px #c4c4c4, -20px -20px 60px #ffffff;
+  background: #f2f2f2;
+}
+
+.card-bs {
+  box-shadow: 2px 2px 7px #c4c4c4, -2px -2px 7px #ffffff;
+  border-radius: 18px;
+}
+
+.stars {
+  background: #ffc107;
+  color: #343a40;
+  border-radius: 6px;
+  width: max-content;
+  padding: 6px 8px;
+}
+
+.btn-dark:hover {
+  background: transparent;
+  color: #343a40;
+}
+
+.btn-warning:hover {
+  background: transparent;
+  color: #343a40;
+}
+
+@media only screen and (max-width: 576px) {
+  h1 {
+    font-size: 2rem;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
