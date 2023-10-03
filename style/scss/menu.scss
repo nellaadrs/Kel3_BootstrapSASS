@@ -1,3 +1,5 @@
+@use "font";
+
 $breakpoints: (
 	small: 576px,
 	medium: 768px,
@@ -24,6 +26,21 @@ $redColor: rgb(235, 8, 8);
 }
 // praktik 9 Fungsi
 
+@mixin cardHover {
+	.card:hover {
+		img {
+			height: 200px * 1.03;
+			transition: 300ms;
+		}
+	}
+
+	.card:active {
+		cursor: grabbing;
+	}
+}
+
+@include cardHover;
+// praktik 10 Modul
 html,
 body,
 nav {
@@ -45,10 +62,16 @@ nav {
 	color: $redColor;
 }
 
-.bold{
+.bold {
 	font-weight: weight(bold);
 }
 
-.lighten{
+.lighten {
 	background: background(rgba(255, 199, 0, 1));
+}
+
+.stylized-text {
+	font-family: font.$stylish;
+	font-size: 20px;
+	font-weight: weight(bold);
 }
