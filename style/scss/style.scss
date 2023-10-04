@@ -30,6 +30,19 @@ h2#bahan {
   }
 }
 
+// Tugas 9 - Fungsi
+  /* fungsi */
+@function lighten($color, $amount) {
+  @return mix($color, white, $amount);
+}
+h2#bahan {
+  color: lighten(rgb(60, 51, 41), 60%);
+  text-align: center;
+  @media (min-width: 768px) {
+    font-size: 2rem;
+  }
+} 
+
 // min ukur 500 responsive
 @media (min-width: 500px) {
     .no, .no_wa {
