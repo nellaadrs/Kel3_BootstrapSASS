@@ -1,10 +1,4 @@
-$shadow : 2px 2px 7px #c4c4c4, -2px -2px 7px #ffffff;
-$warning : #ffc107;
-$dark : #343a40;
-$fSize: (
-    small : 2rem,
-    normal : 2.5rem
-);
+@import 'variables';
 
 // Tugas Praktik 10 - Fungsi
 @function cardHover($color){
@@ -13,6 +7,12 @@ $fSize: (
 }
 @function fontSize($fontName) {
     @return map-get($fSize, $fontName);
+}
+
+// Tugas Praktik 11 - Modul
+@mixin gradientBackground($color1, $color2) {
+    background: linear-gradient(to right, $color1, $color2);
+    color: white;
 }
 
 body {
@@ -57,6 +57,12 @@ body {
     border-radius: 6px;
     width: max-content;
     padding: 6px 8px;
+}
+
+.btn-gradient {
+    outline: none;
+    // Memanggil mixin gradientBackground
+    @include gradientBackground($warning, cardHover($warning))
 }
 
 .btn-dark:hover {

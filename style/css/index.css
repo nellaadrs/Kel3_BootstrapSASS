@@ -39,6 +39,12 @@ body {
   padding: 6px 8px;
 }
 
+.btn-gradient {
+  outline: none;
+  background: linear-gradient(to right, #ffc107, #edb100);
+  color: white;
+}
+
 .btn-dark:hover {
   background: transparent;
   color: #343a40;
