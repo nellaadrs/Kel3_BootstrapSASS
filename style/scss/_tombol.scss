@@ -1,0 +1,16 @@
+// tugas 10 @use
+// Membuat mixin untuk tombol hover
+@mixin hover-tombol {
+    $button-hover-color: #d05b16;
+    $button-hover-text: #ffffff;
+    background-color: $button-hover-color;
+    color: $button-hover-text;
+    border: none;
+}
+
+@mixin link-active-styles ($color :#ffc107) {
+    // $color :#ffc107;
+    color: $color;
+    text-decoration: underline;
+  }
+  
