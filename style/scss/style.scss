@@ -36,7 +36,7 @@ h2#bahan {
   @return mix($color, white, $amount);
 }
 h2#bahan {
-  color: lighten(rgb(60, 51, 41), 60%);
+  color: lighten(#3c3329, 60%);
   text-align: center;
   @media (min-width: 768px) {
     font-size: 2rem;
