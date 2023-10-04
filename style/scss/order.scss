@@ -1,0 +1,59 @@
+/* Variable */
+$primary-color: #FFC107;
+$secondary-color: #000000;
+$background-color: #F8F9FA;
+
+/* Navbar Styling */
+.navbar {
+  background-color: $primary-color;
+  .navbar-brand {
+    color: $secondary-color;
+    img {
+      margin-right: 10px;
+    }
+  }
+  .nav-link {
+    color: $secondary-color;
+    &:hover {
+      color: lighten($secondary-color, 20%);
+    }
+  }
+}
+
+/* Jumbotron Styling */
+.jumbotron {
+  background-color: $primary-color;
+  color: $secondary-color;
+}
+
+/* Card Styling */
+.card {
+  margin-bottom: 20px;
+  .card-title {
+    color: $primary-color;
+  }
+}
+
+/* Form Styling */
+.form-label {
+  color: $primary-color;
+}
+.btn-warning {
+  background-color: $primary-color;
+  border: none;
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+/* Footer Styling */
+.footer {
+  background-color: $secondary-color;
+  color: $primary-color;
+  a {
+    color: $primary-color;
+    &:hover {
+      color: lighten($primary-color, 20%);
+    }
+  }
+}
