@@ -1,7 +1,12 @@
-/* Variable */
+/* Variabel */
 $primary-color: #FFC107;
 $secondary-color: #000000;
 $background-color: #F8F9FA;
+
+/* Fungsi Sass */
+@function calculate-width($columns, $total-columns: 12, $container-width: 100%) {
+  @return ($container-width / $total-columns) * $columns;
+}
 
 /* Navbar Styling */
 .navbar {
@@ -29,6 +34,7 @@ $background-color: #F8F9FA;
 /* Card Styling */
 .card {
   margin-bottom: 20px;
+  width: calculate-width(4); /* Menggunakan fungsi Sass */
   .card-title {
     color: $primary-color;
   }
