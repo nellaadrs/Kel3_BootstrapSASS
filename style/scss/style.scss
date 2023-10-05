@@ -98,14 +98,14 @@ $jumlah-section: 5;
 @for $i from 1 through $jumlah-section {
   section:nth-child(#{$i}) {
     // Gaya umum untuk setiap section
-    border: 1px solid #ddd;
+    border: 1px #ddd;
     box-shadow: 0px 4px 8px  rgb(226, 224, 224);
 
     // Gaya khusus untuk setiap section
     @if $i % 2 == 0 {
-      background-color: #f2f2f2; // Bagi yang genap
+      background-color: #f2f2f2; 
     } @else {
-      background-color: #fff; // Bagi yang ganjil
+      background-color: #fff; 
     }
   }
 }
