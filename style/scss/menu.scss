@@ -1,23 +1,84 @@
+@use "font";
+
 $breakpoints: (
 	small: 576px,
 	medium: 768px,
 	large: 992px,
 	xlarge: 1200px,
 );
-$backgroundColor: #ffc700;
-$backgroundLinear: linear-gradient(
-	90deg,
+
+$font-weights: (
+	light: 300,
+	regular: 400,
+	bold: 600,
+);
+
+$font-size:(
+	"normal": 12px,
+	"title": 2.5rem
+);
+
+$gradient: linear-gradient(
+	163deg,
 	rgba(255, 199, 0, 1) 0%,
 	rgba(255, 199, 0, 1) 41%,
-	rgba(255, 171, 0, 1) 67%
+	rgba(255, 181, 0, 1) 67%
 );
-$redColor: rgb(235, 8, 8);
 
+$redColor: rgb(235, 8, 8);
+// praktik 8 Variabel
+
+@function background($color) {
+	$ch: adjust-hue($color, 2);
+	@return lighten($ch, 2%);
+}
+
+@function weight($weight-name) {
+	@return map-get($font-weights, $weight-name);
+}
+// praktik 9 Fungsi
+
+@mixin cardHover{
+	.card:hover {
+		img {
+			height: 200px * 1.03;
+			transition: 300ms;
+		}
+	}
+
+	.card:not(:hover) {
+		img {
+			height: 200px;
+			transition: 100ms;
+		}
+	}
+}
+
+@include cardHover;
+// Praktik 10 Modul
+
+@mixin border ($size, $card:false){
+	border-radius: $size;
+	@if $card {
+		border-radius: $size * .5;
+	}
+}
+
+@each $size, $value in $font-size {
+	.font-#{$size} {
+		font-size: $value;
+	}
+}
+// Praktik 11 Kondisi dan Perulangan
 html,
 body,
 nav {
 	max-width: 100vw;
 	overflow-x: hidden;
+}
+
+.card{
+	@include border(1.2rem, $card: true);
 }
 
 .card img {
@@ -26,14 +87,24 @@ nav {
 	object-fit: cover;
 }
 
-#header {	
-	background: $backgroundLinear;
-}
-
 #lainnya {
-	background: $backgroundColor;
+	background: $gradient;
 }
 
 .redtext {
 	color: $redColor;
+}
+
+.bold {
+	font-weight: weight(bold);
+}
+
+.lighten {
+	background: background(rgba(255, 199, 0, 1));
+}
+
+.stylized-text {
+	font-family: font.$stylish;
+	font-size: 20px;
+	font-weight: weight(bold);
 }

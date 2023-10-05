@@ -1,13 +1,8 @@
+// tugas 10 -Modul
+@use "tombol";
 
+@import "kontak";
 
-// hover tombol
-.tombol:hover{
-    $button-hover-color:rgb(207, 96, 32);
-    $button-hover-text :#ffffff;
-    background-color: $button-hover-color;
-    color: $button-hover-text;
-    border: none;
-}
 
 // kualitas
 $border-left-top : 40px;
@@ -19,28 +14,104 @@ $border-right-buttom : 40px;
 
 // hover card
 .card:hover {
-  transform: scale(1.08); /* Ubah faktor skala sesuai keinginan Anda */
-  transition: transform 0.3s ease; /* Durasi dan efek transisi */
+  transform: scale(1.08); 
+  transition: transform 0.3s ease;
 }
-// bahan 2
-// $border-left-buttom : 40px;
-// $border-right-top : 40px;
-// .gambar_bahan2{
-//     border-top-right-radius: $border-right-top;
-//     border-bottom-left-radius: $border-left-buttom ;
-// }
 
-// .gambar_bahan2{
-//     $left : -120px;
-//     $top :100px;
-//     margin-left: $left;
-//     margin-top: $top;
-// }
+// fungsi tulisan kualitas bahan
+@function lighten($color, $amount) {
+  @return mix($color, white, $amount);
+}
+h2#bahan {
+  color: lighten(rgb(60, 51, 41), 60%);
+  text-align: center;
+  @media (min-width: 768px) {
+    font-size: 2rem;
+  }
+}
 
-// gelombang bahan
-/* CSS untuk pola gelombang */
+// Tugas 9 - Fungsi
+  /* fungsi */
+@function lighten($color, $amount) {
+  @return mix($color, white, $amount);
+}
+h2#bahan {
+  color: lighten(#3c3329, 60%);
+  text-align: center;
+  @media (min-width: 768px) {
+    font-size: 2rem;
+  }
+} 
 
-// .bahan {
+// min ukur 500 responsive
+@media (min-width: 500px) {
+    .no, .no_wa {
+        font-size: 18px;
+        margin-left: 45px;
+        margin-top: -30px;
+        font-weight: normal;
+    }
+  }
+@media (min-width: 500px) {
+    .lokasi {
+        font-size: 17px;
+        margin-left: 45px;
+        margin-top: -30px;
+        font-weight: normal;
+    }
+  }
+@media (min-width: 500px) {
+    .list-kontak {
+        margin-left: -45px;
+    }
+  }
+
+// tugas 10 @use
+.tombol:hover {
+    @include tombol.hover-tombol;
+}
+.tombol{
+    @include tombol.tombol-awal;
+}
+.nav-item .nav-link.active {
+    @include tombol.link-active-styles;
+  }
 
 
 
+// tugas 11
+// tugas 11 pengondisian dan perulangan 
+  .card-title {
+    $default-color: #000000;
+    color: $default-color;
+  
+    // Check jika class .text-center ada
+    @if (selector-nest('.text-center', &)) {
+      color: hsl(0, 0%, 0%); 
+      font-size:20px;
+      
+    } @else {
+      color: hsl(0, 62%, 35%);
+      font-size:30px;
+    }
+  }
+
+// perulangan 
+$jumlah-section: 5;
+
+@for $i from 1 through $jumlah-section {
+  section:nth-child(#{$i}) {
+    // Gaya umum untuk setiap section
+    border: 1px #ddd;
+    box-shadow: 0px 4px 8px  rgb(226, 224, 224);
+
+    // Gaya khusus untuk setiap section
+    @if $i % 2 == 0 {
+      background-color: #f2f2f2; 
+    } @else {
+      background-color: #fff; 
+    }
+  }
+}
+
+  

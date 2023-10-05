@@ -1,13 +1,124 @@
-.hero-section{
-    .text-header {
-        padding: 2rem;
-        h1 {
-            font-size: 64px;
-        }
-    }
+// Tugas Praktik 10 - Modul
+@use 'mixins';
+@import 'variables';
 
+// Tugas Praktik 9 - Fungsi
+@function cardHover($color){
+    $darken : darken($color, 5%);
+    @return $darken;
+}
+@function fontSize($fontName) {
+    @return map-get($fSize, $fontName);
+}
+
+// Tugas PRaktik 11 - Kondisi & Perulangan
+@mixin button-style($bStyle) {
+    @if $bStyle == primary-fill {
+      border: 1px solid $warning;
+      background: $warning;
+      color: $dark;
+      cursor: pointer;
+      border-radius: 6px;
+    } @else if $bStyle == primary-outline {
+      border: 2px solid $warning;
+      background: transparent;
+      color: $dark;
+      cursor: pointer;
+      border-radius: 6px;
+    } @else if $bStyle == dark-outline {
+      border: 1px solid $dark;
+      background: transparent;
+      color: $dark;
+      cursor: pointer;
+      border-radius: 6px;
+    } @else if $bStyle == dark-fill {
+        border: 1px solid $dark;
+        background: $dark;
+        color: white;
+        cursor: pointer;
+        border-radius: 6px;
+    } @else {
+      border: 1px solid $dark;
+      background: $dark;
+      color: white;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+}
+
+@each $button in $buttons {
+    .btn-#{$button} {
+        @include button-style($button);
+    }
+  }
+
+body {
+    background: white;
 }
 
 #why {
     padding: 5rem 0 5rem 0;
 }
+
+.img-header {
+    width: 85%;
+}
+
+.card-container {
+    $background-card : white;
+    .card-2 {
+        background: $background-card;
+        height: auto;
+        box-shadow:  $shadow;
+        .card-img {
+            width: 75px;
+            margin-top: 0.4rem;
+        }
+        p {
+            font-weight: 600;
+        }
+    }
+    .card-2:hover{
+        // Penerapan fungsi
+        background: cardHover($background-card);
+    }
+}
+.card-bs {
+    box-shadow: $shadow;
+    border-radius: 18px;
+}
+
+.stars {
+    background: $warning;
+    color: $dark;
+    border-radius: 6px;
+    width: max-content;
+    padding: 6px 8px;
+}
+
+.btn-gradient {
+    outline: none;
+    // Memanggil mixin gradientBackground
+    @include mixins.gradientBackground($warning, cardHover($warning))
+}
+
+// Penerapan mixin yang terdapat if else
+.btn-dark-fill:hover {
+    @include button-style(dark-outline)
+}
+.btn-dark-outline:hover {
+    @include button-style(dark-fill)
+}
+.btn-warning:hover {
+    @include button-style(primary-outline)
+}
+.btn-gradient:hover {
+    @include button-style(primary-outline)
+}
+
+@media only screen and (max-width: 576px) {
+    h1 {
+        font-size: fontSize(small);
+    }
+  }
+
