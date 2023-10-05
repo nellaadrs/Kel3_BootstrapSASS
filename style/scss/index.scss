@@ -1,17 +1,56 @@
-// Tugas Praktik 11 - Modul
+// Tugas Praktik 10 - Modul
 @use 'mixins';
 @import 'variables';
 
-// Tugas Praktik 10 - Fungsi
+// Tugas Praktik 9 - Fungsi
 @function cardHover($color){
-    $darken : darken($color, 10%);
+    $darken : darken($color, 5%);
     @return $darken;
 }
 @function fontSize($fontName) {
     @return map-get($fSize, $fontName);
 }
 
+// Tugas PRaktik 11 - Kondisi & Perulangan
+@mixin button-style($bStyle) {
+    @if $bStyle == primary-fill {
+      border: 1px solid $warning;
+      background: $warning;
+      color: $dark;
+      cursor: pointer;
+      border-radius: 6px;
+    } @else if $bStyle == primary-outline {
+      border: 2px solid $warning;
+      background: transparent;
+      color: $dark;
+      cursor: pointer;
+      border-radius: 6px;
+    } @else if $bStyle == dark-outline {
+      border: 1px solid $dark;
+      background: transparent;
+      color: $dark;
+      cursor: pointer;
+      border-radius: 6px;
+    } @else if $bStyle == dark-fill {
+        border: 1px solid $dark;
+        background: $dark;
+        color: white;
+        cursor: pointer;
+        border-radius: 6px;
+    } @else {
+      border: 1px solid $dark;
+      background: $dark;
+      color: white;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+}
 
+@each $button in $buttons {
+    .btn-#{$button} {
+        @include button-style($button);
+    }
+  }
 
 body {
     background: white;
@@ -63,13 +102,18 @@ body {
     @include mixins.gradientBackground($warning, cardHover($warning))
 }
 
-.btn-dark:hover {
-    background: transparent;
-    color: $dark;
+// Penerapan mixin yang terdapat if else
+.btn-dark-fill:hover {
+    @include button-style(dark-outline)
+}
+.btn-dark-outline:hover {
+    @include button-style(dark-fill)
 }
 .btn-warning:hover {
-    background: transparent;
-    color: $dark;
+    @include button-style(primary-outline)
+}
+.btn-gradient:hover {
+    @include button-style(primary-outline)
 }
 
 @media only screen and (max-width: 576px) {

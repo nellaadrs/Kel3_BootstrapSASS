@@ -1,3 +1,35 @@
+.btn-primary-fill {
+  border: 1px solid #ffc107;
+  background: #ffc107;
+  color: #343a40;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.btn-dark-fill {
+  border: 1px solid #343a40;
+  background: #343a40;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.btn-primary-outline {
+  border: 2px solid #ffc107;
+  background: transparent;
+  color: #343a40;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.btn-dark-outline {
+  border: 1px solid #343a40;
+  background: transparent;
+  color: #343a40;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
 body {
   background: white;
 }
@@ -23,7 +55,7 @@ body {
   font-weight: 600;
 }
 .card-container .card-2:hover {
-  background: #e6e6e6;
+  background: #f2f2f2;
 }
 
 .card-bs {
@@ -41,18 +73,39 @@ body {
 
 .btn-gradient {
   outline: none;
-  background: linear-gradient(to right, #ffc107, #d39e00);
-  color: white;
+  background: linear-gradient(to right, #ffc107, #edb100);
 }
 
-.btn-dark:hover {
+.btn-dark-fill:hover {
+  border: 1px solid #343a40;
   background: transparent;
   color: #343a40;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.btn-dark-outline:hover {
+  border: 1px solid #343a40;
+  background: #343a40;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
 }
 
 .btn-warning:hover {
+  border: 2px solid #ffc107;
   background: transparent;
   color: #343a40;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.btn-gradient:hover {
+  border: 2px solid #ffc107;
+  background: transparent;
+  color: #343a40;
+  cursor: pointer;
+  border-radius: 6px;
 }
 
 @media only screen and (max-width: 576px) {
