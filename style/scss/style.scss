@@ -70,9 +70,13 @@ h2#bahan {
 .tombol:hover {
     @include tombol.hover-tombol;
 }
+.tombol{
+    @include tombol.tombol-awal;
+}
 .nav-item .nav-link.active {
     @include tombol.link-active-styles;
   }
+
 
 
 // tugas 11
