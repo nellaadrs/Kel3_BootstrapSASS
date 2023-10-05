@@ -2,10 +2,13 @@
 // Membuat mixin untuk tombol hover
 @mixin hover-tombol {
     $button-hover-color: #d05b16;
-    $button-hover-text: #ffffff;
-    background-color: $button-hover-color;
+    $button-hover-text: hsl(0, 0%, 100%);
+    background-color: white;
     color: $button-hover-text;
-    border: none;
+}
+@mixin tombol-awal {
+    $button-hover-text: #ffffff;
+    color: $button-hover-text;
 }
 
 @mixin link-active-styles ($color :#ffc107) {
@@ -13,4 +16,3 @@
     color: $color;
     text-decoration: underline;
   }
-  
