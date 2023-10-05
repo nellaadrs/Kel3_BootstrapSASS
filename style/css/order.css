@@ -1,4 +1,5 @@
-/* Variable */
+/* Variabel */
+/* Fungsi Sass */
 /* Navbar Styling */
 .navbar {
   background-color: #FFC107;
@@ -25,6 +26,7 @@
 /* Card Styling */
 .card {
   margin-bottom: 20px;
+  width: 33.3333333333%; /* Menggunakan fungsi Sass */
 }
 .card .card-title {
   color: #FFC107;
