@@ -13,6 +13,18 @@ $font-weights: (
 	bold: 600,
 );
 
+$font-size:(
+	"normal": 12px,
+	"title": 2.5rem
+);
+
+$gradient: linear-gradient(
+	163deg,
+	rgba(255, 199, 0, 1) 0%,
+	rgba(255, 199, 0, 1) 41%,
+	rgba(255, 181, 0, 1) 67%
+);
+
 $redColor: rgb(235, 8, 8);
 // praktik 8 Variabel
 
@@ -26,7 +38,7 @@ $redColor: rgb(235, 8, 8);
 }
 // praktik 9 Fungsi
 
-@mixin cardHover {
+@mixin cardHover{
 	.card:hover {
 		img {
 			height: 200px * 1.03;
@@ -34,18 +46,39 @@ $redColor: rgb(235, 8, 8);
 		}
 	}
 
-	.card:active {
-		cursor: grabbing;
+	.card:not(:hover) {
+		img {
+			height: 200px;
+			transition: 100ms;
+		}
 	}
 }
 
 @include cardHover;
-// praktik 10 Modul
+// Praktik 10 Modul
+
+@mixin border ($size, $card:false){
+	border-radius: $size;
+	@if $card {
+		border-radius: $size * .5;
+	}
+}
+
+@each $size, $value in $font-size {
+	.font-#{$size} {
+		font-size: $value;
+	}
+}
+// Praktik 11 Kondisi dan Perulangan
 html,
 body,
 nav {
 	max-width: 100vw;
 	overflow-x: hidden;
+}
+
+.card{
+	@include border(1.2rem, $card: true);
 }
 
 .card img {
@@ -55,7 +88,7 @@ nav {
 }
 
 #lainnya {
-	background: background(rgba(255, 199, 0, 1));
+	background: $gradient;
 }
 
 .redtext {
