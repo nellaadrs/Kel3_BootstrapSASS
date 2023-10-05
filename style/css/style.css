@@ -62,9 +62,12 @@ h2#bahan {
 
 /* output modul use  */
 .tombol:hover {
-  background-color: #d05b16;
+  background-color: white;
+  color: hsl(0, 0%, 100%);
+}
+
+.tombol {
   color: #ffffff;
-  border: none;
 }
 
 .nav-item .nav-link.active {
