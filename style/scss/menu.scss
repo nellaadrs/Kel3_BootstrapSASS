@@ -9,13 +9,13 @@ $breakpoints: (
 
 $font-weights: (
 	light: 300,
-	regular: 400,	
-	bold: 600
+	regular: 400,
+	bold: 600,
 );
 
-$font-size:(
+$font-size: (
 	"normal": 12px,
-	"title": 2.5rem
+	"title": 2.5rem,
 );
 
 $gradient: linear-gradient(
@@ -38,16 +38,16 @@ $redColor: rgb(235, 8, 8);
 }
 // praktik 9 Fungsi
 
-@mixin cardHover{
+@mixin cardHover {
 	.card:hover {
-		img {
+		.card-img-top {
 			height: 200px * 1.03;
 			transition: 300ms;
 		}
 	}
 
 	.card:not(:hover) {
-		img {
+		.card-img-top {
 			height: 200px;
 			transition: 100ms;
 		}
@@ -57,10 +57,10 @@ $redColor: rgb(235, 8, 8);
 @include cardHover;
 // Praktik 10 Modul
 
-@mixin border ($size, $card:false){
+@mixin border($size, $card: false) {
 	border-radius: $size;
 	@if $card {
-		border-radius: $size * .5;
+		border-radius: $size * 0.5;
 	}
 }
 
@@ -77,11 +77,16 @@ nav {
 	overflow-x: hidden;
 }
 
-.card{
+.card {
 	@include border(1.2rem, $card: true);
 }
 
-.card img {
+.btn-order {
+	@include border(1.2rem);
+	width: 150px;
+}
+
+.card .card-img-top {
 	height: 200px;
 	width: 100%;
 	object-fit: cover;
@@ -119,6 +124,21 @@ nav {
 .ink-2-text {
 	font-family: font.$ink-2;
 	font-size: 35px;
-	margin: 0;
+	margin-top: 0;
 	font-weight: weight(regular);
+}
+
+.relative-position {
+	position: relative;
+}
+
+.icon-container {
+	position: absolute;
+	top: 0; /* Adjust as needed */
+	right: 0; /* Adjust as needed */
+	display: flex;
+}
+
+.menu-icon {
+	margin: 0 3px; /* Adjust as needed to add spacing between icons */
 }

@@ -1,12 +1,12 @@
 @import url("https://fonts.cdnfonts.com/css/stylish-classy-font");
 @import url("https://fonts.cdnfonts.com/css/dist-inking");
 @import url("https://fonts.cdnfonts.com/css/i-ichimaru");
-.card:hover img {
+.card:hover .card-img-top {
   height: 206px;
   transition: 300ms;
 }
 
-.card:not(:hover) img {
+.card:not(:hover) .card-img-top {
   height: 200px;
   transition: 100ms;
 }
@@ -31,7 +31,12 @@ nav {
   border-radius: 0.6rem;
 }
 
-.card img {
+.btn-order {
+  border-radius: 1.2rem;
+  width: 150px;
+}
+
+.card .card-img-top {
   height: 200px;
   width: 100%;
   object-fit: cover;
@@ -69,8 +74,23 @@ nav {
 .ink-2-text {
   font-family: "i Ichimaru", sans-serif;
   font-size: 35px;
-  margin: 0;
+  margin-top: 0;
   font-weight: 400;
+}
+
+.relative-position {
+  position: relative;
+}
+
+.icon-container {
+  position: absolute;
+  top: 0; /* Adjust as needed */
+  right: 0; /* Adjust as needed */
+  display: flex;
+}
+
+.menu-icon {
+  margin: 0 3px; /* Adjust as needed to add spacing between icons */
 }
 
 /*# sourceMappingURL=menu.css.map */
