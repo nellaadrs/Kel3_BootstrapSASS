@@ -1,4 +1,6 @@
 @import url("https://fonts.cdnfonts.com/css/stylish-classy-font");
+@import url("https://fonts.cdnfonts.com/css/dist-inking");
+@import url("https://fonts.cdnfonts.com/css/i-ichimaru");
 .card:hover img {
   height: 206px;
   transition: 300ms;
@@ -55,6 +57,20 @@ nav {
   font-family: "Stylish Classy Font", sans-serif;
   font-size: 20px;
   font-weight: 600;
+}
+
+.ink-text {
+  font-family: "DIST Inking Regular", sans-serif;
+  font-size: 35px;
+  margin-top: 0;
+  font-weight: 600;
+}
+
+.ink-2-text {
+  font-family: "i Ichimaru", sans-serif;
+  font-size: 35px;
+  margin: 0;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=menu.css.map */

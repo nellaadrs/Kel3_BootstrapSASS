@@ -9,8 +9,8 @@ $breakpoints: (
 
 $font-weights: (
 	light: 300,
-	regular: 400,
-	bold: 600,
+	regular: 400,	
+	bold: 600
 );
 
 $font-size:(
@@ -107,4 +107,18 @@ nav {
 	font-family: font.$stylish;
 	font-size: 20px;
 	font-weight: weight(bold);
+}
+
+.ink-text {
+	font-family: font.$ink;
+	font-size: 35px;
+	margin-top: 0;
+	font-weight: weight(bold);
+}
+
+.ink-2-text {
+	font-family: font.$ink-2;
+	font-size: 35px;
+	margin: 0;
+	font-weight: weight(regular);
 }
