@@ -1,0 +1,97 @@
+
+// tugas 10 -Modul
+@use "tombol";
+
+@import "kontak";
+    // gambar jumbotron
+    .gambar-jumbo{
+      $margin-top : -60px;
+      margin-top: $margin-top;
+
+    }
+
+// hover tombol
+
+// kualitas
+$border-left-top : 40px;
+$border-right-buttom : 40px;
+.gambar_bahan{
+    border-bottom-right-radius: $border-right-buttom;
+    border-top-left-radius: $border-left-top ;
+
+}
+
+/* hover card */
+.card:hover {
+  transform: scale(1.08);
+  transition: transform 0.3s ease; 
+}
+
+// Tugas 9 - Fungsi
+  /* fungsi */
+@function lighten($color, $amount) {
+  @return mix($color, white, $amount);
+}
+h2#bahan {
+  color: lighten(hsl(60, 3%, 7%), 60%);
+  text-align: center;
+  @media (min-width: 768px) {
+    font-size: 2rem;
+  }
+} 
+
+
+// tugas 10 @use
+.tombol:hover {
+    @include tombol.hover-tombol;
+}
+.tombol{
+    @include tombol.tombol-awal;
+}
+.nav-item .nav-link.active {
+    @include tombol.link-active-styles;
+  }
+
+
+// tugas 11 pengondisian dan perulangan 
+  .card-title {
+    $default-color: #000000;
+    color: $default-color;
+  
+    // Check jika class .text-center ada
+    @if (selector-nest('.text-center', &)) {
+      color: hsl(0, 0%, 0%); 
+      font-size:20px;
+      
+    } @else {
+      color: hsl(0, 62%, 35%);
+      font-size:30px;
+    }
+  }
+
+// perulangan 
+$jumlah-section: 5;
+
+@for $i from 1 through $jumlah-section {
+  section:nth-child(#{$i}) {
+
+    // Gaya khusus untuk setiap section
+    @if $i % 2 == 0 {
+      background-color: #ffffff; // Bagi yang genap
+    } @else {
+      background-color: #f8f9fa; // Bagi yang ganjil
+    }
+  }
+}
+
+// footer ajakan
+.resell{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://static.promediateknologi.id/crop/184x58:1279x719/750x500/webp/photo/2023/01/06/1266545826.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 350;
+  color: #ffffff; /* Warna teks */
+  z-index: -1;
+}
+
