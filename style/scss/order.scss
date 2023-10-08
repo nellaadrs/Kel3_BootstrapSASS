@@ -43,7 +43,7 @@ $background-color: #F8F9FA;
 /* Card Styling */
 .card {
   margin-bottom: 20px;
-  width: calculate-width(5); /* Menggunakan fungsi Sass */
+  width: calculate-width(6); /* Menggunakan fungsi Sass */
   .card-title {
     color: $primary-color;
   }
