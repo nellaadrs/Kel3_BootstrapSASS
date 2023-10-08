@@ -24,7 +24,7 @@
 /* Card Styling */
 .card {
   margin-bottom: 20px;
-  width: 41.6666666667%; /* Menggunakan fungsi Sass */
+  width: 50%; /* Menggunakan fungsi Sass */
 }
 .card .card-title {
   color: #FFC107;
