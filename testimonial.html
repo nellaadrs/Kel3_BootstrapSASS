@@ -3,279 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/dcf3185087.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <link rel="stylesheet" href="./assets/css/testimonial.css">
+    <script src="./assets/javascript/navbar_footer.js"></script>
 </head>
 <body>
-        <!-- navbar -->
-        <nav class="navbar navbar-expand-md fixed-top shadow mb-4 bg-light">
-            <div class="container">
-                <a class="navbar-brand text-warning" href="#">
-                    <img src="https://cdn.discordapp.com/attachments/875383813411311627/1158449227815465100/Ellipse_3.png" alt="Logo Toko" width="40"
-                        height="40" class="mr-2" />
-                    CirengQU
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon">
-                        <i class="fa-solid fa-bars fa-lg" style="color: #000000"></i>
-                    </span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link text-body" href="index.html">Beranda</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-body" href="menu.html">Menu</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="about.html">Tentang Kami</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-body" href="testimonial.html">Testimoni</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-body" href="order.html">Order</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- end of navbar -->
+    <!-- navbar -->
+    <section id="navigation"></section>
+    <!-- end of navbar -->
     
-
-        <!-- Header -->
-        <section class="bg-warning d-flex align-items-center">
-            <div class="container py-4 my-5">
-                <div class="row">
-                    <div class="col-lg-6 order-lg-2">
-                        <div class="w-100 pt-3">
-                            <img src="https://i.pinimg.com/564x/cf/c2/99/cfc299798b678cb98b0fea599deb9153.jpg" class="px-4 py-3 img-fluid rounded">
-                        </div>
-                    </div>
-                    <div class="col-lg-6 text-center order-lg-1 align-self-center mt-4 text-lg-left">
-                        <div class="">
-                            <h2 class="tulisan">Testimoni <span class="redtext">CirengQu!</span>
-                            </h2>
-                            <p class="tulis text-dark text-justify paragraf">Kami senang melihat senyum bahagia dan testimoni positif dari pelanggan kami yang puas. Pengalaman kuliner tak terlupakan mereka bersama CirengQU adalah bukti nyata bahwa kami menjaga standar kualitas terbaik dalam setiap sajian. </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    
-        <!-- Testimonial -->                
-        <section> 
-            <div class="container py-5">
-                <div class="text-center align-self-center">
-                    <h2>Testimonial</h2> 
-                </div>           
-                <div class="row"> 
-                    <div class="col-lg-10 mx-auto">
-                        <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
-                            <!-- Indicators -->
-                            <ol class="carousel-indicators">
-                                <li data-target="#testimonialCarousel" data-slide-to="0" class="active"></li>
-                                <li data-target="#testimonialCarousel" data-slide-to="1"></li>
-                                <li data-target="#testimonialCarousel" data-slide-to="2"></li>
-                            </ol>
-
-                            <!-- Slides -->
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <div class="testimonial-card">
-                                        <img src="https://media.licdn.com/dms/image/D5603AQEBmAZNbckdkg/profile-displayphoto-shrink_400_400/0/1662264878413?e=1702512000&v=beta&t=jIhqHMmTJTRtrBQjrt7skwnooTyXL4PdhzD4Ftwa0JA" alt="Testimonial 1" width="100px" class="img-fluid rounded-circle">
-                                        <h3>Nella</h3>
-                                        <p>Cirengnya enak, tapi bisa lebih crispy. Sausnya juga bisa lebih bervariasi untuk menambah variasi rasa.</p>
-                                        <div class="stars">
-                                            <span class="yellow-star">&#9733;</span>
-                                            <span class="yellow-star">&#9733;</span>
-                                            <span class="yellow-star">&#9733;</span>
-                                            <span class="yellow-star">&#9733;</span>
-                                            <span class="grey-star">&#9733;</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="testimonial-card">
-                                        <img src="https://media.licdn.com/dms/image/D5603AQEgWs29fPYbfg/profile-displayphoto-shrink_800_800/0/1692062570210?e=1702512000&v=beta&t=YXf7mATu74yRSKmZ4KeS_08ehj3z4Gb5ts47HWPk8N0" alt="Testimonial 2" width="120px" class="img-fluid rounded-circle">
-                                        <h3>Gandhi</h3>
-                                        <p>Cirengnya juara! Udah gitu, sausnya pedesnya pas, nambahin sensasi makan yang beda banget. Cocok buat nemenin nongkrong sama temen-temen.</p>
-                                        <div class="stars">
-                                            <span class="yellow-star">&#9733;</span>
-                                            <span class="yellow-star">&#9733;</span>
-                                            <span class="yellow-star">&#9733;</span>
-                                            <span class="yellow-star">&#9733;</span>
-                                            <span class="yellow-star">&#9733;</span>                        
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="testimonial-card">
-                                        <img src="https://media.licdn.com/dms/image/C4E03AQEdka-JArux2w/profile-displayphoto-shrink_400_400/0/1639918735850?e=1702512000&v=beta&t=clcWUMxZpo7m2iZYg5sdInzdQY5xxM2ubNBvVidtHWI" alt="Testimonial 3" width="100px" class="img-fluid rounded-circle">
-                                        <h3>Syukran</h3>
-                                        <p>Wuih, cireng di sini tuh oke banget! Garing luarnya, empuk dalamnya, makannya sambil ngemil bener-bener bikin senyum. Ga bisa berhenti ngunyah deh.</p>
-                                        <div class="stars">
-                                            <span class="yellow-star">&#9733;</span>
-                                            <span class="yellow-star">&#9733;</span>
-                                            <span class="yellow-star">&#9733;</span>
-                                            <span class="yellow-star">&#9733;</span>
-                                            <span class="yellow-star">&#9733;</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Controls -->
-                            <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
-                                <img src="https://cdn.icon-icons.com/icons2/2189/PNG/512/arrow_left_icon_133718.png" alt="Previous" width="25px" height="25px">
-                            </a>
-                            <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
-                                <img src="https://cdn.icon-icons.com/icons2/2189/PNG/512/arrow_right_icon_133719.png" alt="Next" width="25px" height="25px">
-                            </a>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-
-        <!-- FAQ Section -->
-        <section class="bg-warning py-5">
-            <div class="container">
-                <div class="text-center">
-                    <h2>Pertanyaan yang Sering Diajukan (FAQ)</h2>
-                </div>
-                <div class="accordion mt-4" id="faqAccordion">
-                    <!-- Pertanyaan 1 -->
-                    <div class="card">
-                        <div class="card-header" id="headingOne">
-                            <h5 class="mb-0">
-                                <button class="btn text-warning collapsed" type="button" data-toggle="collapse" data-target="#collapseOne"
-                                        aria-expanded="true" aria-controls="collapseOne">
-                                    <i class="faq-icon fas fa-question-circle"></i> Apa itu CirengQU?
-                                </button>
-                            </h5>
-                        </div>
-        
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
-                            <div class="card-body">
-                                CirengQU adalah sebuah toko makanan yang menyajikan cireng dengan berbagai varian rasa dan saus.
-                            </div>
-                        </div>
-                    </div>
-        
-                    <!-- Pertanyaan 2 -->
-                    <div class="card">
-                        <div class="card-header" id="headingTwo">
-                            <h5 class="mb-0">
-                                <button class="btn text-warning collapsed" type="button" data-toggle="collapse"
-                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    <i class="faq-icon fas fa-question-circle"></i> Bagaimana cara melakukan pemesanan?
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
-                            <div class="card-body">
-                                Anda dapat melakukan pemesanan melalui situs web kami atau menghubungi nomor telepon yang tertera di halaman Kontak.
-                            </div>
-                        </div>
-                    </div>
-        
-                    <!-- Pertanyaan 3 -->
-                    <div class="card">
-                        <div class="card-header" id="headingThree">
-                            <h5 class="mb-0">
-                                <button class="btn text-warning collapsed" type="button" data-toggle="collapse"
-                                        data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    <i class="faq-icon fas fa-question-circle"></i> Apakah ada pilihan pengiriman?
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
-                            <div class="card-body">
-                                Ya, kami menyediakan layanan pengiriman dengan biaya tambahan. Detail pengiriman dapat Anda tanyakan pada saat pemesanan.
-                            </div>
-                        </div>
-                    </div>
-        
-                    <!-- Pertanyaan 4 -->
-                    <div class="card">
-                        <div class="card-header" id="headingFour">
-                            <h5 class="mb-0">
-                                <button class="btn text-warning collapsed" type="button" data-toggle="collapse"
-                                        data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    <i class="faq-icon fas fa-question-circle"></i> Apa metode pembayaran yang dapat digunakan?
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion">
-                            <div class="card-body">
-                                Kami menerima pembayaran dengan kartu kredit, transfer bank, dan pembayaran tunai saat pengiriman.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-
-
-
-
-        <!-- Footer -->
-        <div class="footer navbar-dark bg-dark">
-            <div class="container">
+    <!-- Header -->
+    <section class="bg-warning d-flex align-items-center">
+        <div class="container py-4 my-5">
             <div class="row">
-                <div class="col-lg-4 mt-3">
-                <h4 class="text text-warning">CirengQU</h4>
-                <h6 class="text-warning">Tentang kami</h6>
-                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                <h6 class="text-warning">Kontak</h6>
-                <p class="text-white"><span><i class="fa-solid fa-phone m-2"></i></span>081234567890</p>
+                <div class="col-lg-6 order-lg-2">
+                    <div class="w-100 pt-3">
+                        <img src="https://i.pinimg.com/564x/cf/c2/99/cfc299798b678cb98b0fea599deb9153.jpg" class="px-4 py-3 img-fluid rounded">
+                    </div>
                 </div>
-                <div class="col-lg-4 mt-3 ">
-                <h4 class="text-warning">INFORMASI</h4>
-                <ul class="list-unstyled">
-                    <li ><a href="index.html" class="text-white">Beranda</a></li>
-                    <li><a href="menu.html" class="text-white">Menu</a>
-                    </li>
-                    <li><a href="about.html" class="text-white">Tentang Kami</a></li>
-                    <li><a href="testimoni.html" class="text-white">Testimoni</a></li>
-                    <li><a href="order.html" class="text-white">Order</a></li>
-                </ul>
+                <div class="col-lg-6 text-center order-lg-1 align-self-center mt-4 text-lg-left">
+                    <div class="">
+                        <h2 class="tulisan">Testimoni <span class="redtext">CirengQu!</span>
+                        </h2>
+                        <p class="tulis text-dark text-justify paragraf">Kami senang melihat senyum bahagia dan testimoni positif dari pelanggan kami yang puas. Pengalaman kuliner tak terlupakan mereka bersama CirengQU adalah bukti nyata bahwa kami menjaga standar kualitas terbaik dalam setiap sajian. </p>
+                    </div>
                 </div>
-                <div class="col-lg-4 mt-3">
-                <h4 class="text-warning">Pembayaran</h4>
-                <img src="https://scontent.fsub8-2.fna.fbcdn.net/v/t1.6435-9/100609253_756371721818730_7857219132717006848_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=174925&_nc_ohc=35cY7CFOgvcAX_7Kuna&_nc_ht=scontent.fsub8-2.fna&oh=00_AfALF-Tw6lRcCmqAkM2pkMA7KKfogBqQBOy4X1WwLAw8qQ&oe=65334EED" alt=""width="30" height="30" class="mr-2">
-                <img src="https://theme.zdassets.com/theme_assets/1379487/2cb35fe96fa1191f49c2b769b50cf8b546fff65e.png" alt=""width="30" height="30" class="mr-2">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Logo_Bank_Rakyat_Indonesia.svg/899px-Logo_Bank_Rakyat_Indonesia.svg.png" alt=""width="30" height="30" class="mr-2">
-                </div>
-            </div>
-        
-            <div class="row">
-                <div class="col-md-12 align-center">
-                <div class="copyright text-center text-white">
-                    <hr>
-                    &copy; 2021 Your Company. All rights reserved.
-                </div>
-                <br>
-                </div>
-            </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section> 
+        <div class="container py-5">
+            <div class="text-center align-self-center">
+                <h2>Testimonial</h2> 
+            </div>           
+            <div class="row"> 
+                <div class="col-lg-10 mx-auto">
+                    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <!-- Slides -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="testimonial-card">
+                                    <img src="https://media.licdn.com/dms/image/D5603AQEBmAZNbckdkg/profile-displayphoto-shrink_400_400/0/1662264878413?e=1702512000&v=beta&t=jIhqHMmTJTRtrBQjrt7skwnooTyXL4PdhzD4Ftwa0JA" alt="Testimonial 1" width="100px" class="img-fluid rounded-circle">
+                                    <h3>Nella</h3>
+                                    <p>Cirengnya enak, tapi bisa lebih crispy. Sausnya juga bisa lebih bervariasi untuk menambah variasi rasa.</p>
+                                    <div class="stars">
+                                        <span class="yellow-star">&#9733;</span>
+                                        <span class="yellow-star">&#9733;</span>
+                                        <span class="yellow-star">&#9733;</span>
+                                        <span class="yellow-star">&#9733;</span>
+                                        <span class="grey-star">&#9733;</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonial-card">
+                                    <img src="https://media.licdn.com/dms/image/D5603AQEgWs29fPYbfg/profile-displayphoto-shrink_800_800/0/1692062570210?e=1702512000&v=beta&t=YXf7mATu74yRSKmZ4KeS_08ehj3z4Gb5ts47HWPk8N0" alt="Testimonial 2" width="120px" class="img-fluid rounded-circle">
+                                    <h3>Gandhi</h3>
+                                    <p>Cirengnya juara! Udah gitu, sausnya pedesnya pas, nambahin sensasi makan yang beda banget. Cocok buat nemenin nongkrong sama temen-temen.</p>
+                                    <div class="stars">
+                                        <span class="yellow-star">&#9733;</span>
+                                        <span class="yellow-star">&#9733;</span>
+                                        <span class="yellow-star">&#9733;</span>
+                                        <span class="yellow-star">&#9733;</span>
+                                        <span class="yellow-star">&#9733;</span>                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonial-card">
+                                    <img src="https://media.licdn.com/dms/image/C4E03AQEdka-JArux2w/profile-displayphoto-shrink_400_400/0/1639918735850?e=1702512000&v=beta&t=clcWUMxZpo7m2iZYg5sdInzdQY5xxM2ubNBvVidtHWI" alt="Testimonial 3" width="100px" class="img-fluid rounded-circle">
+                                    <h3>Syukran</h3>
+                                    <p>Wuih, cireng di sini tuh oke banget! Garing luarnya, empuk dalamnya, makannya sambil ngemil bener-bener bikin senyum. Ga bisa berhenti ngunyah deh.</p>
+                                    <div class="stars">
+                                        <span class="yellow-star">&#9733;</span>
+                                        <span class="yellow-star">&#9733;</span>
+                                        <span class="yellow-star">&#9733;</span>
+                                        <span class="yellow-star">&#9733;</span>
+                                        <span class="yellow-star">&#9733;</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                            <img src="https://cdn.icon-icons.com/icons2/2189/PNG/512/arrow_left_icon_133718.png" alt="Previous" width="25px" height="25px">
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                            <img src="https://cdn.icon-icons.com/icons2/2189/PNG/512/arrow_right_icon_133719.png" alt="Next" width="25px" height="25px">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="bg-warning py-5">
+        <div class="container">
+            <div class="text-center">
+                <h2>Pertanyaan yang Sering Diajukan (FAQ)</h2>
+            </div>
+            <div class="accordion mt-4" id="faqAccordion">
+                <!-- Pertanyaan 1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                aria-expanded="true" aria-controls="collapseOne">
+                            <i class="faq-icon fas fa-question-circle"></i> Apa itu CirengQU?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            CirengQU adalah sebuah toko makanan yang menyajikan cireng dengan berbagai varian rasa dan saus.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pertanyaan 2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <i class="faq-icon fas fa-question-circle"></i> Bagaimana cara melakukan pemesanan?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Anda dapat melakukan pemesanan melalui situs web kami atau menghubungi nomor telepon yang tertera di halaman Kontak.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pertanyaan 3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <i class="faq-icon fas fa-question-circle"></i> Apakah ada pilihan pengiriman?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Ya, kami menyediakan layanan pengiriman dengan biaya tambahan. Detail pengiriman dapat Anda tanyakan pada saat pemesanan.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pertanyaan 4 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <i class="faq-icon fas fa-question-circle"></i> Apa metode pembayaran yang dapat digunakan?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Kami menerima pembayaran dengan kartu kredit, transfer bank, dan pembayaran tunai saat pengiriman.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <section id="footer"></section>
 
     <!-- scfript -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
