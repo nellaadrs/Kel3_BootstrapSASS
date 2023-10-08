@@ -1,0 +1,47 @@
+// _variables.scss
+$background-color: #f2f2f2;
+$box-shadow-color: rgba(0, 0, 0, 0.1);
+$gold-color: gold;
+$grey-color: gray;
+$primary-bg-color: #ffc107;
+
+// _styles.scss
+body {
+    background-color: $background-color;
+}
+
+.testimonial-card {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 20px $box-shadow-color;
+}
+
+.stars {
+    font-size: 28px;
+}
+
+.yellow-star {
+    color: $gold-color;
+}
+
+.grey-star {
+    color: $grey-color;
+}
+
+.faq-section {
+    background-color: $primary-bg-color;
+    color: $grey-color;
+    padding: 50px 0;
+}
+
+.faq-icon {
+    font-size: 22px;
+    margin-right: 10px;
+    color: $primary-bg-color;
+}
+
+.btn-warning:hover {
+    color: #000 !important;
+}
