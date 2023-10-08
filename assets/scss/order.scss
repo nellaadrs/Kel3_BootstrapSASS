@@ -4,9 +4,8 @@ $secondary-color: #000000;
 $background-color: #F8F9FA;
 
 // Fungsi Sass
-@function calculate-width($columns, $total-columns: 12, $container-width: 100%) {
-  @return ($container-width / $total-columns) * $columns;
-}
+// Import and use Fungsi
+@import 'functions';
 
 // Mixin
 @mixin button-styles {
@@ -43,7 +42,7 @@ $background-color: #F8F9FA;
 /* Card Styling */
 .card {
   margin-bottom: 20px;
-  width: calculate-width(5); /* Menggunakan fungsi Sass */
+  width: calculate-width(6); /* Menggunakan fungsi Sass */
   .card-title {
     color: $primary-color;
   }

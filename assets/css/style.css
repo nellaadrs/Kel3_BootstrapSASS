@@ -1,0 +1,83 @@
+.kontak:hover {
+  border: 2px solid;
+  border-color: #ffc107;
+}
+
+.gambar-jumbo {
+  margin-top: -60px;
+}
+
+.gambar_bahan {
+  border-bottom-right-radius: 40px;
+  border-top-left-radius: 40px;
+}
+
+/* hover card */
+.card:hover {
+  transform: scale(1.08);
+  transition: transform 0.3s ease;
+}
+
+/* fungsi */
+h2#bahan {
+  color: #717170;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  h2#bahan {
+    font-size: 2rem;
+  }
+}
+
+.tombol:hover {
+  background-color: white;
+  color: #000000;
+}
+
+.tombol {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.nav-item .nav-link.active {
+  color: #ffc107;
+  text-decoration: underline;
+}
+
+.card-title {
+  color: #000000;
+  color: hsl(0, 0%, 0%);
+  font-size: 20px;
+}
+
+section:nth-child(1) {
+  background-color: #f8f9fa;
+}
+
+section:nth-child(2) {
+  background-color: #ffffff;
+}
+
+section:nth-child(3) {
+  background-color: #f8f9fa;
+}
+
+section:nth-child(4) {
+  background-color: #ffffff;
+}
+
+section:nth-child(5) {
+  background-color: #f8f9fa;
+}
+
+.resell {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://static.promediateknologi.id/crop/184x58:1279x719/750x500/webp/photo/2023/01/06/1266545826.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 350;
+  color: #ffffff; /* Warna teks */
+  z-index: -1;
+}
+
+/*# sourceMappingURL=style.css.map */

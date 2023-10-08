@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="./style/css/menu.css">
+    <link rel="stylesheet" href="./assets/css/menu.css">
 </head>
 
 <body>
@@ -19,32 +19,32 @@
     <nav class="navbar navbar-expand-md fixed-top shadow mb-4 bg-light">
         <div class="container">
             <a class="navbar-brand text-warning" href="#">
-                <img src="https://media.tenor.com/Z0wDoxDHjn4AAAAj/tsunami-studio-wave.gif" alt="Logo Toko" width="40"
-                    height="40" class="mr-2">
+                <img src="https://cdn.discordapp.com/attachments/875383813411311627/1158449227815465100/Ellipse_3.png"
+                    alt="Logo Toko" width="40" height="40" class="mr-2" />
                 CirengQU
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon">
-                    <i class="fa-solid fa-bars fa-lg" style="color: #000000;"></i>
+                    <i class="fa-solid fa-bars fa-lg" style="color: #000000"></i>
                 </span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link text-body" href="index.html">Beranda</a>
+                        <a class="nav-link text-body btn btn-outline-warning" href="index.html">Beranda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-warning " href="menu.html"><ins>Menu</ins></a>
+                        <a class="nav-link text-warning" href="menu.html"><u>Menu</u></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-body" href="about.html">Tentang Kami</a>
+                        <a class="nav-link text-body btn btn-outline-warning" href="about.html">Tentang Kami</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-body" href="testimonial.html">Testimoni</a>
+                        <a class="nav-link text-body btn btn-outline-warning" href="testimonial.html">Testimoni</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-body" href="order.html">Order</a>
+                        <a class="nav-link text-body btn btn-outline-warning" href="order.html">Order</a>
                     </li>
                 </ul>
             </div>
@@ -52,13 +52,14 @@
     </nav>
     <!-- end of navbar -->
 
-    <!-- content -->
+
+    <!-- Header -->
     <section class="bg-warning d-flex align-items-center">
-        <div class="container py-4 my-5 align-self-center">
+        <div class="container py-4 my-5">
             <div class="row">
-                <div class="col-lg-6 order-lg-2">
+                <div class="col-lg-6 order-lg-2 text-center">
                     <div class="pt-3">
-                        <img src="./assets/img-header-menu.png" class="px-4 py-3 img-fluid rounded" width="570px">
+                        <img src="./assets/image/img-header-menu.png" class="px-4 py-3 img-fluid rounded" width="570px">
                     </div>
                 </div>
                 <div class="col-lg-6 text-center order-lg-1 align-self-center mt-4 text-lg-left">
@@ -66,8 +67,7 @@
                         <h2 class="tulisan font-title mb-4">Nikmati kelezatan berbagai macam menu <span
                                 class="redtext">CirengQu!</span>
                         </h2>
-                        <p class="mb-4">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat non quis minima harum
-                            placeat sequi eligendi"</p>
+                        <p class="mb-4">Lihat Beragam Menu CirengQu yang Menggugah Selera!</p>
                     </div>
                     <button id="lihat" class="btn btn-outline-danger">Lihat Menu <svg xmlns="http://www.w3.org/2000/svg"
                             width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 18">
@@ -78,7 +78,10 @@
             </div>
         </div>
     </section>
+    <!-- end of Header -->
 
+
+    <!-- Daftar Menu Cireng Isi -->
     <section class="container-fluid d-flex-row pt-lg-3 px-3 bg-white" id="lihatSection">
         <h1 class="text-center mt-5">CIRENG ISI</h1>
         <div class="container-fluid d-flex mt-lg-4 justify-content-center">
@@ -94,26 +97,18 @@
                                     <img class="card-img-top"
                                         src="https://img.kurio.network/LbzxLhOUbdVaSCOeE8Xnew900so=/1200x1200/filters:quality(80)/https://kurio-img.kurioapps.com/21/03/18/891895d5-54fe-4a9a-a5a2-c9890d8e6e1d.jpe"
                                         width="280px" height="100%">
-                                    <div class="card-body">
+                                    <div class="card-body text-center d-flex-column relative-position">
+                                        <div class="icon-container">
+                                            <img src="./assets/image/favorite-icon.png" height="22" alt="favorite icon"
+                                                class="menu-icon" title="Menu Terfavorit">
+                                            <img src="./assets/image/spicy-icon.png" height="22" alt="favorite icon"
+                                                class="menu-icon" title="Pedas" style="margin-right: 6px;">
+                                        </div>
                                         <h3 class="card-title">Ayam pedas</h3>
                                         <p class="card-text text-justify">Cireng pedas berisi ayam.</p>
-                                        <button href="#" class="btn btn-warning" data-bs-toggle="modal"
-                                            data-bs-target="#menu1">Selengkapnya</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="col mb-4">
-                                <div class="card custom-card shadow-sm">
-                                    <img class="card-img-top"
-                                        src="https://images.tokopedia.net/img/cache/500-square/VqbcmM/2022/2/15/862d88ea-7a85-40e3-b812-7be1a2d97e57.jpg"
-                                        width="280px" height="100%">
-                                    <div class="card-body">
-                                        <h3 class="card-title">Sosis Pedas</h3>
-                                        <p class="card-text text-justify">Cireng pedas berisi sosis.</p>
-                                        <button href="#" class="btn btn-warning " data-bs-toggle="modal"
-                                            data-bs-target="#menu2">Selengkapnya</button>
+                                        <p class="card-text bold">Rp. 2000/PCS</p>
+                                        <a href="./order.html"><button
+                                                class="btn btn-warning btn-order">Order</button></a>
                                     </div>
                                 </div>
                             </div>
@@ -124,11 +119,32 @@
                                     <img class="card-img-top"
                                         src="https://fyine.com/wp-content/uploads/2021/01/resepkoki.png" width="280px"
                                         height="100%">
-                                    <div class="card-body">
+                                    <div class="card-body text-center d-flex-column relative-position">
                                         <h3 class="card-title">Ayam Kentang</h3>
                                         <p class="card-text ">Cireng ayam kentang.</p>
-                                        <button href="#" class="btn btn-warning " data-bs-toggle="modal"
-                                            data-bs-target="#menu4">Selengkapnya</button>
+                                        <p class="card-text bold">Rp. 2000/PCS</p>
+                                        <a href="./order.html"><button
+                                                class="btn btn-warning btn-order">Order</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col mb-4">
+                                <div class="card custom-card shadow-sm">
+                                    <img class="card-img-top"
+                                        src="https://images.tokopedia.net/img/cache/500-square/VqbcmM/2022/2/15/862d88ea-7a85-40e3-b812-7be1a2d97e57.jpg"
+                                        width="280px" height="100%">
+                                    <div class="card-body text-center d-flex-column relative-position">
+                                        <div class="icon-container"><img src="./assets/image/spicy-icon.png" height="22"
+                                                alt="favorite icon" class="menu-icon" title="Pedas"
+                                                style="margin-right: 6px;">
+                                        </div>
+                                        <h3 class="card-title">Sosis Pedas</h3>
+                                        <p class="card-text text-justify">Cireng pedas berisi sosis.</p>
+                                        <p class="card-text bold">Rp. 2000/PCS</p>
+                                        <a href="./order.html"><button
+                                                class="btn btn-warning btn-order">Order</button></a>
                                     </div>
                                 </div>
                             </div>
@@ -139,11 +155,12 @@
                                     <img class="card-img-top"
                                         src="https://i.pinimg.com/736x/f6/3d/32/f63d32fc75253d286a7ca256b8b2fb73.jpg"
                                         width="280px" height="100%">
-                                    <div class="card-body">
+                                    <div class="card-body text-center d-flex-column relative-position">
                                         <h3 class="card-title">Abon Sapi</h3>
                                         <p class="card-text ">Cireng isi abon sapi.</p>
-                                        <button href="#" class="btn btn-warning " data-bs-toggle="modal"
-                                            data-bs-target="#menu5">Selengkapnya</button>
+                                        <p class="card-text bold">Rp. 2000/PCS</p>
+                                        <a href="./order.html"><button
+                                                class="btn btn-warning btn-order">Order</button></a>
                                     </div>
                                 </div>
                             </div>
@@ -154,11 +171,16 @@
                                     <img class="card-img-top"
                                         src="https://cdn0-production-images-kly.akamaized.net/2L6yfDeslVAJtSPWUJTyPWm9Qhw=/1200x675/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/1123299/original/034012800_1453812916-tokopedia.jpg"
                                         width="280px" height="100%">
-                                    <div class="card-body">
+                                    <div class="card-body text-center d-flex-column relative-position">
+                                        <div class="icon-container">
+                                            <img src="./assets/image/cheese-icon.png" height="22" alt="favorite icon"
+                                                class="menu-icon" title="Keju" style="margin-right: 6px;">
+                                        </div>
                                         <h3 class="card-title">Kornet Keju</h3>
                                         <p class="card-text ">Cireng kornet keju.</p>
-                                        <button href="#" class="btn btn-warning " data-bs-toggle="modal"
-                                            data-bs-target="#menu3">Selengkapnya</button>
+                                        <p class="card-text bold">Rp. 2000/PCS</p>
+                                        <a href="./order.html"><button
+                                                class="btn btn-warning btn-order">Order</button></a>
                                     </div>
                                 </div>
                             </div>
@@ -172,38 +194,120 @@
             </button>
         </div>
     </section>
+    <!-- end of Daftar Menu Cireng Isi -->
 
-    <section class="container-fluid d-flex-row py-3 my-4 px-3 vh-100" id="lainnya">
-        <h1 class="text-center mt-3">LAINNYA</h1>
-        <div class="d-flex">
-            <div class="col-sm-10 container my-5">
-                <div class="item">
-                    <div class="col mb-4">
-                        <div class="card custom-card shadow">
-                            <img class="card-img-top"
-                                src="https://static.vecteezy.com/system/resources/previews/026/130/354/non_2x/the-best-hot-spicy-burgergraphy-images-will-satisfy-your-cravings-generative-ai-free-photo.jpeg"
-                                width="280px" height="100%">
-                            <div class="card-body text-center">
-                                <h3 class="card-title">Burger Pedas</h3>
-                                <p class="card-text ">Krimi, gurih, bercitarasa keju.</p>
-                                <button href="#" class="btn btn-warning " data-bs-toggle="modal"
-                                    data-bs-target="#menu6">Selengkapnya</button>
+
+    <!-- Menu Pilihan -->
+    <section class="container-fluid d-flex-row py-3 mt-4 px-3 h-75 d-inline-block lainnya">
+        <h1 class="text-center my-4">MENU PILIHAN KAMI</h1>
+        <div class="container">
+            <div class="row justify-content-lg-center">
+                <div class="col-lg-3 col-md-6">
+                    <div class="pt-3">
+                        <img src="./assets/image/cireng_ayam_pedas.png" class="img-fluid rounded-circle" alt="">
+                    </div>
+                </div>
+                <div class=" col-md-6 mt-4 text-lg-left align-self-lg-center">
+                    <div class="">
+                        <h3 class="text-center text-lg-start text-danger">Cireng isi Ayam pedas</h3>
+                        <p class="mb-4">Cireng isi ayam pedas adalah sajian lezat yang menggoda dengan sensasi pedas dan
+                            gurih. Luarannya yang renyah, digoreng sempurna, menciptakan perpaduan sempurna antara
+                            kelezatan kulit yang garing dan isi ayam yang lembut, menjadikan dia menu favorit pelanggan CirengQu.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row mb-lg-5 justify-content-lg-center">
+                <div class="col-lg-3 col-md-6">
+                    <div class="pt-3">
+                        <img src="./assets/image/cireng_keju.png" class="img-fluid rounded-circle" alt="">
+                    </div>
+                </div>
+                <div class=" mt-4 text-lg-left col-md-6 align-self-lg-center">
+                    <div class="">
+                        <h3 class="text-center text-lg-start text-danger">Cireng isi Keju Kornet</h3>
+                        <p class="mb-4">Cireng isi Keju Kornet adalah camilan Indonesia yang menggoda selera, terdiri
+                            dari cireng renyah berisi kombinasi lembut keju dan kornet yang gurih, menciptakan harmoni
+                            rasa yang tak terlupakan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- end of Menu Pilihan -->
+
+
+    <!-- <section class="py-5 d-none d-lg-flex mh-100" style="background-color: rgb(255, 199, 0);">
+    </section> -->
+
+
+    <div class="wave">
+        <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 130" version="1.1"
+            xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                    <stop stop-color="rgba(255, 138.986, 101.726, 1)" offset="0%"></stop>
+                    <stop stop-color="rgba(255, 199, 0, 1)" offset="100%"></stop>
+                </linearGradient>
+            </defs>
+            <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
+                d="M0,117L34.3,104C68.6,91,137,65,206,62.8C274.3,61,343,82,411,93.2C480,104,549,104,617,93.2C685.7,82,754,61,823,49.8C891.4,39,960,39,1029,49.8C1097.1,61,1166,82,1234,95.3C1302.9,108,1371,113,1440,99.7C1508.6,87,1577,56,1646,43.3C1714.3,30,1783,35,1851,39C1920,43,1989,48,2057,45.5C2125.7,43,2194,35,2263,30.3C2331.4,26,2400,26,2469,36.8C2537.1,48,2606,69,2674,67.2C2742.9,65,2811,39,2880,28.2C2948.6,17,3017,22,3086,36.8C3154.3,52,3223,78,3291,82.3C3360,87,3429,69,3497,69.3C3565.7,69,3634,87,3703,93.2C3771.4,100,3840,95,3909,95.3C3977.1,95,4046,100,4114,101.8C4182.9,104,4251,104,4320,95.3C4388.6,87,4457,69,4526,54.2C4594.3,39,4663,26,4731,36.8C4800,48,4869,82,4903,99.7L4937.1,117L4937.1,130L4902.9,130C4868.6,130,4800,130,4731,130C4662.9,130,4594,130,4526,130C4457.1,130,4389,130,4320,130C4251.4,130,4183,130,4114,130C4045.7,130,3977,130,3909,130C3840,130,3771,130,3703,130C3634.3,130,3566,130,3497,130C3428.6,130,3360,130,3291,130C3222.9,130,3154,130,3086,130C3017.1,130,2949,130,2880,130C2811.4,130,2743,130,2674,130C2605.7,130,2537,130,2469,130C2400,130,2331,130,2263,130C2194.3,130,2126,130,2057,130C1988.6,130,1920,130,1851,130C1782.9,130,1714,130,1646,130C1577.1,130,1509,130,1440,130C1371.4,130,1303,130,1234,130C1165.7,130,1097,130,1029,130C960,130,891,130,823,130C754.3,130,686,130,617,130C548.6,130,480,130,411,130C342.9,130,274,130,206,130C137.1,130,69,130,34,130L0,130Z">
+            </path>
+            <defs>
+                <linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0">
+                    <stop stop-color="rgb(255, 199, 0)" offset="0%"></stop>
+                    <stop stop-color="rgba(255, 199, 0, 1)" offset="100%"></stop>
+                </linearGradient>
+            </defs>
+            <path style="transform:translate(0, 50px); opacity:1" fill="url(#sw-gradient-1)"
+                d="M0,39L34.3,43.3C68.6,48,137,56,206,49.8C274.3,43,343,22,411,23.8C480,26,549,52,617,60.7C685.7,69,754,61,823,49.8C891.4,39,960,26,1029,21.7C1097.1,17,1166,22,1234,32.5C1302.9,43,1371,61,1440,58.5C1508.6,56,1577,35,1646,34.7C1714.3,35,1783,56,1851,67.2C1920,78,1989,78,2057,71.5C2125.7,65,2194,52,2263,52C2331.4,52,2400,65,2469,67.2C2537.1,69,2606,61,2674,52C2742.9,43,2811,35,2880,28.2C2948.6,22,3017,17,3086,15.2C3154.3,13,3223,13,3291,15.2C3360,17,3429,22,3497,28.2C3565.7,35,3634,43,3703,58.5C3771.4,74,3840,95,3909,97.5C3977.1,100,4046,82,4114,71.5C4182.9,61,4251,56,4320,60.7C4388.6,65,4457,78,4526,75.8C4594.3,74,4663,56,4731,49.8C4800,43,4869,48,4903,49.8L4937.1,52L4937.1,130L4902.9,130C4868.6,130,4800,130,4731,130C4662.9,130,4594,130,4526,130C4457.1,130,4389,130,4320,130C4251.4,130,4183,130,4114,130C4045.7,130,3977,130,3909,130C3840,130,3771,130,3703,130C3634.3,130,3566,130,3497,130C3428.6,130,3360,130,3291,130C3222.9,130,3154,130,3086,130C3017.1,130,2949,130,2880,130C2811.4,130,2743,130,2674,130C2605.7,130,2537,130,2469,130C2400,130,2331,130,2263,130C2194.3,130,2126,130,2057,130C1988.6,130,1920,130,1851,130C1782.9,130,1714,130,1646,130C1577.1,130,1509,130,1440,130C1371.4,130,1303,130,1234,130C1165.7,130,1097,130,1029,130C960,130,891,130,823,130C754.3,130,686,130,617,130C548.6,130,480,130,411,130C342.9,130,274,130,206,130C137.1,130,69,130,34,130L0,130Z">
+            </path>
+        </svg>
+    </div>
+    </div>
+
+
+    <!-- Menu Lainnya -->
+    <section class="container-fluid d-flex-row py-3 mb-4 mt-2 px-3">
+        <h1 class="text-center mt-3">MENU LAINNYA</h1>
+        <div class="container py-4 mt-5">
+            <div class="row justify-content-center">
+                <div class="col-10 col-sm-5 col-lg-3 mb-4 mx-2">
+                    <div class="card custom-card shadow-sm">
+                        <img class="card-img-top"
+                            src="https://static.vecteezy.com/system/resources/previews/026/130/354/non_2x/the-best-hot-spicy-burgergraphy-images-will-satisfy-your-cravings-generative-ai-free-photo.jpeg"
+                            width="280px" height="100%">
+                        <div class="card-body text-center d-flex-column relative-position">
+                            <div class="icon-container">
+                                <img src="./assets/image/spicy-icon.png" height="22" alt="favorite icon"
+                                    class="menu-icon" title="Pedas">
+                                <img src="./assets/image/cheese-icon.png" height="22" alt="favorite icon"
+                                    class="menu-icon" title="Keju" style="margin-right: 6px;">
                             </div>
+                            <h3 class="card-title">Burger Pedas</h3>
+                            <p class="card-text">Burger gurih dengan rasa pedas menggigit</p>
+                            <p class="card-text bold">Rp. 2000/PCS</p>
+                            <a href="./order.html"><button class="btn btn-warning btn-order">Order</button></a>
                         </div>
                     </div>
                 </div>
-                <div class="item">
-                    <div class="col mb-4">
-                        <div class="card custom-card shadow">
-                            <img class="card-img-top"
-                                src="https://p1.pxfuel.com/preview/1019/563/629/spaghetti-aglio-olio-pasta-italian.jpg"
-                                width="280px" height="100%">
-                            <div class="card-body text-center">
-                                <h3 class="card-title">Spageti Pedas</h3>
-                                <p class="card-text ">Krimi, gurih, bercitarasa keju.</p>
-                                <button href="#" class="btn btn-warning " data-bs-toggle="modal"
-                                    data-bs-target="#menu7">Selengkapnya</button>
+                <div class="col-10 col-sm-5 col-lg-3 mb-4 mx-2">
+                    <div class="card custom-card shadow-sm">
+                        <img class="card-img-top"
+                            src="https://p1.pxfuel.com/preview/1019/563/629/spaghetti-aglio-olio-pasta-italian.jpg"
+                            width="280px" height="100%">
+                        <div class="card-body text-center d-flex-column relative-position">
+                            <div class="icon-container">
+                                <img src="./assets/image/spicy-icon.png" height="22" alt="favorite icon"
+                                    class="menu-icon" title="Pedas" style="margin-right: 6px;">
                             </div>
+                            <h3 class="card-title">Spageti Pedas</h3>
+                            <p class="card-text">Spageti pedas, cita rasa pedas yang memikat selera.</p>
+                            <p class="card-text bold">Rp. 2000/PCS</p>
+                            <a href="./order.html"><button class="btn btn-warning btn-order">Order</button></a>
                         </div>
                     </div>
                 </div>
@@ -211,32 +315,38 @@
             </div>
         </div>
     </section>
+    <!-- end of Menu Lainnya -->
 
-    <section class="py-sm-5 d-inline-block mh-100 float-md-none float-sm-right my-xl-4" id="floatblock">
 
-    </section>
-
-    <section class="d-flex align-items-center justify-content-center">
-        <div class="row justify-content-center">
-            <div class="col-lg-6 text-center order-lg-2 align-self-center mt-4 text-lg-left mb-5">
-                <div class="">
-                    <h2 class="text-center mt-5 mt-md-0">Tunggu Apalagi?</h2>
-                    <h2 class="text-center">Order <span class="redtext stylized-text">CirengQu</span> Sekarang!
+    <!-- CTA -->
+    <section class="d-flex align-items-center justify-content-center bg-warning h-100 py-md-5">
+        <div class="row justify-content-center vw-100">
+            <div class="col-lg-6 order-lg-1 mt-4 text-lg-start mb-lg-5 text-center">
+                <div class="col-lg-12 container">
+                    <h1 class="col-lg-12 mt-5 mt-md-0">Tunggu Apalagi?</h1>
+                    <h2 class="col-lg-12">Ayo Order <span class="redtext">CirengQu</span> Sekarang!
                     </h2>
+                    <p>Atau datangi kami, cepat sebelum kehabisan!</p>
                 </div>
-                <div class="d-flex justify-content-center">
-                    <a href="order.html">
-                        <button id="lihat" class="btn btn-warning align-self-center justify-content-end">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="16" fill="currentColor"
-                                class="bi bi-basket2-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M5.929 1.757a.5.5 0 1 0-.858-.514L2.217 6H.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h.623l1.844 6.456A.75.75 0 0 0 3.69 15h8.622a.75.75 0 0 0 .722-.544L14.877 8h.623a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1.717L10.93 1.243a.5.5 0 1 0-.858.514L12.617 6H3.383L5.93 1.757zM4 10a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm4-1a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1z" />
-                            </svg>
+                <div class="container">
+                    <div class="d-flex justify-content-center justify-content-lg-start">
+                        <button class="custom-outline mx-2 col-lg-6 col-6 order-lg-2">
+                            Buka jam 09.00 - 20.00 WIB
                         </button>
-                    </a>
+                        <a href="order.html" class="order-lg-1 mt-2 mt-md-0" style="text-decoration: none;">
+                            <button id="lihat" class="btn btn-danger">
+                                Order
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="20" fill="currentColor"
+                                    class="bi bi-basket2-fill" viewBox="0 0 16 19">
+                                    <path
+                                        d="M5.929 1.757a.5.5 0 1 0-.858-.514L2.217 6H.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h.623l1.844 6.456A.75.75 0 0 0 3.69 15h8.622a.75.75 0 0 0 .722-.544L14.877 8h.623a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1.717L10.93 1.243a.5.5 0 1 0-.858.514L12.617 6H3.383L5.93 1.757zM4 10a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm4-1a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1z" />
+                                </svg>
+                            </button>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="card border-dark col-lg-6 text-center order-lg-1 align-self-center mt-4 text-lg-left mb-5"
+            <div class="card border-white shadow-sm col-lg-6 text-center order-lg-2 align-self-center mt-5 mt-lg-4 text-lg-left mb-5"
                 style="max-width: 200rem; width: 200px;">
                 <div class="card-header bg-warning text-center card-title bold">Pesan Antar</div>
                 <div class="card-body text-dark d-flex justify-content-center">
@@ -248,190 +358,22 @@
             </div>
         </div>
     </section>
+    <!-- end of CTA -->
 
-    <section id="selengkapnya">
-        <div class="modal fade" id="menu1" tabindex="-1" role="dialog" aria-labelledby="menu1title" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
-                <div class="modal-content">
-
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="menu1title">Ayam Pedas</h5>
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <img src="https://img.kurio.network/LbzxLhOUbdVaSCOeE8Xnew900so=/1200x1200/filters:quality(80)/https://kurio-img.kurioapps.com/21/03/18/891895d5-54fe-4a9a-a5a2-c9890d8e6e1d.jpe"
-                            class="px-4 py-3 w-100">
-
-                        <p class="text-justify">Cireng yang digoreng garing dengan lapisan pedas luar biasa, berisi
-                            potongan ayam yang lembut dan beraroma pedas yang memukau.
-                        </p>
-                    </div>
-                    <div class="modal-footer justify-content-between">
-                        <div class="price-tag">
-                            <button class="btn btn-outline-warning ml-2">Rp. 2000 / PCS</button>
-                        </div>
-                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tutup</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="menu2" tabindex="-1" role="dialog" aria-labelledby="menu1title" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="menu1title">Sosis Pedas</h5>
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <img src="https://images.tokopedia.net/img/cache/500-square/VqbcmM/2022/2/15/862d88ea-7a85-40e3-b812-7be1a2d97e57.jpg"
-                            class="px-4 py-3 w-100">
-                        <p class="text-justify">Cireng dengan lapisan pedas yang menggigit, berisi sosis pedas yang
-                            memberikan sensasi pedas yang menggugah selera!</p>
-                    </div>
-                    <div class="modal-footer justify-content-between">
-                        <div class="price-tag">
-                            <button class="btn btn-outline-warning ml-2">Rp. 2000 / PCS</button>
-                        </div>
-                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tutup</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="menu3" tabindex="-1" role="dialog" aria-labelledby="menu1title" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
-                <div class="modal-content">
-                    <div class="modal-header d-flex align-items-center">
-                        <h5 class="modal-title" id="menu1title">Kornet Keju</h5>
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <img src="https://cdn0-production-images-kly.akamaized.net/2L6yfDeslVAJtSPWUJTyPWm9Qhw=/1200x675/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/1123299/original/034012800_1453812916-tokopedia.jpg"
-                            class="px-4 py-3 w-100" height="280px">
-                        <p class="text-justify">Cireng yang renyah, dengan lapisan luar berisi campuran kornet berbumbu
-                            dan keju meleleh yang memikat, menjadikannya camilan yang luar biasa dengan rasa keju yang
-                            tak terlupakan!</p>
-                    </div>
-                    <div class="modal-footer justify-content-between">
-                        <div class="price-tag">
-                            <button class="btn btn-outline-warning ml-2">Rp. 2000 / PCS</button>
-                        </div>
-                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tutup</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="menu4" tabindex="-1" role="dialog" aria-labelledby="menu1title" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="menu1title">Ayam Kentang</h5>
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <img src="https://fyine.com/wp-content/uploads/2021/01/resepkoki.png" class="px-4 py-3 w-100"
-                            height="280px">
-                        <p class="text-justify">Cireng renyah yang memanjakan lidah dengan isian lezat berupa ayam dan
-                            kentang yang berpadu harmonis!</p>
-                    </div>
-                    <div class="modal-footer justify-content-between">
-                        <div class="price-tag">
-                            <button class="btn btn-outline-warning ml-2">Rp. 2000 / PCS</button>
-                        </div>
-                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tutup</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="menu5" tabindex="-1" role="dialog" aria-labelledby="menu1title" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="menu1title">Abon Sapi</h5>
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <img src="https://i.pinimg.com/736x/f6/3d/32/f63d32fc75253d286a7ca256b8b2fb73.jpg"
-                            class="px-4 py-3 w-100" height="280px">
-                        <p class="text-justify">Cireng yang renyah dengan taburan abon sapi gurih di dalamnya,
-                            menghadirkan rasa gurih yang nikmat!</p>
-                    </div>
-                    <div class="modal-footer justify-content-between">
-                        <div class="price-tag">
-                            <button class="btn btn-outline-warning ml-2">Rp. 2000 / PCS</button>
-                        </div>
-                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tutup</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="menu6" tabindex="-1" role="dialog" aria-labelledby="menu1title" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="menu1title">Burger Pedas</h5>
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <img src="https://static.vecteezy.com/system/resources/previews/026/130/354/non_2x/the-best-hot-spicy-burgergraphy-images-will-satisfy-your-cravings-generative-ai-free-photo.jpeg"
-                            class="px-4 py-3 w-100" height="280px">
-                        <p class="text-justify">Burger dengan rasa pedas yang memanjakan lidah, dengan saus pedas,
-                            daging lezat, dan topping yang menggugah selera.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tutup</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="menu7" tabindex="-1" role="dialog" aria-labelledby="menu1title" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="menu1title">Spageti Pedas</h5>
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <img src="https://p1.pxfuel.com/preview/1019/563/629/spaghetti-aglio-olio-pasta-italian.jpg"
-                            class="px-4 py-3 w-100" height="280px">
-                        <p class="text-justify">Spageti yang diselimuti saus tomat pedas, diberi tambahan
-                            lapisan keju, dan potongan sayuran segar yang memberikan cita rasa pedas yang menggugah
-                            selera.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tutup</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end of content -->
 
     <!-- footer -->
-    <div class="footer navbar-dark bg-dark mt-4">
+    <div class="footer navbar-dark bg-dark">
         <div class="container">
-            <div class="row m-4">
+            <div class="row">
                 <div class="col-lg-4 mt-4">
                     <h4 class="text text-warning">CirengQu</h4>
                     <h6 class="text-warning">Tentang kami</h6>
-                    <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    <p class="text-white">Jl. Mutiara no.14 RT002/RW013, Kel.Adiarsa Timur, Kec.Karawang Timur
+                        Kab.Karawang</p>
                     <h6 class="text-warning">Kontak</h6>
-                    <p class="text-white"><span><i class="fa-solid fa-phone m-2"></i></span>081234567890</p>
+                    <a href="https://wa.me/6281234567890" target="_blank" style="text-decoration: none;">
+                        <p class="text-white"><span><i class="fa-solid fa-phone m-2"></i></span>081234567890</p>
+                    </a>
                 </div>
                 <div class="col-lg-4 mt-4 ">
                     <h4 class="text-warning">INFORMASI</h4>
@@ -467,11 +409,10 @@
             </div>
         </div>
     </div>
+    <!-- end of footer -->
 </body>
-<!-- end of footer -->
 
 <!-- scfript -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
 <script src="./assets/bootstrap-5.3.2/dist/js/bootstrap.min.js"></script>
 <!-- owl -->
@@ -485,27 +426,35 @@
         var elementPosition = lihatSection.getBoundingClientRect().top;
         var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
-        window.scrollTo({
-            top: offsetPosition,
-            behavior: "smooth"
-        });
+        if (window.innerWidth < 1000) {
+            window.scrollTo({
+                top: offsetPosition - 40,
+                behavior: "smooth"
+            });
+        } else {
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+            });
+        }
     });
 
     $(document).ready(function () {
         var owl = $(".owl-carousel");
         owl.owlCarousel({
             items: 3,
-            loop: true,
-            margin: 10,
-            autoplay: true,
-            autoplayTimeout: 5000,
+            loop: false,
+            margin: 35,
+            autoplay: false,
             responsiveClass: true,
             responsive: {
                 0: {
-                    items: 1
+                    items: 1,
+                    loop: true
                 },
                 810: {
-                    items: 2
+                    items: 2,
+                    loop: true
                 },
                 1280: {
                     items: 3

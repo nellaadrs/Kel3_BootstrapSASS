@@ -56,6 +56,11 @@ body {
     background: white;
 }
 
+.nav-item .nav-link.index {
+    color: $warning;
+    text-decoration: underline;
+}
+
 #why {
     padding: 5rem 0 5rem 0;
 }
@@ -100,6 +105,15 @@ body {
     outline: none;
     // Memanggil mixin gradientBackground
     @include mixins.gradientBackground($warning, cardHover($warning))
+}
+
+.bg-white {
+    background: white;
+}
+
+.py-more {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 // Penerapan mixin yang terdapat if else

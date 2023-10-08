@@ -34,6 +34,11 @@ body {
   background: white;
 }
 
+.nav-item .nav-link.index {
+  color: #ffc107;
+  text-decoration: underline;
+}
+
 #why {
   padding: 5rem 0 5rem 0;
 }
@@ -45,7 +50,7 @@ body {
 .card-container .card-2 {
   background: white;
   height: auto;
-  box-shadow: 2px 2px 7px #c4c4c4, -2px -2px 7px #ffffff;
+  box-shadow: 4px 4px 14px #c4c4c4, -4px -4px 14px #ffffff;
 }
 .card-container .card-2 .card-img {
   width: 75px;
@@ -59,7 +64,7 @@ body {
 }
 
 .card-bs {
-  box-shadow: 2px 2px 7px #c4c4c4, -2px -2px 7px #ffffff;
+  box-shadow: 4px 4px 14px #c4c4c4, -4px -4px 14px #ffffff;
   border-radius: 18px;
 }
 
@@ -74,6 +79,15 @@ body {
 .btn-gradient {
   outline: none;
   background: linear-gradient(to right, #ffc107, #edb100);
+}
+
+.bg-white {
+  background: white;
+}
+
+.py-more {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .btn-dark-fill:hover {

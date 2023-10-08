@@ -1,0 +1,5 @@
+//Tugas 10
+
+@function calculate-width($columns, $total-columns: 12, $container-width: 100%) {
+  @return ($container-width / $total-columns) * $columns;
+}
