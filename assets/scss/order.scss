@@ -4,9 +4,8 @@ $secondary-color: #000000;
 $background-color: #F8F9FA;
 
 // Fungsi Sass
-@function calculate-width($columns, $total-columns: 12, $container-width: 100%) {
-  @return ($container-width / $total-columns) * $columns;
-}
+// Import Fungsi
+@import 'functions';
 
 // Mixin
 @mixin button-styles {
