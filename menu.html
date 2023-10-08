@@ -7,7 +7,6 @@
     <title>Menu</title>
     <link rel="stylesheet" href="./assets/bootstrap-5.3.2/dist/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/dcf3185087.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
@@ -16,42 +15,7 @@
 
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-md fixed-top shadow mb-4 bg-light">
-        <div class="container">
-            <a class="navbar-brand text-warning" href="#">
-                <img src="https://cdn.discordapp.com/attachments/875383813411311627/1158449227815465100/Ellipse_3.png"
-                    alt="Logo Toko" width="40" height="40" class="mr-2" />
-                CirengQU
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon">
-                    <i class="fa-solid fa-bars fa-lg" style="color: #000000"></i>
-                </span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link text-body btn btn-outline-warning" href="index.html">Beranda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-warning" href="menu.html"><u>Menu</u></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-body btn btn-outline-warning" href="about.html">Tentang Kami</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-body btn btn-outline-warning" href="testimonial.html">Testimoni</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-body btn btn-outline-warning" href="order.html">Order</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- end of navbar -->
-
+    <nav id="navigation"></nav>
 
     <!-- Header -->
     <section class="bg-warning d-flex align-items-center">
@@ -73,7 +37,8 @@
                             width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 18">
                             <path fill-rule="evenodd"
                                 d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
-                        </svg></button>
+                        </svg>
+                    </button>
                 </div>
             </div>
         </div>
@@ -210,14 +175,14 @@
                 <div class=" col-md-6 mt-4 text-lg-left align-self-lg-center">
                     <div class="">
                         <h3 class="text-center text-lg-start text-danger">Cireng isi Ayam pedas</h3>
-                        <p class="mb-4">Cireng isi ayam pedas adalah sajian lezat yang menggoda dengan sensasi pedas dan
-                            gurih. Luarannya yang renyah, digoreng sempurna, menciptakan perpaduan sempurna antara
-                            kelezatan kulit yang garing dan isi ayam yang lembut, menjadikan dia menu favorit pelanggan CirengQu.</p>
+                        <p class="mb-4">Cireng isi ayam pedas adalah sajian lezat dengan sensasi pedas dan gurih.
+                            Luarannya yang renyah, menciptakan perpaduan sempurna antara
+                            kelezatan kulit yang garing dan isi ayam yang lembut, menjadikan dia menu favorit pelanggan
+                            CirengQu.</p>
                     </div>
                 </div>
             </div>
         </div>
-
         <div class="container">
             <div class="row mb-lg-5 justify-content-lg-center">
                 <div class="col-lg-3 col-md-6">
@@ -235,15 +200,11 @@
                 </div>
             </div>
         </div>
-
     </section>
     <!-- end of Menu Pilihan -->
 
 
-    <!-- <section class="py-5 d-none d-lg-flex mh-100" style="background-color: rgb(255, 199, 0);">
-    </section> -->
-
-
+    <!-- wave SVG -->
     <div class="wave">
         <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 130" version="1.1"
             xmlns="http://www.w3.org/2000/svg">
@@ -267,7 +228,7 @@
             </path>
         </svg>
     </div>
-    </div>
+    <!-- end of wave SVG -->
 
 
     <!-- Menu Lainnya -->
@@ -362,120 +323,16 @@
 
 
     <!-- footer -->
-    <div class="footer navbar-dark bg-dark">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <h4 class="text text-warning">CirengQu</h4>
-                    <h6 class="text-warning">Tentang kami</h6>
-                    <p class="text-white">Jl. Mutiara no.14 RT002/RW013, Kel.Adiarsa Timur, Kec.Karawang Timur
-                        Kab.Karawang</p>
-                    <h6 class="text-warning">Kontak</h6>
-                    <a href="https://wa.me/6281234567890" target="_blank" style="text-decoration: none;">
-                        <p class="text-white"><span><i class="fa-solid fa-phone m-2"></i></span>081234567890</p>
-                    </a>
-                </div>
-                <div class="col-lg-4 mt-4 ">
-                    <h4 class="text-warning">INFORMASI</h4>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html" class="text-white">Beranda</a></li>
-                        <li><a href="menu.html" class="text-white">Menu</a>
-                        </li>
-                        <li><a href="about.html" class="text-white">Tentang Kami</a></li>
-                        <li><a href="testimoni.html" class="text-white">Testimoni</a></li>
-                        <li><a href="order.html" class="text-white">Order</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-4 mt-4">
-                    <h4 class="text-warning">Pembayaran</h4>
-                    <img src="https://scontent.fsub8-2.fna.fbcdn.net/v/t1.6435-9/100609253_756371721818730_7857219132717006848_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=174925&_nc_ohc=35cY7CFOgvcAX_7Kuna&_nc_ht=scontent.fsub8-2.fna&oh=00_AfALF-Tw6lRcCmqAkM2pkMA7KKfogBqQBOy4X1WwLAw8qQ&oe=65334EED"
-                        alt="" width="30" height="30" class="mr-2">
-                    <img src="https://theme.zdassets.com/theme_assets/1379487/2cb35fe96fa1191f49c2b769b50cf8b546fff65e.png"
-                        alt="" width="30" height="30" class="mr-2">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Logo_Bank_Rakyat_Indonesia.svg/899px-Logo_Bank_Rakyat_Indonesia.svg.png"
-                        alt="" width="30" height="30" class="mr-2">
+    <footer id="footer"></footer>
 
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-12 align-center">
-                    <div class="copyright text-center text-white">
-                        <hr>
-                        &copy; 2021 Your Company. All rights reserved.
-                    </div>
-                    <br>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end of footer -->
-</body>
-
-<!-- scfript -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-<script src="./assets/bootstrap-5.3.2/dist/js/bootstrap.min.js"></script>
-<!-- owl -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<script>
-    const lihat = document.getElementById('lihat');
-    const lihatSection = document.getElementById('lihatSection');
-
-    lihat.addEventListener('click', function () {
-        var headerOffset = 65;
-        var elementPosition = lihatSection.getBoundingClientRect().top;
-        var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-        if (window.innerWidth < 1000) {
-            window.scrollTo({
-                top: offsetPosition - 40,
-                behavior: "smooth"
-            });
-        } else {
-            window.scrollTo({
-                top: offsetPosition,
-                behavior: "smooth"
-            });
-        }
-    });
-
-    $(document).ready(function () {
-        var owl = $(".owl-carousel");
-        owl.owlCarousel({
-            items: 3,
-            loop: false,
-            margin: 35,
-            autoplay: false,
-            responsiveClass: true,
-            responsive: {
-                0: {
-                    items: 1,
-                    loop: true
-                },
-                810: {
-                    items: 2,
-                    loop: true
-                },
-                1280: {
-                    items: 3
-                }
-            }
-        });
-
-        $(".custom-next-btn").click(function () {
-            owl.trigger("next.owl.carousel");
-        });
-        $(".custom-prev-btn").click(function () {
-            owl.trigger("prev.owl.carousel");
-        });
-    });
-
-    if (window.innerWidth < 400 && window.innerHeight < 820) {
-        $('#floatblock').css('margin-bottom', '150px');
-    } else {
-        $('#floatblock').css('margin-bottom', '0px');
-    }    
-</script>
+    <!-- script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="./assets/bootstrap-5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="./assets/javascript/navbar_footer.js"></script>
+    <script src="./assets/javascript/menu.js"></script>
 </body>
 
 </html>
