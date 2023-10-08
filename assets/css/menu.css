@@ -42,12 +42,12 @@ nav {
   object-fit: cover;
 }
 
-#lainnya {
-  background: linear-gradient(163deg, rgb(255, 199, 0) 0%, rgb(255, 199, 0) 41%, rgb(255, 181, 0) 67%);
+.lainnya {
+  background: linear-gradient(0deg, rgb(255, 199, 0) 0%, rgb(255, 199, 0) 41%, rgb(255, 187, 17) 67%);
 }
 
 .redtext {
-  color: rgb(235, 8, 8);
+  color: #dc3545;
 }
 
 .bold {
@@ -84,13 +84,22 @@ nav {
 
 .icon-container {
   position: absolute;
-  top: 0; /* Adjust as needed */
-  right: 0; /* Adjust as needed */
+  top: 0;
+  right: 0;
   display: flex;
 }
 
 .menu-icon {
   margin: 0 3px; /* Adjust as needed to add spacing between icons */
+}
+
+.custom-outline {
+  background-color: transparent;
+  color: #dc3545;
+  border: 1px solid #dc3545;
+  border-radius: 5px;
+  transition: none;
+  cursor: default !important;
 }
 
 /*# sourceMappingURL=menu.css.map */

@@ -7,6 +7,7 @@ $breakpoints: (
 	xlarge: 1200px,
 );
 
+// praktik 8 Variabel
 $font-weights: (
 	light: 300,
 	regular: 400,
@@ -19,15 +20,15 @@ $font-size: (
 );
 
 $gradient: linear-gradient(
-	163deg,
-	rgba(255, 199, 0, 1) 0%,
-	rgba(255, 199, 0, 1) 41%,
-	rgba(255, 181, 0, 1) 67%
+	0deg,
+	rgb(255, 199, 0) 0%,
+	rgb(255, 199, 0) 41%,
+	rgb(255 187 17) 67%
 );
 
-$redColor: rgb(235, 8, 8);
-// praktik 8 Variabel
+$redColor: #dc3545;
 
+// praktik 9 Fungsi
 @function background($color) {
 	$ch: adjust-hue($color, 2);
 	@return lighten($ch, 2%);
@@ -36,8 +37,8 @@ $redColor: rgb(235, 8, 8);
 @function weight($weight-name) {
 	@return map-get($font-weights, $weight-name);
 }
-// praktik 9 Fungsi
 
+// Praktik 10 Modul
 @mixin cardHover {
 	.card:hover {
 		.card-img-top {
@@ -55,10 +56,13 @@ $redColor: rgb(235, 8, 8);
 }
 
 @include cardHover;
-// Praktik 10 Modul
 
-@mixin border($size, $card: false) {
+// Praktik 11 Kondisi dan Perulangan
+@mixin border($size, $card: false, $button: false) {
 	border-radius: $size;
+	@if $button {
+		border-width: 2px;
+	}
 	@if $card {
 		border-radius: $size * 0.5;
 	}
@@ -69,7 +73,7 @@ $redColor: rgb(235, 8, 8);
 		font-size: $value;
 	}
 }
-// Praktik 11 Kondisi dan Perulangan
+
 html,
 body,
 nav {
@@ -92,7 +96,7 @@ nav {
 	object-fit: cover;
 }
 
-#lainnya {
+.lainnya {
 	background: $gradient;
 }
 
@@ -134,11 +138,20 @@ nav {
 
 .icon-container {
 	position: absolute;
-	top: 0; /* Adjust as needed */
-	right: 0; /* Adjust as needed */
+	top: 0;
+	right: 0;
 	display: flex;
 }
 
 .menu-icon {
 	margin: 0 3px; /* Adjust as needed to add spacing between icons */
+}
+
+.custom-outline {
+	background-color: transparent;
+	color: $redColor;
+	border: 1px solid $redColor;
+	border-radius: 5px;
+	transition: none;
+	cursor: default !important;
 }
