@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
-    <link rel="stylesheet" href="./assets/bootstrap-5.3.2/dist/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="./assets/bootstrap-5.3.2/dist/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/dcf3185087.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
@@ -59,7 +59,7 @@
             <div class="row">
                 <div class="col-lg-6 order-lg-2 text-center">
                     <div class="pt-3">
-                        <img src="./assets/image/img-header-menu.png" class="px-4 py-3 img-fluid rounded" width="570px">assets\\img-header-menu.png
+                        <img src="./assets/image/img-header-menu.png" class="px-4 py-3 img-fluid rounded" width="570px">
                     </div>
                 </div>
                 <div class="col-lg-6 text-center order-lg-1 align-self-center mt-4 text-lg-left">
@@ -211,7 +211,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 mt-4 text-lg-left align-self-lg-center">
                     <div class="">
-                        <h3 class="ink-2-text text-center text-lg-start text-danger">Cireng isi Ayam pedas</h3>
+                        <h3 class="text-center text-lg-start text-danger">Cireng isi Ayam pedas</h3>
                         <p class="mb-4">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat non quis
                             minima harum
                             placeat sequi eligendi"</p>
@@ -229,7 +229,7 @@
                 </div>
                 <div class="col-lg-4 mt-4 text-lg-left order-lg-1 col-md-6 align-self-lg-end">
                     <div class="">
-                        <h3 class="ink-2-text text-center text-lg-start text-danger">Cireng isi Keju Kornet</h3>
+                        <h3 class="text-center text-lg-start text-danger">Cireng isi Keju Kornet</h3>
                         <p class="mb-4">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat non quis
                             minima harum
                             placeat sequi eligendi"</p>
@@ -277,7 +277,7 @@
         <h1 class="text-center mt-3">MENU LAINNYA</h1>
         <div class="container py-4 mt-5">
             <div class="row justify-content-center">
-                <div class="col-10 col-sm-3 col-md-5 col-lg-3 mb-4 mx-2">
+                <div class="col-10 col-sm-5 col-lg-3 mb-4 mx-2">
                     <div class="card custom-card shadow-sm">
                         <img class="card-img-top"
                             src="https://static.vecteezy.com/system/resources/previews/026/130/354/non_2x/the-best-hot-spicy-burgergraphy-images-will-satisfy-your-cravings-generative-ai-free-photo.jpeg"
@@ -289,14 +289,14 @@
                                 <img src="./assets/image/cheese-icon.png" height="22" alt="favorite icon"
                                     class="menu-icon" title="Keju" style="margin-right: 6px;">
                             </div>
-                            <h3 class="card-title ink-2-text">Burger Pedas</h3>
+                            <h3 class="card-title">Burger Pedas</h3>
                             <p class="card-text">Burger gurih dengan rasa pedas menggigit</p>
                             <p class="card-text bold">Rp. 2000/PCS</p>
                             <a href="./order.html"><button class="btn btn-warning btn-order">Order</button></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-10 col-sm-3 col-md-5 col-lg-3 mb-4 mx-2">
+                <div class="col-10 col-sm-5 col-lg-3 mb-4 mx-2">
                     <div class="card custom-card shadow-sm">
                         <img class="card-img-top"
                             src="https://p1.pxfuel.com/preview/1019/563/629/spaghetti-aglio-olio-pasta-italian.jpg"
@@ -306,7 +306,7 @@
                                 <img src="./assets/image/spicy-icon.png" height="22" alt="favorite icon"
                                     class="menu-icon" title="Pedas" style="margin-right: 6px;">
                             </div>
-                            <h3 class="card-title ink-2-text">Spageti Pedas</h3>
+                            <h3 class="card-title">Spageti Pedas</h3>
                             <p class="card-text">Spageti pedas, cita rasa pedas yang memikat selera.</p>
                             <p class="card-text bold">Rp. 2000/PCS</p>
                             <a href="./order.html"><button class="btn btn-warning btn-order">Order</button></a>
@@ -370,7 +370,8 @@
                 <div class="col-lg-4 mt-4">
                     <h4 class="text text-warning">CirengQu</h4>
                     <h6 class="text-warning">Tentang kami</h6>
-                    <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    <p class="text-white">Jl. Mutiara no.14 RT002/RW013, Kel.Adiarsa Timur, Kec.Karawang Timur
+                        Kab.Karawang</p>
                     <h6 class="text-warning">Kontak</h6>
                     <a href="https://wa.me/6281234567890" target="_blank" style="text-decoration: none;">
                         <p class="text-white"><span><i class="fa-solid fa-phone m-2"></i></span>081234567890</p>
@@ -427,10 +428,17 @@
         var elementPosition = lihatSection.getBoundingClientRect().top;
         var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
-        window.scrollTo({
-            top: offsetPosition,
-            behavior: "smooth"
-        });
+        if (window.innerWidth < 1000) {
+            window.scrollTo({
+                top: offsetPosition - 40,
+                behavior: "smooth"
+            });
+        } else {
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+            });
+        }
     });
 
     $(document).ready(function () {
