@@ -4,7 +4,7 @@ $secondary-color: #000000;
 $background-color: #F8F9FA;
 
 // Fungsi Sass
-// Import Fungsi
+// Import and use Fungsi
 @import 'functions';
 
 // Mixin
@@ -67,4 +67,3 @@ $background-color: #F8F9FA;
     }
   }
 }
-//sass --watch assets/scss/order.scss assets/css/order.css
