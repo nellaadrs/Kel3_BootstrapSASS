@@ -42,6 +42,10 @@ body {
     color: $primary-bg-color;
 }
 
+.btn-warning:hover {
+    color: #000 !important;
+}
+
 // Menggunakan fungsi adjust-hue untuk menghasilkan warna yang lebih terang
 .btn-success {
     color: #fff;
