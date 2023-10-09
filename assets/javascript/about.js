@@ -20,16 +20,6 @@ document.getElementById('read-more-mobile').addEventListener('click', function()
     }
     });
     
-    document.getElementById('read-more-desktop').addEventListener('click', function() {
-    var moreText = document.getElementById('more-desktop');
-    if (moreText.style.display === 'none') {
-        moreText.style.display = 'inline';
-        this.innerHTML = 'Tutup';
-    } else {
-        moreText.style.display = 'none';
-        this.innerHTML = 'Baca Selengkapnya';
-    }
-    });
 
     // slider gambar
     var owl = $(".owl-carousel");
