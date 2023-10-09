@@ -46,4 +46,9 @@ body {
   cursor: pointer;
 }
 
+.nav-item .nav-link.testimoni {
+  color: #ffc107;
+  text-decoration: underline;
+}
+
 /*# sourceMappingURL=testimonial.css.map */
