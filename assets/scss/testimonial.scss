@@ -6,10 +6,6 @@ $grey-color: gray;
 $primary-bg-color: #ffc107;
 
 // Fungsi TP-9 (Fungsi)
-@function adjust-hue-color($color, $degrees) {
-  @return adjust-hue($color, $degrees);
-}
-
 @function fontSize($fontName) {
     @return map-get($fSize, $fontName);
 }
@@ -57,7 +53,6 @@ body {
 
 // Menggunakan fungsi adjust-hue untuk menghasilkan warna yang lebih terang
 .btn-success {
-    background-color: adjust-hue-color($primary-bg-color, 30deg); 
     color: #fff;
     border: none;
     padding: 10px 20px;
