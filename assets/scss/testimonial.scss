@@ -5,11 +5,6 @@ $gold-color: gold;
 $grey-color: gray;
 $primary-bg-color: #ffc107;
 
-// Fungsi TP-9 (Fungsi)
-@function fontSize($fontName) {
-    @return map-get($fSize, $fontName);
-}
-
 // _styles.scss
 body {
     background-color: $background-color;
