@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pemesanan Cireng</title>
     <!-- Tautan ke file CSS Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/bootstrap-5.3.2/dist/css/bootstrap.min.css" /> <!-- import bootstrap local -->
     <link rel="stylesheet" href="./assets/css/order.css">
 </head>
 
@@ -193,6 +193,24 @@
             </div>
         </div>
     </section>
+    <div class="modal fade" id="pesanModal" tabindex="-1" aria-labelledby="pesanModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="pesanModalLabel">Konfirmasi Pesanan</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Pesanan Anda telah dikonfirmasi! Apakah Anda ingin melanjutkan ke WhatsApp untuk mengirim pesan?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <a href="https://wa.me/6281234567890" class="btn btn-primary">Pesan via WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script>
         var tambahJumlahButton = document.getElementById("tambahJumlah");
         var kurangJumlahButton = document.getElementById("kurangJumlah");
@@ -208,6 +226,11 @@
             if (currentJumlah > 1) {
                 jumlahField.value = currentJumlah - 1;
             }
+
+        });
+
+        pesanButton.addEventListener("click", function () {
+            pesanModal.show();
         });
     </script>
 
@@ -218,7 +241,8 @@
                 <div class="col-lg-4 pt-3">
                     <h4 class="text text-warning">CirengQU</h4>
                     <h6 class="text-warning">Tentang kami</h6>
-                    <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    <p class="text-white">Jl. Mutiara no.14 RT002/RW013, Kel.Adiarsa Timur, Kec.Karawang Timur
+                        Kab.Karawang.</p>
                     <h6 class="text-warning">Kontak</h6>
                     <p class="text-white"><span><i class="fa-solid fa-phone m-2"></i></span>081234567890</p>
                 </div>
