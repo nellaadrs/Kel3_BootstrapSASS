@@ -5,9 +5,13 @@ $gold-color: gold;
 $grey-color: gray;
 $primary-bg-color: #ffc107;
 
-// Fungsi untuk menghasilkan warna yang lebih terang
-@function lighten-color($color, $amount) {
-  @return lighten($color, $amount);
+// Fungsi TP-9 (Fungsi)
+@function adjust-hue-color($color, $degrees) {
+  @return adjust-hue($color, $degrees);
+}
+
+@function fontSize($fontName) {
+    @return map-get($fSize, $fontName);
 }
 
 // _styles.scss
@@ -51,9 +55,9 @@ body {
     color: #000 !important;
 }
 
-// Menggunakan fungsi untuk menghasilkan warna yang lebih terang
+// Menggunakan fungsi adjust-hue untuk menghasilkan warna yang lebih terang
 .btn-success {
-    background-color: lighten-color($primary-bg-color, 10%);
+    background-color: adjust-hue-color($primary-bg-color, 30deg); // Ubah derajat sesuai kebutuhan
     color: #fff;
     border: none;
     padding: 10px 20px;
