@@ -34,10 +34,6 @@ body {
   color: #ffc107;
 }
 
-.btn-warning:hover {
-  color: #000 !important;
-}
-
 .btn-success {
   color: #fff;
   border: none;
