@@ -57,7 +57,7 @@ body {
 
 // Menggunakan fungsi adjust-hue untuk menghasilkan warna yang lebih terang
 .btn-success {
-    background-color: adjust-hue-color($primary-bg-color, 30deg); // Ubah derajat sesuai kebutuhan
+    background-color: adjust-hue-color($primary-bg-color, 30deg); 
     color: #fff;
     border: none;
     padding: 10px 20px;
