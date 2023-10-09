@@ -1,3 +1,37 @@
 @mixin gradientBackground($color1, $color2) {
     background: linear-gradient(to right, $color1, $color2);
 }
+
+@mixin button-style($bStyle) {
+    @if $bStyle == primary-fill {
+      border: 1px solid $warning;
+      background: $warning;
+      color: $dark;
+      cursor: pointer;
+      border-radius: 6px;
+    } @else if $bStyle == primary-outline {
+      border: 2px solid $warning;
+      background: transparent;
+      color: $dark;
+      cursor: pointer;
+      border-radius: 6px;
+    } @else if $bStyle == dark-outline {
+      border: 1px solid $dark;
+      background: transparent;
+      color: $dark;
+      cursor: pointer;
+      border-radius: 6px;
+    } @else if $bStyle == dark-fill {
+        border: 1px solid $dark;
+        background: $dark;
+        color: white;
+        cursor: pointer;
+        border-radius: 6px;
+    } @else {
+      border: 1px solid $dark;
+      background: $dark;
+      color: white;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+}
