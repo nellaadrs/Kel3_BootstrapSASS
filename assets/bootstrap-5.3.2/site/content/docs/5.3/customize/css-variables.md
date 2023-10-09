@@ -21,8 +21,9 @@ These CSS variables are available everywhere, regardless of color mode.
 ```css
 {{< root.inline >}}
 {{- $css := readFile "dist/css/bootstrap.css" -}}
+{% raw %}
 {{- $match := findRE `:root,\n\[data-bs-theme=light\] {([^}]*)}` $css 1 -}}
-
+{% endraw %}
 {{- if (eq (len $match) 0) -}}
 {{- errorf "Got no matches for :root in %q!" $.Page.Path -}}
 {{- end -}}
@@ -39,7 +40,9 @@ These variables are scoped to our built-in dark mode.
 ```css
 {{< root.inline >}}
 {{- $css := readFile "dist/css/bootstrap.css" -}}
+{% raw }
 {{- $match := findRE `\[data-bs-theme=dark\] {([^}]*)}` $css 1 -}}
+{% endraw %}
 {{- if (eq (len $match) 0) -}}
 {{- errorf "Got no matches for [data-bs-theme=dark] in %q!" $.Page.Path -}}
 {{- end -}}
