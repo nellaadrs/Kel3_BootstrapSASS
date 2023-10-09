@@ -185,4 +185,33 @@ section:nth-child(10) {
   }
 }
 
+        /* CSS untuk desktop */
+        .desktop {
+            display: block;
+        }
+
+        /* CSS untuk mobile */
+        .mobile {
+            display: none;
+        }
+
+        /* Tombol "Baca Selengkapnya" */
+        .read-more-button {
+            display: none;
+        }
+
+        /* CSS untuk tampilan mobile */
+        @media (max-width: 768px) {
+            .desktop {
+                display: none;
+            }
+
+            .mobile {
+                display: block;
+            }
+
+            .read-more-button {
+                display: inline;
+            }
+        }
 /*# sourceMappingURL=style.css.map */
