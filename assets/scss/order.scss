@@ -33,6 +33,10 @@ $background-color: #F8F9FA;
   }
 }
 
+.nav-item .nav-link.order {
+    color: $warning;
+    text-decoration: underline;
+
 /* Jumbotron Styling */
 .jumbotron {
   background-color: $primary-color;
