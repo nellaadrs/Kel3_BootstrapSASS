@@ -5,6 +5,11 @@ $gold-color: gold;
 $grey-color: gray;
 $primary-bg-color: #ffc107;
 
+// Fungsi untuk menghasilkan warna yang lebih terang
+@function lighten-color($color, $amount) {
+  @return lighten($color, $amount);
+}
+
 // _styles.scss
 body {
     background-color: $background-color;
@@ -44,4 +49,14 @@ body {
 
 .btn-warning:hover {
     color: #000 !important;
+}
+
+// Menggunakan fungsi untuk menghasilkan warna yang lebih terang
+.btn-success {
+    background-color: lighten-color($primary-bg-color, 10%);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
 }
