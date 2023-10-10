@@ -1,3 +1,36 @@
+.carousel-control-1 {
+  transition: all 0.3s ease;
+  color: #000 !important;
+}
+.carousel-control-1.prev {
+  left: 50px;
+}
+.carousel-control-1.next {
+  right: 50px;
+}
+
+.carousel-control-2 {
+  transition: all 0.3s ease;
+  color: #000 !important;
+}
+.carousel-control-2.prev {
+  left: 100px;
+}
+.carousel-control-2.next {
+  right: 100px;
+}
+
+.carousel-control-3 {
+  transition: all 0.3s ease;
+  color: #000 !important;
+}
+.carousel-control-3.prev {
+  left: 150px;
+}
+.carousel-control-3.next {
+  right: 150px;
+}
+
 body {
   background-color: #f2f2f2;
 }
