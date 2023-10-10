@@ -10,9 +10,8 @@ $primary-bg-color: #ffc107;
     @return lighten($color, $percentage);
 }
 
-@mixin hover-effect {
-    transition: all 0.3s ease; // Efek transisi saat hover
-}
+// TP 10 Modul
+@import 'modul';
 
 // _styles.scss
 body {
