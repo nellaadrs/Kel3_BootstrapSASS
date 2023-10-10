@@ -1,3 +1,22 @@
 @mixin hover-effect {
     transition: all 0.3s ease; // Efek transisi saat hover
 }
+
+@for $i from 1 through 3 {
+    .carousel-control-#{$i} {
+        @include hover-effect; 
+        color: #000 !important;
+        &.prev {
+            left: #{$i * 50}px;
+        }
+        &.next {
+            right: #{$i * 50}px;
+        }
+    }
+}
+
+
+
+
+
+
