@@ -1,3 +1,4 @@
+/* Mixin */
 /* Navbar Styling */
 .navbar {
   background-color: #FFC107;
@@ -14,6 +15,10 @@
 .navbar .nav-link:hover {
   color: #333333;
 }
+.navbar .nav-item .nav-link.order {
+  color: #FF5722;
+  text-decoration: underline;
+}
 
 /* Jumbotron Styling */
 .jumbotron {
@@ -24,7 +29,24 @@
 /* Card Styling */
 .card {
   margin-bottom: 20px;
-  width: 50%; /* Menggunakan fungsi Sass */
+}
+.card:nth-child(1) {
+  width: 8.3333333333%;
+}
+.card:nth-child(2) {
+  width: 16.6666666667%;
+}
+.card:nth-child(3) {
+  width: 25%;
+}
+.card:nth-child(4) {
+  width: 33.3333333333%;
+}
+.card:nth-child(5) {
+  width: 41.6666666667%;
+}
+.card:nth-child(6) {
+  width: 50%;
 }
 .card .card-title {
   color: #FFC107;
