@@ -3,7 +3,6 @@ body {
 }
 
 .testimonial-card {
-  transition: all 0.3s ease;
   text-align: center;
   padding: 20px;
   border-radius: 10px;
@@ -41,7 +40,6 @@ body {
 }
 
 .accordion-button {
-  transition: all 0.3s ease;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -54,4 +52,4 @@ body {
   text-decoration: underline;
 }
 
-/*# sourceMappingURL=testimonia.css.map */
+/*# sourceMappingURL=testimonial.css.map */
