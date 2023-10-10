@@ -48,12 +48,12 @@ body {
     color: $primary-bg-color;
 }
 
-.btn-warning {
+.carousel-control-prev {
     @include hover-effect; 
     color: #000 !important;
 }
 
-.btn-success {
+.accordion-button {
     @include hover-effect; // Terapkan efek hover
     color: #fff;
     border: none;
@@ -61,7 +61,6 @@ body {
     border-radius: 5px;
     cursor: pointer;
 }
-
 
 .nav-item .nav-link.testimoni {
     color: $primary-bg-color;
