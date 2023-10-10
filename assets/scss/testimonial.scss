@@ -54,7 +54,6 @@ body {
 }
 
 .accordion-button {
-    @include hover-effect; 
     color: #fff;
     border: none;
     padding: 10px 20px;

@@ -41,7 +41,6 @@ body {
 }
 
 .accordion-button {
-  transition: all 0.3s ease;
   color: #fff;
   border: none;
   padding: 10px 20px;
