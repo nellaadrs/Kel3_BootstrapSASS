@@ -24,7 +24,7 @@ body {
     text-align: center;
     padding: 20px;
     border-radius: 10px;
-    background-color: lighten-color($box-shadow-color, 1%);
+    background-color: lighten-color($background-color, 20%);
     box-shadow: 0 0 20px $box-shadow-color;
 }
 
