@@ -16,6 +16,7 @@ body {
 }
 
 .testimonial-card {
+    @include hover-effect; 
     text-align: center;
     padding: 20px;
     border-radius: 10px;
@@ -53,6 +54,7 @@ body {
 }
 
 .accordion-button {
+    @include hover-effect; 
     color: #fff;
     border: none;
     padding: 10px 20px;
