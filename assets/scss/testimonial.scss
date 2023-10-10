@@ -6,8 +6,8 @@ $grey-color: gray;
 $primary-bg-color: #ffc107;
 
 // TP 9 Fungsi
-@function darken-color($color, $percentage) {
-    @return darken($color, $percentage);
+@function lighten-color($color, $percentage) {
+    @return lighten($color, $percentage);
 }
 
 @mixin hover-effect {
@@ -24,7 +24,7 @@ body {
     text-align: center;
     padding: 20px;
     border-radius: 10px;
-    background-color: darken-color($box-shadow-color, 1%);
+    background-color: lighten-color($box-shadow-color, 1%);
     box-shadow: 0 0 20px $box-shadow-color;
 }
 
