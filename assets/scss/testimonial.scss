@@ -6,6 +6,10 @@ $grey-color: gray;
 $primary-bg-color: #ffc107;
 
 // TP 9 Fungsi
+@function darken-color($color, $percentage) {
+    @return darken($color, $percentage);
+}
+
 @mixin hover-effect {
     transition: all 0.3s ease; // Efek transisi saat hover
 }
@@ -20,7 +24,7 @@ body {
     text-align: center;
     padding: 20px;
     border-radius: 10px;
-    background-color: #fff;
+    background-color: darken-color($box-shadow-color, 10%);
     box-shadow: 0 0 20px $box-shadow-color;
 }
 
