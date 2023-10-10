@@ -1,0 +1,57 @@
+body {
+  background-color: #f2f2f2;
+}
+
+.testimonial-card {
+  transition: all 0.3s ease;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.stars {
+  font-size: 28px;
+}
+
+.yellow-star {
+  color: gold;
+}
+
+.grey-star {
+  color: gray;
+}
+
+.faq-section {
+  background-color: #ffc107;
+  color: gray;
+  padding: 50px 0;
+}
+
+.faq-icon {
+  font-size: 22px;
+  margin-right: 10px;
+  color: #ffc107;
+}
+
+.btn-warning {
+  transition: all 0.3s ease;
+  color: #000 !important;
+}
+
+.btn-success {
+  transition: all 0.3s ease;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nav-item .nav-link.testimoni {
+  color: #ffc107;
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=testimonial.css.map */

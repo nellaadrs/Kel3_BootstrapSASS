@@ -5,12 +5,18 @@ $gold-color: gold;
 $grey-color: gray;
 $primary-bg-color: #ffc107;
 
+// TP 9 Fungsi
+@mixin hover-effect {
+    transition: all 0.3s ease; // Efek transisi saat hover
+}
+
 // _styles.scss
 body {
     background-color: $background-color;
 }
 
 .testimonial-card {
+    @include hover-effect; 
     text-align: center;
     padding: 20px;
     border-radius: 10px;
@@ -42,18 +48,20 @@ body {
     color: $primary-bg-color;
 }
 
-.btn-warning:hover {
+.btn-warning {
+    @include hover-effect; 
     color: #000 !important;
 }
 
-// Menggunakan fungsi adjust-hue untuk menghasilkan warna yang lebih terang
 .btn-success {
+    @include hover-effect; // Terapkan efek hover
     color: #fff;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
 }
+
 
 .nav-item .nav-link.testimoni {
     color: $primary-bg-color;
